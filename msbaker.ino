@@ -22,9 +22,7 @@ void loop()
   while(pins_read(UART_RX)) TCNT0 = 0;
   uart_read();
 
-  while(uart_newData())
-  {
-    uart_copyString(in, '\0', sizeof(in));
-    uart_writeString(in, sizeof(in));
-  }
+  if(uart_contains((byte *)"LED+")) pins_write(LED, HIGH);
+  if(uart_contains((byte *)"LED-")) pins_write(LED, LOW);
+  if(uart_contains((byte *)"\r")) uart_clearBuffer();
 }

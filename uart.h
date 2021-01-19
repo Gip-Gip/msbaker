@@ -35,6 +35,8 @@ boolean uart_newData();
 byte uart_pop();
 void uart_copy(byte *dest, int len);
 void uart_copyString(byte *dest, byte delem, int len);
+boolean uart_contains(byte *str);
+void uart_clearBuffer();
 void uart_rn4871_writeCmd(byte *str);
 void uart_rn4871_enterCmdMode();
 void uart_rn4871_exitCmdMode();
