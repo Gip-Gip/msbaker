@@ -13,5 +13,6 @@
 
 void pins_write(byte pins, boolean state);
 void pins_setMode(byte pins, boolean state);
+boolean pins_read(byte pins);
 
 #endif /* PINS_H_ */

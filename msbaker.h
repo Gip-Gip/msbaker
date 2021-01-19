@@ -9,5 +9,6 @@
 
 #include "common.h"
 #include "pins.h"
+#include "uart.h"
 
 #endif /* MSBAKER_H_ */

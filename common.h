@@ -10,6 +10,7 @@
 // Define Arduino keywords for Eclipse
 #ifndef PORTB
 #include <stdint.h>
+#include <string.h>
 
 typedef uint8_t byte;
 typedef byte boolean;
@@ -19,11 +20,22 @@ typedef byte boolean;
 #define INPUT LOW
 #define OUTPUT HIGH
 
+#define PCINT0_vect
+
+#define ISR(intr) void isr()
+
 void delay(int ms);
 
 byte PORTB;
 byte PINB;
 byte DDRB;
+byte TCCR0A;
+byte TCCR0B;
+byte TCNT0;
+byte GIMSK;
+byte PCMSK;
+byte SREG;
+
 #endif
 
 #endif /* COMMON_H_ */

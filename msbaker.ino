@@ -11,12 +11,20 @@
 void setup()
 {
   pins_setMode(LED, OUTPUT);
+  pins_write(LED, HIGH);
+  uart_init();
 }
 
 void loop()
 {
-  pins_write(LED, HIGH);
-  delay(1000);
-  pins_write(LED, LOW);
-  delay(1000);
+  byte in[16];
+
+  while(pins_read(UART_RX)) TCNT0 = 0;
+  uart_read();
+
+  while(uart_newData())
+  {
+    uart_copyString(in, '\0', sizeof(in));
+    uart_writeString(in, sizeof(in));
+  }
 }
