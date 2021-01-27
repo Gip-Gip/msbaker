@@ -14,1285 +14,1937 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATTINY85V-10SUR:ATTINY85V-10SUR U?
-U 1 1 600AA84F
-P 12250 4850
-F 0 "U?" H 13600 4983 50  0000 C CNN
-F 1 "ATTINY85V-10SUR" H 13600 4984 50  0001 C CNN
-F 2 "SOIC127P798X216-8N" H 16800 4950 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet-summary.pdf" H 16800 4850 50  0001 L CNN
-F 4 "MICROCHIP - ATTINY85V-10SUR - MCU, 8BIT, AVR, 10MHZ, WSOIC-8" H 16800 4750 50  0001 L CNN "Description"
-F 5 "2.16" H 16800 4650 50  0001 L CNN "Height"
-F 6 "Microchip" H 16800 4550 50  0001 L CNN "Manufacturer_Name"
-F 7 "ATTINY85V-10SUR" H 16800 4450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "556-ATTINY85V-10SUR" H 16800 4350 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology-Atmel/ATTINY85V-10SUR?qs=6Dg1WZIWLC7RsRgydzBFFw%3D%3D" H 16800 4250 50  0001 L CNN "Mouser Price/Stock"
-F 10 "ATTINY85V-10SUR" H 16800 4150 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/attiny85v-10sur/microchip-technology" H 16800 4050 50  0001 L CNN "Arrow Price/Stock"
-	1    12250 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 600AB346
-P 15050 5100
-F 0 "C?" H 15165 5100 50  0000 L CNN
-F 1 "10uF" H 15165 5055 50  0001 L CNN
-F 2 "" H 15088 4950 50  0001 C CNN
-F 3 "~" H 15050 5100 50  0001 C CNN
-	1    15050 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 600AC7BA
-P 15650 5700
-F 0 "#PWR?" H 15650 5450 50  0001 C CNN
-F 1 "Earth" H 15650 5550 50  0001 C CNN
-F 2 "" H 15650 5700 50  0001 C CNN
-F 3 "~" H 15650 5700 50  0001 C CNN
-	1    15650 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR?
-U 1 1 600AD5E7
-P 15050 4750
-F 0 "#PWR?" H 15050 4600 50  0001 C CNN
-F 1 "+BATT" H 15065 4923 50  0000 C CNN
-F 2 "" H 15050 4750 50  0001 C CNN
-F 3 "" H 15050 4750 50  0001 C CNN
-	1    15050 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Crystal Y?
+L Device:Crystal Y1
 U 1 1 600AE895
-P 9400 5000
-F 0 "Y?" H 9400 5176 50  0000 C CNN
-F 1 "10MHZ" H 9400 5177 50  0001 C CNN
-F 2 "" H 9400 5000 50  0001 C CNN
-F 3 "~" H 9400 5000 50  0001 C CNN
-	1    9400 5000
+P 4800 1150
+F 0 "Y1" H 4800 1326 50  0000 C CNN
+F 1 "10MHZ" H 4800 1327 50  0001 C CNN
+F 2 "" H 4800 1150 50  0001 C CNN
+F 3 "~" H 4800 1150 50  0001 C CNN
+	1    4800 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C9
 U 1 1 600AFA4A
-P 9750 5350
-F 0 "C?" H 9865 5350 50  0000 L CNN
-F 1 "22pF" H 9865 5305 50  0001 L CNN
-F 2 "" H 9788 5200 50  0001 C CNN
-F 3 "~" H 9750 5350 50  0001 C CNN
-	1    9750 5350
+P 5150 1500
+F 0 "C9" H 5265 1500 50  0000 L CNN
+F 1 "22pF" H 5265 1455 50  0001 L CNN
+F 2 "" H 5188 1350 50  0001 C CNN
+F 3 "~" H 5150 1500 50  0001 C CNN
+	1    5150 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9550 5000 9750 5000
+	4950 1150 5150 1150
 Wire Wire Line
-	9750 5000 9750 5200
+	5150 1150 5150 1350
 $Comp
-L Device:C C?
+L Device:C C8
 U 1 1 600B0B59
-P 9050 5350
-F 0 "C?" H 9165 5350 50  0000 L CNN
-F 1 "22pF" H 9165 5305 50  0001 L CNN
-F 2 "" H 9088 5200 50  0001 C CNN
-F 3 "~" H 9050 5350 50  0001 C CNN
-	1    9050 5350
+P 4450 1500
+F 0 "C8" H 4565 1500 50  0000 L CNN
+F 1 "22pF" H 4565 1455 50  0001 L CNN
+F 2 "" H 4488 1350 50  0001 C CNN
+F 3 "~" H 4450 1500 50  0001 C CNN
+	1    4450 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 5000 9050 5200
+	4450 1150 4450 1350
 Wire Wire Line
-	9050 5500 9050 5700
+	4450 1650 4450 1850
 Wire Wire Line
-	9050 5700 9400 5700
+	4450 1850 4800 1850
 Wire Wire Line
-	9750 5700 9750 5500
+	5150 1850 5150 1650
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR017
 U 1 1 600B3775
-P 9400 5900
-F 0 "#PWR?" H 9400 5650 50  0001 C CNN
-F 1 "Earth" H 9400 5750 50  0001 C CNN
-F 2 "" H 9400 5900 50  0001 C CNN
-F 3 "~" H 9400 5900 50  0001 C CNN
-	1    9400 5900
+P 4800 2050
+F 0 "#PWR017" H 4800 1800 50  0001 C CNN
+F 1 "Earth" H 4800 1900 50  0001 C CNN
+F 2 "" H 4800 2050 50  0001 C CNN
+F 3 "~" H 4800 2050 50  0001 C CNN
+	1    4800 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 5700 9400 5900
-Connection ~ 9400 5700
+	4800 1850 4800 2050
+Connection ~ 4800 1850
 Wire Wire Line
-	9400 5700 9750 5700
-Text GLabel 9750 4800 1    50   Input ~ 0
+	4800 1850 5150 1850
+Text GLabel 5150 950  1    50   Input ~ 0
 CLKO
 Wire Wire Line
-	9750 4800 9750 5000
-Connection ~ 9750 5000
-Text GLabel 9050 4800 1    50   Input ~ 0
+	5150 950  5150 1150
+Connection ~ 5150 1150
+Text GLabel 4450 950  1    50   Input ~ 0
 CLKI
 Wire Wire Line
-	9250 5000 9050 5000
+	4650 1150 4450 1150
 Wire Wire Line
-	9050 4800 9050 5000
-Connection ~ 9050 5000
-Text GLabel 12050 5050 0    50   Input ~ 0
-CLKO
-Wire Wire Line
-	12250 5050 12050 5050
-Text GLabel 12050 4950 0    50   Input ~ 0
-CLKI
-Wire Wire Line
-	12050 4950 12250 4950
+	4450 950  4450 1150
+Connection ~ 4450 1150
 $Comp
-L TC7WH08FK_LJ_CT:TC7WH08FK,LJ_CT U?
-U 1 1 600D2ACA
-P 11000 3200
-F 0 "U?" H 11500 3373 50  0000 C CNN
-F 1 "TC7WH08FK,LJ_CT" H 11500 3374 50  0001 C CNN
-F 2 "SOP50P310X90-8N" H 11850 3300 50  0001 L CNN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=54660&prodName=TC7WH08FK" H 11850 3200 50  0001 L CNN
-F 4 "Logic Gates Dual 2-Input L-MOS Series" H 11850 3100 50  0001 L CNN "Description"
-F 5 "0.9" H 11850 3000 50  0001 L CNN "Height"
-F 6 "Toshiba" H 11850 2900 50  0001 L CNN "Manufacturer_Name"
-F 7 "TC7WH08FK,LJ(CT" H 11850 2800 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "757-TC7WH08FKLJCT" H 11850 2700 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TC7WH08FKLJCT" H 11850 2600 50  0001 L CNN "Mouser Price/Stock"
-F 10 "TC7WH08FK,LJ(CT" H 11850 2500 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/tc7wh08fklj-ct/toshiba" H 11850 2400 50  0001 L CNN "Arrow Price/Stock"
-	1    11000 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L RN4871-I_RM140:RN4871-I_RM140 U?
+L RN4871-I_RM140:RN4871-I_RM140 U3
 U 1 1 600D5214
-P 13700 2850
-F 0 "U?" H 14350 3023 50  0000 C CNN
-F 1 "RN4871-I_RM140" H 14350 3024 50  0001 C CNN
-F 2 "RN4871IRM140" H 14850 2950 50  0001 L CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en586027" H 14850 2850 50  0001 L CNN
-F 4 "Bluetooth Modules (802.15.1) Bluetooth Low Energy BLE Module, Shielded, Antenna, ASCII Interface, 9x11.5mm" H 14850 2750 50  0001 L CNN "Description"
-F 5 "2.16" H 14850 2650 50  0001 L CNN "Height"
-F 6 "Microchip" H 14850 2550 50  0001 L CNN "Manufacturer_Name"
-F 7 "RN4871-I/RM140" H 14850 2450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "579-RN4871-I/RM140" H 14850 2350 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN4871-I-RM140?qs=BJlw7L4Cy79OHrwBC2yoPQ%3D%3D" H 14850 2250 50  0001 L CNN "Mouser Price/Stock"
-F 10 "RN4871-I/RM140" H 14850 2150 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/rn4871-irm140/microchip-technology" H 14850 2050 50  0001 L CNN "Arrow Price/Stock"
-	1    13700 2850
+P 1400 7000
+F 0 "U3" H 2050 7173 50  0000 C CNN
+F 1 "RN4871-I_RM140" H 2050 7174 50  0001 C CNN
+F 2 "RN4871IRM140" H 2550 7100 50  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en586027" H 2550 7000 50  0001 L CNN
+F 4 "Bluetooth Modules (802.15.1) Bluetooth Low Energy BLE Module, Shielded, Antenna, ASCII Interface, 9x11.5mm" H 2550 6900 50  0001 L CNN "Description"
+F 5 "2.16" H 2550 6800 50  0001 L CNN "Height"
+F 6 "Microchip" H 2550 6700 50  0001 L CNN "Manufacturer_Name"
+F 7 "RN4871-I/RM140" H 2550 6600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "579-RN4871-I/RM140" H 2550 6500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN4871-I-RM140?qs=BJlw7L4Cy79OHrwBC2yoPQ%3D%3D" H 2550 6400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "RN4871-I/RM140" H 2550 6300 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/rn4871-irm140/microchip-technology" H 2550 6200 50  0001 L CNN "Arrow Price/Stock"
+	1    1400 7000
 	1    0    0    -1  
 $EndComp
-Text GLabel 12050 5150 0    50   Input ~ 0
-ATTINY_UART
-Wire Wire Line
-	12050 5150 12250 5150
-Text GLabel 12050 5250 0    50   Input ~ 0
-ATTINY_RTS
-Text GLabel 12050 5350 0    50   Input ~ 0
+Text GLabel 2900 7000 2    50   Input ~ 0
 RN4871_RTS
 Wire Wire Line
-	12250 5250 12050 5250
-Wire Wire Line
-	12250 5350 12050 5350
-Text GLabel 15200 2850 2    50   Input ~ 0
-RN4871_RTS
-Wire Wire Line
-	15000 2850 15200 2850
-Text GLabel 15200 3050 2    50   Input ~ 0
+	2700 7000 2900 7000
+Text GLabel 2900 7200 2    50   Input ~ 0
 ATTINY_RTS
 Wire Wire Line
-	15000 3050 15200 3050
-Text GLabel 13500 3450 0    50   Input ~ 0
+	2700 7200 2900 7200
+Text GLabel 1200 7600 0    50   Input ~ 0
 RN4871_RX
 Wire Wire Line
-	13500 3450 13700 3450
-Text GLabel 13500 3550 0    50   Input ~ 0
+	1200 7600 1400 7600
+Text GLabel 1200 7700 0    50   Input ~ 0
 RN4871_TX
 Wire Wire Line
-	13700 3550 13500 3550
-Text GLabel 10800 3200 0    50   Input ~ 0
-ATTINY_UART
+	1400 7700 1200 7700
+Wire Notes Line
+	4300 650  5400 650 
+Wire Notes Line
+	5400 650  5400 2200
+Wire Notes Line
+	5400 2200 4300 2200
+Wire Notes Line
+	4300 2200 4300 650 
+Text Notes 4300 650  0    50   ~ 10
+10MHZ quartz crystal block
+$Comp
+L LIS3DHTR:LIS3DHTR U11
+U 1 1 602434D4
+P 10000 1700
+F 0 "U11" H 10700 2389 50  0000 C CNN
+F 1 "LIS3DHTR" H 10700 2390 50  0001 C CNN
+F 2 "LIS3DHTR" H 11250 2100 50  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3c/ae/50/85/d6/b1/46/fe/CD00274221.pdf/files/CD00274221.pdf/jcr:content/translations/en.CD00274221.pdf" H 11250 2000 50  0001 L CNN
+F 4 "Accelerometer 3-Axis 2g/16g 1.8V LGA16 STMicroelectronics LIS3DHTR Accelerometer IC, 3-axis, I2C, SPI 1.71  3.6 V, 16-Pin LGA" H 11250 1900 50  0001 L CNN "Description"
+F 5 "1" H 11250 1800 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 11250 1700 50  0001 L CNN "Manufacturer_Name"
+F 7 "LIS3DHTR" H 11250 1600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-LIS3DHTR" H 11250 1500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LIS3DHTR?qs=6la6oa3D8xzhXYax3cEo4w%3D%3D" H 11250 1400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "LIS3DHTR" H 11250 1300 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/lis3dhtr/stmicroelectronics" H 11250 1200 50  0001 L CNN "Arrow Price/Stock"
+	1    10000 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10000 1800
+NoConn ~ 10000 1900
+$Comp
+L power:+BATT #PWR041
+U 1 1 60277C24
+P 11000 3150
+F 0 "#PWR041" H 11000 3000 50  0001 C CNN
+F 1 "+BATT" H 11015 3323 50  0000 C CNN
+F 2 "" H 11000 3150 50  0001 C CNN
+F 3 "" H 11000 3150 50  0001 C CNN
+	1    11000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 3100 10800 3200
 Wire Wire Line
 	10800 3200 11000 3200
-Text GLabel 10800 3300 0    50   Input ~ 0
-RN4871_CTS
 Wire Wire Line
-	10800 3300 11000 3300
-Text GLabel 10800 3400 0    50   Input ~ 0
-ATTINY_UART
-Wire Wire Line
-	10800 3400 11000 3400
-Text GLabel 12200 3300 2    50   Input ~ 0
-RN4871_RX
-Wire Wire Line
-	12000 3300 12200 3300
-Text GLabel 12200 3400 2    50   Input ~ 0
-ATTINY_RTS
-Wire Wire Line
-	12200 3400 12000 3400
-Text GLabel 12200 3500 2    50   Input ~ 0
-RN4871_TX
-Wire Wire Line
-	12200 3500 12000 3500
+	11000 3200 11000 3150
 $Comp
-L power:+BATT #PWR?
-U 1 1 600E48B0
-P 12100 3100
-F 0 "#PWR?" H 12100 2950 50  0001 C CNN
-F 1 "+BATT" H 12115 3273 50  0000 C CNN
-F 2 "" H 12100 3100 50  0001 C CNN
-F 3 "" H 12100 3100 50  0001 C CNN
-	1    12100 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12000 3200 12100 3200
-Wire Wire Line
-	12100 3200 12100 3100
-$Comp
-L Device:C C?
-U 1 1 600E7027
-P 12100 3750
-F 0 "C?" H 12215 3750 50  0000 L CNN
-F 1 "10uF" H 12215 3705 50  0001 L CNN
-F 2 "" H 12138 3600 50  0001 C CNN
-F 3 "~" H 12100 3750 50  0001 C CNN
-	1    12100 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12100 3200 12100 3600
-Connection ~ 12100 3200
-$Comp
-L power:Earth #PWR?
-U 1 1 600EFB3C
-P 12100 4100
-F 0 "#PWR?" H 12100 3850 50  0001 C CNN
-F 1 "Earth" H 12100 3950 50  0001 C CNN
-F 2 "" H 12100 4100 50  0001 C CNN
-F 3 "~" H 12100 4100 50  0001 C CNN
-	1    12100 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12100 3900 12100 4000
-Wire Wire Line
-	12100 4000 10900 4000
-Wire Wire Line
-	10900 4000 10900 3500
-Wire Wire Line
-	10900 3500 11000 3500
-Connection ~ 12100 4000
-Wire Wire Line
-	12100 4000 12100 4100
-Text GLabel 12050 4850 0    50   Input ~ 0
-RESET
-Wire Wire Line
-	12050 4850 12250 4850
-Wire Notes Line
-	10250 2850 12750 2850
-Wire Notes Line
-	12750 2850 12750 4250
-Wire Notes Line
-	12750 4250 10250 4250
-Wire Notes Line
-	10250 4250 10250 2850
-$Comp
-L MR44V100AMAZAATL:MR44V100AMAZAATL U?
-U 1 1 6010EABE
-P 9350 6900
-F 0 "U?" H 9850 7073 50  0000 C CNN
-F 1 "MR44V100AMAZAATL" H 9850 7074 50  0001 C CNN
-F 2 "SOIC127P600X165-8N" H 10200 7000 50  0001 L CNN
-F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 10200 6900 50  0001 L CNN
-F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 10200 6800 50  0001 L CNN "Description"
-F 5 "1.65" H 10200 6700 50  0001 L CNN "Height"
-F 6 "ROHM Semiconductor" H 10200 6600 50  0001 L CNN "Manufacturer_Name"
-F 7 "MR44V100AMAZAATL" H 10200 6500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "755-MR44V100AMAZAATL" H 10200 6400 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 10200 6300 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 10200 6200 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 10200 6100 50  0001 L CNN "Arrow Price/Stock"
-	1    9350 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L MR44V100AMAZAATL:MR44V100AMAZAATL U?
-U 1 1 60111AF6
-P 9350 7650
-F 0 "U?" H 9850 7823 50  0000 C CNN
-F 1 "MR44V100AMAZAATL" H 9850 7824 50  0001 C CNN
-F 2 "SOIC127P600X165-8N" H 10200 7750 50  0001 L CNN
-F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 10200 7650 50  0001 L CNN
-F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 10200 7550 50  0001 L CNN "Description"
-F 5 "1.65" H 10200 7450 50  0001 L CNN "Height"
-F 6 "ROHM Semiconductor" H 10200 7350 50  0001 L CNN "Manufacturer_Name"
-F 7 "MR44V100AMAZAATL" H 10200 7250 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "755-MR44V100AMAZAATL" H 10200 7150 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 10200 7050 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 10200 6950 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 10200 6850 50  0001 L CNN "Arrow Price/Stock"
-	1    9350 7650
-	1    0    0    -1  
-$EndComp
-Text GLabel 10650 6750 1    50   Input ~ 0
-I2C_SDA
-Text GLabel 10850 6750 1    50   Input ~ 0
-I2C_SCL
-NoConn ~ 10350 7000
-NoConn ~ 10350 7750
-NoConn ~ 9350 7850
-$Comp
-L power:+BATT #PWR?
-U 1 1 60197459
-P 10450 6800
-F 0 "#PWR?" H 10450 6650 50  0001 C CNN
-F 1 "+BATT" H 10465 6973 50  0000 C CNN
-F 2 "" H 10450 6800 50  0001 C CNN
-F 3 "" H 10450 6800 50  0001 C CNN
-	1    10450 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 6900 10450 6900
-Wire Wire Line
-	10450 6900 10450 7650
-Wire Wire Line
-	10450 7650 10350 7650
-Wire Wire Line
-	10450 6800 10450 6900
-Connection ~ 10450 6900
-Wire Wire Line
-	9350 7200 9250 7200
-Wire Wire Line
-	9250 7200 9250 7950
-Wire Wire Line
-	9250 7950 9350 7950
-Connection ~ 9250 7950
-$Comp
-L Device:C C?
-U 1 1 601ABA58
-P 9000 7950
-F 0 "C?" V 8840 7950 50  0000 C CNN
-F 1 "10uF" V 8839 7950 50  0001 C CNN
-F 2 "" H 9038 7800 50  0001 C CNN
-F 3 "~" H 9000 7950 50  0001 C CNN
-	1    9000 7950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 7950 9250 7950
-$Comp
-L Device:C C?
-U 1 1 601B099A
-P 9000 7200
-F 0 "C?" V 8840 7200 50  0000 C CNN
-F 1 "C" V 8839 7200 50  0001 C CNN
-F 2 "" H 9038 7050 50  0001 C CNN
-F 3 "~" H 9000 7200 50  0001 C CNN
-	1    9000 7200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 7200 9250 7200
-Connection ~ 9250 7200
-Wire Wire Line
-	8850 7200 8750 7200
-Wire Wire Line
-	8750 7200 8750 7750
-Wire Wire Line
-	8750 7950 8850 7950
-Wire Wire Line
-	8750 7750 9350 7750
-Connection ~ 8750 7750
-Wire Wire Line
-	8750 7750 8750 7950
-$Comp
-L power:+BATT #PWR?
-U 1 1 601B5197
-P 8750 7100
-F 0 "#PWR?" H 8750 6950 50  0001 C CNN
-F 1 "+BATT" H 8765 7273 50  0000 C CNN
-F 2 "" H 8750 7100 50  0001 C CNN
-F 3 "" H 8750 7100 50  0001 C CNN
-	1    8750 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 7100 8750 7200
-Connection ~ 8750 7200
-$Comp
-L MR44V100AMAZAATL:MR44V100AMAZAATL U?
-U 1 1 601BD993
-P 9350 8300
-F 0 "U?" H 9850 8473 50  0000 C CNN
-F 1 "MR44V100AMAZAATL" H 9850 8474 50  0001 C CNN
-F 2 "SOIC127P600X165-8N" H 10200 8400 50  0001 L CNN
-F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 10200 8300 50  0001 L CNN
-F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 10200 8200 50  0001 L CNN "Description"
-F 5 "1.65" H 10200 8100 50  0001 L CNN "Height"
-F 6 "ROHM Semiconductor" H 10200 8000 50  0001 L CNN "Manufacturer_Name"
-F 7 "MR44V100AMAZAATL" H 10200 7900 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "755-MR44V100AMAZAATL" H 10200 7800 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 10200 7700 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 10200 7600 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 10200 7500 50  0001 L CNN "Arrow Price/Stock"
-	1    9350 8300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 7650 10450 8300
-Wire Wire Line
-	10450 8300 10350 8300
-Connection ~ 10450 7650
-NoConn ~ 10350 8400
-NoConn ~ 9350 8400
-Wire Wire Line
-	9250 7950 9250 8600
-Wire Wire Line
-	9250 8600 9350 8600
-$Comp
-L Device:C C?
-U 1 1 601C5433
-P 9000 8600
-F 0 "C?" V 8840 8600 50  0000 C CNN
-F 1 "10uF" V 8839 8600 50  0001 C CNN
-F 2 "" H 9038 8450 50  0001 C CNN
-F 3 "~" H 9000 8600 50  0001 C CNN
-	1    9000 8600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 8600 9250 8600
-Connection ~ 9250 8600
-Wire Wire Line
-	9350 8500 9150 8500
-Wire Wire Line
-	9150 8500 9150 8400
-Wire Wire Line
-	9150 8400 8750 8400
-Wire Wire Line
-	8750 8400 8750 7950
-Connection ~ 8750 7950
-Wire Wire Line
-	8750 8400 8750 8600
-Wire Wire Line
-	8750 8600 8850 8600
-Connection ~ 8750 8400
-$Comp
-L MR44V100AMAZAATL:MR44V100AMAZAATL U?
-U 1 1 601D78B3
-P 9350 8950
-F 0 "U?" H 9850 9123 50  0000 C CNN
-F 1 "MR44V100AMAZAATL" H 9850 9124 50  0001 C CNN
-F 2 "SOIC127P600X165-8N" H 10200 9050 50  0001 L CNN
-F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 10200 8950 50  0001 L CNN
-F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 10200 8850 50  0001 L CNN "Description"
-F 5 "1.65" H 10200 8750 50  0001 L CNN "Height"
-F 6 "ROHM Semiconductor" H 10200 8650 50  0001 L CNN "Manufacturer_Name"
-F 7 "MR44V100AMAZAATL" H 10200 8550 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "755-MR44V100AMAZAATL" H 10200 8450 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 10200 8350 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 10200 8250 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 10200 8150 50  0001 L CNN "Arrow Price/Stock"
-	1    9350 8950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 8300 10450 8950
-Wire Wire Line
-	10450 8950 10350 8950
-Connection ~ 10450 8300
-NoConn ~ 10350 9050
-Wire Wire Line
-	9250 8600 9250 9250
-Wire Wire Line
-	9250 9250 9350 9250
-Wire Wire Line
-	9350 9150 9150 9150
-Wire Wire Line
-	9150 9150 9150 9050
-Wire Wire Line
-	9150 9050 9350 9050
-$Comp
-L Device:C C?
-U 1 1 601E34CF
-P 9000 9250
-F 0 "C?" V 8840 9250 50  0000 C CNN
-F 1 "C" V 8839 9250 50  0001 C CNN
-F 2 "" H 9038 9100 50  0001 C CNN
-F 3 "~" H 9000 9250 50  0001 C CNN
-	1    9000 9250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 9250 9250 9250
-Connection ~ 9250 9250
-Wire Wire Line
-	8850 9250 8750 9250
-Wire Wire Line
-	8750 9250 8750 9050
-Connection ~ 8750 8600
-Wire Wire Line
-	9150 9050 8750 9050
-Connection ~ 9150 9050
-Connection ~ 8750 9050
-Wire Wire Line
-	8750 9050 8750 8600
-Wire Wire Line
-	10650 6750 10650 7200
-Wire Wire Line
-	10650 7200 10350 7200
-Wire Wire Line
-	10650 7200 10650 7950
-Wire Wire Line
-	10650 7950 10350 7950
-Connection ~ 10650 7200
-Wire Wire Line
-	10650 7950 10650 8600
-Wire Wire Line
-	10650 8600 10350 8600
-Connection ~ 10650 7950
-Wire Wire Line
-	10650 8600 10650 9250
-Wire Wire Line
-	10650 9250 10350 9250
-Connection ~ 10650 8600
-Wire Wire Line
-	10850 6750 10850 7100
-Wire Wire Line
-	10850 7100 10350 7100
-Wire Wire Line
-	10850 7100 10850 7850
-Wire Wire Line
-	10850 7850 10350 7850
-Connection ~ 10850 7100
-Wire Wire Line
-	10850 7850 10850 8500
-Wire Wire Line
-	10850 8500 10350 8500
-Connection ~ 10850 7850
-Wire Wire Line
-	10850 8500 10850 9150
-Wire Wire Line
-	10850 9150 10350 9150
-Connection ~ 10850 8500
-Wire Notes Line
-	8600 6350 10950 6350
-Wire Notes Line
-	10950 9400 8600 9400
-Wire Notes Line
-	8900 4500 10000 4500
-Wire Notes Line
-	10000 4500 10000 6050
-Wire Notes Line
-	10000 6050 8900 6050
-Wire Notes Line
-	8900 6050 8900 4500
-Text Notes 8600 6350 0    50   ~ 10
-512kbyte I2C FRAM block
-Text Notes 8900 4500 0    50   ~ 10
-10MHZ quartz crystal block
-Text Notes 10250 2850 0    50   ~ 10
-3-wire to 4-wire UART conversion
-$Comp
-L LIS3DHTR:LIS3DHTR U?
-U 1 1 602434D4
-P 11900 7600
-F 0 "U?" H 12600 8289 50  0000 C CNN
-F 1 "LIS3DHTR" H 12600 8290 50  0001 C CNN
-F 2 "LIS3DHTR" H 13150 8000 50  0001 L CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3c/ae/50/85/d6/b1/46/fe/CD00274221.pdf/files/CD00274221.pdf/jcr:content/translations/en.CD00274221.pdf" H 13150 7900 50  0001 L CNN
-F 4 "Accelerometer 3-Axis 2g/16g 1.8V LGA16 STMicroelectronics LIS3DHTR Accelerometer IC, 3-axis, I2C, SPI 1.71  3.6 V, 16-Pin LGA" H 13150 7800 50  0001 L CNN "Description"
-F 5 "1" H 13150 7700 50  0001 L CNN "Height"
-F 6 "STMicroelectronics" H 13150 7600 50  0001 L CNN "Manufacturer_Name"
-F 7 "LIS3DHTR" H 13150 7500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "511-LIS3DHTR" H 13150 7400 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LIS3DHTR?qs=6la6oa3D8xzhXYax3cEo4w%3D%3D" H 13150 7300 50  0001 L CNN "Mouser Price/Stock"
-F 10 "LIS3DHTR" H 13150 7200 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/lis3dhtr/stmicroelectronics" H 13150 7100 50  0001 L CNN "Arrow Price/Stock"
-	1    11900 7600
-	1    0    0    -1  
-$EndComp
-NoConn ~ 11900 7700
-NoConn ~ 11900 7800
-$Comp
-L power:+BATT #PWR?
-U 1 1 60277C24
-P 12900 9050
-F 0 "#PWR?" H 12900 8900 50  0001 C CNN
-F 1 "+BATT" H 12915 9223 50  0000 C CNN
-F 2 "" H 12900 9050 50  0001 C CNN
-F 3 "" H 12900 9050 50  0001 C CNN
-	1    12900 9050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12700 9000 12700 9100
-Wire Wire Line
-	12700 9100 12900 9100
-Wire Wire Line
-	12900 9100 12900 9050
-$Comp
-L power:Earth #PWR?
+L power:Earth #PWR038
 U 1 1 6027AEB0
-P 12600 9100
-F 0 "#PWR?" H 12600 8850 50  0001 C CNN
-F 1 "Earth" H 12600 8950 50  0001 C CNN
-F 2 "" H 12600 9100 50  0001 C CNN
-F 3 "~" H 12600 9100 50  0001 C CNN
-	1    12600 9100
+P 10700 3200
+F 0 "#PWR038" H 10700 2950 50  0001 C CNN
+F 1 "Earth" H 10700 3050 50  0001 C CNN
+F 2 "" H 10700 3200 50  0001 C CNN
+F 3 "~" H 10700 3200 50  0001 C CNN
+	1    10700 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR039
 U 1 1 6029136C
-P 12700 6800
-F 0 "#PWR?" H 12700 6650 50  0001 C CNN
-F 1 "+BATT" H 12715 6973 50  0000 C CNN
-F 2 "" H 12700 6800 50  0001 C CNN
-F 3 "" H 12700 6800 50  0001 C CNN
-	1    12700 6800
+P 10800 900
+F 0 "#PWR039" H 10800 750 50  0001 C CNN
+F 1 "+BATT" H 10815 1073 50  0000 C CNN
+F 2 "" H 10800 900 50  0001 C CNN
+F 3 "" H 10800 900 50  0001 C CNN
+	1    10800 900 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 12500 7000
-NoConn ~ 12600 7000
-NoConn ~ 13300 7600
-NoConn ~ 13300 7800
-NoConn ~ 13300 8000
-Text Notes 8600 9600 0    50   ~ 0
-Notes:\n* Pins Ax are internally pulled down
-Wire Notes Line
-	8600 9650 10950 9650
-Wire Notes Line
-	10950 6350 10950 9650
-Wire Notes Line
-	8600 6350 8600 9650
+NoConn ~ 10600 1100
+NoConn ~ 10700 1100
+NoConn ~ 11400 1700
+NoConn ~ 11400 1900
+NoConn ~ 11400 2100
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR045
 U 1 1 602C7BC3
-P 13400 8000
-F 0 "#PWR?" H 13400 7750 50  0001 C CNN
-F 1 "Earth" H 13400 7850 50  0001 C CNN
-F 2 "" H 13400 8000 50  0001 C CNN
-F 3 "~" H 13400 8000 50  0001 C CNN
-	1    13400 8000
+P 11500 2100
+F 0 "#PWR045" H 11500 1850 50  0001 C CNN
+F 1 "Earth" H 11500 1950 50  0001 C CNN
+F 2 "" H 11500 2100 50  0001 C CNN
+F 3 "~" H 11500 2100 50  0001 C CNN
+	1    11500 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR035
 U 1 1 602DFB3D
-P 11800 8100
-F 0 "#PWR?" H 11800 7850 50  0001 C CNN
-F 1 "Earth" H 11800 7950 50  0001 C CNN
-F 2 "" H 11800 8100 50  0001 C CNN
-F 3 "~" H 11800 8100 50  0001 C CNN
-	1    11800 8100
+P 9900 2200
+F 0 "#PWR035" H 9900 1950 50  0001 C CNN
+F 1 "Earth" H 9900 2050 50  0001 C CNN
+F 2 "" H 9900 2200 50  0001 C CNN
+F 3 "~" H 9900 2200 50  0001 C CNN
+	1    9900 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR034
 U 1 1 602F35E9
-P 11800 7500
-F 0 "#PWR?" H 11800 7350 50  0001 C CNN
-F 1 "+BATT" H 11815 7673 50  0000 C CNN
-F 2 "" H 11800 7500 50  0001 C CNN
-F 3 "" H 11800 7500 50  0001 C CNN
-	1    11800 7500
+P 9900 1600
+F 0 "#PWR034" H 9900 1450 50  0001 C CNN
+F 1 "+BATT" H 9915 1773 50  0000 C CNN
+F 2 "" H 9900 1600 50  0001 C CNN
+F 3 "" H 9900 1600 50  0001 C CNN
+	1    9900 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11800 7500 11800 7600
+	9900 1600 9900 1700
 Wire Wire Line
-	11800 7600 11900 7600
+	9900 1700 10000 1700
 Wire Wire Line
-	11900 8000 11800 8000
+	10000 2100 9900 2100
 Wire Wire Line
-	11800 8000 11800 8100
+	9900 2100 9900 2200
 Wire Wire Line
-	13300 7700 13400 7700
+	11400 1800 11500 1800
 Wire Wire Line
-	13400 7700 13400 7900
+	11500 1800 11500 2000
 Wire Wire Line
-	13400 7900 13300 7900
+	11500 2000 11400 2000
 Wire Wire Line
-	13400 7900 13400 8000
-Connection ~ 13400 7900
-Text GLabel 11700 7900 0    50   Input ~ 0
+	11500 2000 11500 2100
+Connection ~ 11500 2000
+Text GLabel 9800 2000 0    50   Input ~ 0
 I2C_SCL
 Wire Wire Line
-	11700 7900 11900 7900
-Text GLabel 12300 9200 0    50   Input ~ 0
+	9800 2000 10000 2000
+Text GLabel 10400 3300 0    50   Input ~ 0
 I2C_SDA
 Wire Wire Line
-	12500 9000 12500 9200
+	10600 3100 10600 3300
 Wire Wire Line
-	12500 9200 12300 9200
+	10600 3300 10400 3300
 Wire Wire Line
-	12600 9000 12600 9100
-Text GLabel 13500 3050 0    50   Input ~ 0
+	10700 3100 10700 3200
+Text GLabel 1200 7200 0    50   Input ~ 0
 I2C_SCL
 Wire Wire Line
-	13500 3050 13700 3050
-Text GLabel 13500 3150 0    50   Input ~ 0
+	1200 7200 1400 7200
+Text GLabel 1200 7300 0    50   Input ~ 0
 I2C_SDA
 Wire Wire Line
-	13500 3150 13700 3150
-Wire Wire Line
-	14950 4850 15050 4850
-Wire Wire Line
-	15050 4850 15050 4950
-Wire Wire Line
-	14950 5350 15050 5350
-Wire Wire Line
-	15050 5350 15050 5250
-Wire Wire Line
-	15050 4750 15050 4850
-Connection ~ 15050 4850
-Connection ~ 15050 5350
-Text GLabel 15250 5350 2    50   Input ~ 0
-PGND
-Wire Wire Line
-	15050 5350 15250 5350
+	1200 7300 1400 7300
 $Comp
-L Jumper:Jumper_2_Bridged JP?
-U 1 1 60368E7C
-P 15350 5600
-F 0 "JP?" H 15350 5703 50  0000 C CNN
-F 1 "Programming GND Disconnect" H 15350 5704 50  0001 C CNN
-F 2 "" H 15350 5600 50  0001 C CNN
-F 3 "~" H 15350 5600 50  0001 C CNN
-	1    15350 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15050 5600 15150 5600
-Wire Wire Line
-	15050 5350 15050 5600
-Wire Wire Line
-	15550 5600 15650 5600
-Wire Wire Line
-	15650 5600 15650 5700
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J?
+L Connector_Generic:Conn_02x03_Odd_Even J1
 U 1 1 6037ADD2
-P 2000 1650
-F 0 "J?" H 2050 1875 50  0000 C CNN
-F 1 "ISP_HEADER" H 2050 1876 50  0001 C CNN
-F 2 "" H 2000 1650 50  0001 C CNN
-F 3 "~" H 2000 1650 50  0001 C CNN
-	1    2000 1650
+P 1500 1100
+F 0 "J1" H 1550 1325 50  0000 C CNN
+F 1 "ISP_HEADER" H 1550 1326 50  0001 C CNN
+F 2 "" H 1500 1100 50  0001 C CNN
+F 3 "~" H 1500 1100 50  0001 C CNN
+	1    1500 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 1600 1750 0    50   Input ~ 0
+Text GLabel 1100 1200 0    50   Input ~ 0
 RESET
 Wire Wire Line
-	1600 1750 1800 1750
-Text GLabel 2500 1750 2    50   Input ~ 0
+	1100 1200 1300 1200
+Text GLabel 2000 1200 2    50   Input ~ 0
 PGND
 Wire Wire Line
-	2300 1750 2500 1750
+	1800 1200 2000 1200
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR04
 U 1 1 6038743B
-P 2400 1450
-F 0 "#PWR?" H 2400 1300 50  0001 C CNN
-F 1 "+BATT" H 2415 1623 50  0000 C CNN
-F 2 "" H 2400 1450 50  0001 C CNN
-F 3 "" H 2400 1450 50  0001 C CNN
-	1    2400 1450
+P 1900 900
+F 0 "#PWR04" H 1900 750 50  0001 C CNN
+F 1 "+BATT" H 1915 1073 50  0000 C CNN
+F 2 "" H 1900 900 50  0001 C CNN
+F 3 "" H 1900 900 50  0001 C CNN
+	1    1900 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2300 1550 2400 1550
+	1800 1000 1900 1000
 Wire Wire Line
-	2400 1550 2400 1450
-Text GLabel 11000 5350 2    50   Input ~ 0
-RN4871_RTS
-Text GLabel 10900 5350 0    50   Input ~ 0
-ISP_MOSI
-Wire Wire Line
-	10900 5350 11000 5350
-Text GLabel 11100 5250 2    50   Input ~ 0
-ATTINY_RTS
-Text GLabel 11000 5250 0    50   Input ~ 0
-ISP_MISO
-Wire Wire Line
-	11000 5250 11100 5250
-Text GLabel 11000 5150 2    50   Input ~ 0
-ATTINY_UART
-Text GLabel 10900 5150 0    50   Input ~ 0
+	1900 1000 1900 900 
+Text GLabel 1100 1100 0    50   Input ~ 0
 ISP_SCK
 Wire Wire Line
-	10900 5150 11000 5150
-Text GLabel 1600 1650 0    50   Input ~ 0
-ISP_SCK
-Wire Wire Line
-	1600 1650 1800 1650
-Text GLabel 1600 1550 0    50   Input ~ 0
+	1100 1100 1300 1100
+Text GLabel 1100 1000 0    50   Input ~ 0
 ISP_MISO
 Wire Wire Line
-	1600 1550 1800 1550
-Text GLabel 2500 1650 2    50   Input ~ 0
+	1100 1000 1300 1000
+Text GLabel 2000 1100 2    50   Input ~ 0
 ISP_MOSI
 Wire Wire Line
-	2500 1650 2300 1650
+	2000 1100 1800 1100
 Wire Notes Line
-	1150 1200 2950 1200
+	650  650  2450 650 
 Wire Notes Line
-	2950 1200 2950 1850
+	2450 650  2450 1300
 Wire Notes Line
-	2950 1850 1150 1850
+	2450 1300 650  1300
 Wire Notes Line
-	1150 1850 1150 1200
-Text Notes 1150 1200 0    50   ~ 10
+	650  1300 650  650 
+Text Notes 650  650  0    50   ~ 10
 ISP header
-NoConn ~ 9350 7000
-NoConn ~ 9350 7100
 $Comp
-L Device:C C?
+L Device:C C17
 U 1 1 603EA5C2
-P 12950 6900
-F 0 "C?" V 12790 6900 50  0000 C CNN
-F 1 "10uF" V 12789 6900 50  0001 C CNN
-F 2 "" H 12988 6750 50  0001 C CNN
-F 3 "~" H 12950 6900 50  0001 C CNN
-	1    12950 6900
+P 11050 1000
+F 0 "C17" V 10890 1000 50  0000 C CNN
+F 1 "10uF" V 10889 1000 50  0001 C CNN
+F 2 "" H 11088 850 50  0001 C CNN
+F 3 "~" H 11050 1000 50  0001 C CNN
+	1    11050 1000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	12700 6800 12700 6900
+	10800 900  10800 1000
 Wire Wire Line
-	12700 6900 12800 6900
-Connection ~ 12700 6900
+	10800 1000 10900 1000
+Connection ~ 10800 1000
 Wire Wire Line
-	12700 6900 12700 7000
+	10800 1000 10800 1100
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR043
 U 1 1 603F6888
-P 13200 7000
-F 0 "#PWR?" H 13200 6750 50  0001 C CNN
-F 1 "Earth" H 13200 6850 50  0001 C CNN
-F 2 "" H 13200 7000 50  0001 C CNN
-F 3 "~" H 13200 7000 50  0001 C CNN
-	1    13200 7000
+P 11300 1100
+F 0 "#PWR043" H 11300 850 50  0001 C CNN
+F 1 "Earth" H 11300 950 50  0001 C CNN
+F 2 "" H 11300 1100 50  0001 C CNN
+F 3 "~" H 11300 1100 50  0001 C CNN
+	1    11300 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13100 6900 13200 6900
+	11200 1000 11300 1000
 Wire Wire Line
-	13200 6900 13200 7000
+	11300 1000 11300 1100
 Wire Notes Line
-	13500 9300 11300 9300
+	11600 3400 9400 3400
 Wire Notes Line
-	11300 6550 13500 6550
-Text Notes 11300 6550 0    50   ~ 10
-Watchdog Accelerometer
+	9400 650  11600 650 
+Text Notes 9400 650  0    50   ~ 10
+Watchdog accelerometer block
 $Comp
-L LIS3DHTR:LIS3DHTR U?
+L LIS3DHTR:LIS3DHTR U12
 U 1 1 604226AA
-P 14300 7600
-F 0 "U?" H 15000 8289 50  0000 C CNN
-F 1 "LIS3DHTR" H 15000 8290 50  0001 C CNN
-F 2 "LIS3DHTR" H 15550 8000 50  0001 L CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3c/ae/50/85/d6/b1/46/fe/CD00274221.pdf/files/CD00274221.pdf/jcr:content/translations/en.CD00274221.pdf" H 15550 7900 50  0001 L CNN
-F 4 "Accelerometer 3-Axis 2g/16g 1.8V LGA16 STMicroelectronics LIS3DHTR Accelerometer IC, 3-axis, I2C, SPI 1.71  3.6 V, 16-Pin LGA" H 15550 7800 50  0001 L CNN "Description"
-F 5 "1" H 15550 7700 50  0001 L CNN "Height"
-F 6 "STMicroelectronics" H 15550 7600 50  0001 L CNN "Manufacturer_Name"
-F 7 "LIS3DHTR" H 15550 7500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "511-LIS3DHTR" H 15550 7400 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LIS3DHTR?qs=6la6oa3D8xzhXYax3cEo4w%3D%3D" H 15550 7300 50  0001 L CNN "Mouser Price/Stock"
-F 10 "LIS3DHTR" H 15550 7200 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/lis3dhtr/stmicroelectronics" H 15550 7100 50  0001 L CNN "Arrow Price/Stock"
-	1    14300 7600
+P 10000 4900
+F 0 "U12" H 10700 5589 50  0000 C CNN
+F 1 "LIS3DHTR" H 10700 5590 50  0001 C CNN
+F 2 "LIS3DHTR" H 11250 5300 50  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3c/ae/50/85/d6/b1/46/fe/CD00274221.pdf/files/CD00274221.pdf/jcr:content/translations/en.CD00274221.pdf" H 11250 5200 50  0001 L CNN
+F 4 "Accelerometer 3-Axis 2g/16g 1.8V LGA16 STMicroelectronics LIS3DHTR Accelerometer IC, 3-axis, I2C, SPI 1.71  3.6 V, 16-Pin LGA" H 11250 5100 50  0001 L CNN "Description"
+F 5 "1" H 11250 5000 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 11250 4900 50  0001 L CNN "Manufacturer_Name"
+F 7 "LIS3DHTR" H 11250 4800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-LIS3DHTR" H 11250 4700 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LIS3DHTR?qs=6la6oa3D8xzhXYax3cEo4w%3D%3D" H 11250 4600 50  0001 L CNN "Mouser Price/Stock"
+F 10 "LIS3DHTR" H 11250 4500 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/lis3dhtr/stmicroelectronics" H 11250 4400 50  0001 L CNN "Arrow Price/Stock"
+	1    10000 4900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 14300 7700
-NoConn ~ 14300 7800
+NoConn ~ 10000 5000
+NoConn ~ 10000 5100
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR042
 U 1 1 604226B2
-P 15300 9050
-F 0 "#PWR?" H 15300 8900 50  0001 C CNN
-F 1 "+BATT" H 15315 9223 50  0000 C CNN
-F 2 "" H 15300 9050 50  0001 C CNN
-F 3 "" H 15300 9050 50  0001 C CNN
-	1    15300 9050
+P 11000 6350
+F 0 "#PWR042" H 11000 6200 50  0001 C CNN
+F 1 "+BATT" H 11015 6523 50  0000 C CNN
+F 2 "" H 11000 6350 50  0001 C CNN
+F 3 "" H 11000 6350 50  0001 C CNN
+	1    11000 6350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15100 9000 15100 9100
+	10800 6300 10800 6400
 Wire Wire Line
-	15100 9100 15300 9100
+	10800 6400 11000 6400
 Wire Wire Line
-	15300 9100 15300 9050
+	11000 6400 11000 6350
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR040
 U 1 1 604226C1
-P 15100 6800
-F 0 "#PWR?" H 15100 6650 50  0001 C CNN
-F 1 "+BATT" H 15115 6973 50  0000 C CNN
-F 2 "" H 15100 6800 50  0001 C CNN
-F 3 "" H 15100 6800 50  0001 C CNN
-	1    15100 6800
+P 10800 4100
+F 0 "#PWR040" H 10800 3950 50  0001 C CNN
+F 1 "+BATT" H 10815 4273 50  0000 C CNN
+F 2 "" H 10800 4100 50  0001 C CNN
+F 3 "" H 10800 4100 50  0001 C CNN
+	1    10800 4100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 14900 7000
-NoConn ~ 15000 7000
-NoConn ~ 15700 7600
-NoConn ~ 15700 7800
-NoConn ~ 15700 8000
+NoConn ~ 10600 4300
+NoConn ~ 10700 4300
+NoConn ~ 11400 4900
+NoConn ~ 11400 5100
+NoConn ~ 11400 5300
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR046
 U 1 1 604226CC
-P 15800 8000
-F 0 "#PWR?" H 15800 7750 50  0001 C CNN
-F 1 "Earth" H 15800 7850 50  0001 C CNN
-F 2 "" H 15800 8000 50  0001 C CNN
-F 3 "~" H 15800 8000 50  0001 C CNN
-	1    15800 8000
+P 11500 5300
+F 0 "#PWR046" H 11500 5050 50  0001 C CNN
+F 1 "Earth" H 11500 5150 50  0001 C CNN
+F 2 "" H 11500 5300 50  0001 C CNN
+F 3 "~" H 11500 5300 50  0001 C CNN
+	1    11500 5300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR037
 U 1 1 604226D2
-P 14200 8100
-F 0 "#PWR?" H 14200 7850 50  0001 C CNN
-F 1 "Earth" H 14200 7950 50  0001 C CNN
-F 2 "" H 14200 8100 50  0001 C CNN
-F 3 "~" H 14200 8100 50  0001 C CNN
-	1    14200 8100
+P 9900 5400
+F 0 "#PWR037" H 9900 5150 50  0001 C CNN
+F 1 "Earth" H 9900 5250 50  0001 C CNN
+F 2 "" H 9900 5400 50  0001 C CNN
+F 3 "~" H 9900 5400 50  0001 C CNN
+	1    9900 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR036
 U 1 1 604226D8
-P 14200 7500
-F 0 "#PWR?" H 14200 7350 50  0001 C CNN
-F 1 "+BATT" H 14215 7673 50  0000 C CNN
-F 2 "" H 14200 7500 50  0001 C CNN
-F 3 "" H 14200 7500 50  0001 C CNN
-	1    14200 7500
+P 9900 4800
+F 0 "#PWR036" H 9900 4650 50  0001 C CNN
+F 1 "+BATT" H 9915 4973 50  0000 C CNN
+F 2 "" H 9900 4800 50  0001 C CNN
+F 3 "" H 9900 4800 50  0001 C CNN
+	1    9900 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14200 7500 14200 7600
+	9900 4800 9900 4900
 Wire Wire Line
-	14200 7600 14300 7600
+	9900 4900 10000 4900
 Wire Wire Line
-	14300 8000 14200 8000
+	10000 5300 9900 5300
 Wire Wire Line
-	14200 8000 14200 8100
+	9900 5300 9900 5400
 Wire Wire Line
-	15700 7700 15800 7700
+	11400 5000 11500 5000
 Wire Wire Line
-	15800 7700 15800 7900
+	11500 5000 11500 5200
 Wire Wire Line
-	15800 7900 15700 7900
+	11500 5200 11400 5200
 Wire Wire Line
-	15800 7900 15800 8000
-Connection ~ 15800 7900
-Text GLabel 14100 7900 0    50   Input ~ 0
+	11500 5200 11500 5300
+Connection ~ 11500 5200
+Text GLabel 9800 5200 0    50   Input ~ 0
 I2C_SCL
 Wire Wire Line
-	14100 7900 14300 7900
-Text GLabel 14700 9200 0    50   Input ~ 0
+	9800 5200 10000 5200
+Text GLabel 10400 6500 0    50   Input ~ 0
 I2C_SDA
 Wire Wire Line
-	14900 9000 14900 9200
+	10600 6300 10600 6500
 Wire Wire Line
-	14900 9200 14700 9200
+	10600 6500 10400 6500
 Wire Wire Line
-	15000 9000 15000 9100
+	10700 6300 10700 6400
 $Comp
-L Device:C C?
+L Device:C C18
 U 1 1 604226ED
-P 15350 6900
-F 0 "C?" V 15190 6900 50  0000 C CNN
-F 1 "10uF" V 15189 6900 50  0001 C CNN
-F 2 "" H 15388 6750 50  0001 C CNN
-F 3 "~" H 15350 6900 50  0001 C CNN
-	1    15350 6900
+P 11050 4200
+F 0 "C18" V 10890 4200 50  0000 C CNN
+F 1 "10uF" V 10889 4200 50  0001 C CNN
+F 2 "" H 11088 4050 50  0001 C CNN
+F 3 "~" H 11050 4200 50  0001 C CNN
+	1    11050 4200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	15100 6800 15100 6900
+	10800 4100 10800 4200
 Wire Wire Line
-	15100 6900 15200 6900
-Connection ~ 15100 6900
+	10800 4200 10900 4200
+Connection ~ 10800 4200
 Wire Wire Line
-	15100 6900 15100 7000
+	10800 4200 10800 4300
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR044
 U 1 1 604226F7
-P 15600 7000
-F 0 "#PWR?" H 15600 6750 50  0001 C CNN
-F 1 "Earth" H 15600 6850 50  0001 C CNN
-F 2 "" H 15600 7000 50  0001 C CNN
-F 3 "~" H 15600 7000 50  0001 C CNN
-	1    15600 7000
+P 11300 4300
+F 0 "#PWR044" H 11300 4050 50  0001 C CNN
+F 1 "Earth" H 11300 4150 50  0001 C CNN
+F 2 "" H 11300 4300 50  0001 C CNN
+F 3 "~" H 11300 4300 50  0001 C CNN
+	1    11300 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15500 6900 15600 6900
+	11200 4200 11300 4200
 Wire Wire Line
-	15600 6900 15600 7000
+	11300 4200 11300 4300
 Wire Notes Line
-	15900 9300 13700 9300
+	11600 6600 9400 6600
 Wire Notes Line
-	13700 6550 15900 6550
-Text Notes 13700 6550 0    50   ~ 10
-High Precision Accelerometer
+	9400 3850 11600 3850
+Text Notes 9400 3850 0    50   ~ 10
+High-precision accelerometer block
 Wire Wire Line
-	15000 9100 15100 9100
-Connection ~ 15100 9100
-Text Notes 11300 9500 0    50   ~ 0
+	10700 6400 10800 6400
+Connection ~ 10800 6400
+Text Notes 9400 3600 0    50   ~ 0
 Notes:\n* I2C Address = 0011000b
 Wire Notes Line
-	11300 9550 13500 9550
+	9400 3650 11600 3650
 Wire Notes Line
-	13500 6550 13500 9550
+	11600 650  11600 3650
 Wire Notes Line
-	11300 6550 11300 9550
-Wire Notes Line
-	10450 4500 15750 4500
-Wire Notes Line
-	15750 5850 10450 5850
-Text Notes 10450 4500 0    50   ~ 10
-ATTINY block
-Text Notes 10450 6100 0    50   ~ 0
-Notes:\n* There is a jumper on the board which disconnects the attiny from the board-wide ground plane, so when programming no other\ndevices mis-interpret the signals nor get destroyed if a 5.5v programmer is accidentally used...
-Wire Notes Line
-	10450 6150 15750 6150
-Wire Notes Line
-	10450 4500 10450 6150
-Wire Notes Line
-	15750 4500 15750 6150
-Text Notes 13700 9500 0    50   ~ 0
+	9400 650  9400 3650
+Text Notes 9400 6800 0    50   ~ 0
 Notes:\n* I2C Address = 0011001b
 Wire Notes Line
-	13700 9550 15900 9550
+	9400 6850 11600 6850
 Wire Notes Line
-	15900 6550 15900 9550
+	11600 3850 11600 6850
 Wire Notes Line
-	13700 6550 13700 9550
-NoConn ~ 15000 3450
-Text GLabel 15200 2950 2    50   Input ~ 0
+	9400 3850 9400 6850
+NoConn ~ 2700 7600
+Text GLabel 2900 7100 2    50   Input ~ 0
 RESET
 Wire Wire Line
-	15200 2950 15000 2950
-Text GLabel 15200 3150 2    50   Input ~ 0
+	2900 7100 2700 7100
+Text GLabel 2900 7300 2    50   Input ~ 0
 LED_BTON
 Wire Wire Line
-	15200 3150 15000 3150
-NoConn ~ 15000 3550
-NoConn ~ 13700 3250
-NoConn ~ 13700 3350
+	2900 7300 2700 7300
+NoConn ~ 2700 7700
+NoConn ~ 1400 7400
+NoConn ~ 1400 7500
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR09
 U 1 1 604C2FEA
-P 15050 2750
-F 0 "#PWR?" H 15050 2600 50  0001 C CNN
-F 1 "+BATT" H 15065 2923 50  0000 C CNN
-F 2 "" H 15050 2750 50  0001 C CNN
-F 3 "" H 15050 2750 50  0001 C CNN
-	1    15050 2750
+P 2750 6900
+F 0 "#PWR09" H 2750 6750 50  0001 C CNN
+F 1 "+BATT" H 2765 7073 50  0000 C CNN
+F 2 "" H 2750 6900 50  0001 C CNN
+F 3 "" H 2750 6900 50  0001 C CNN
+	1    2750 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15050 2750 15050 3350
+	2750 6900 2750 7500
 Wire Wire Line
-	15050 3350 15000 3350
+	2750 7500 2700 7500
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 604C9C88
-P 15150 3550
-F 0 "C?" H 15035 3550 50  0000 R CNN
-F 1 "10uF" H 15035 3595 50  0001 R CNN
-F 2 "" H 15188 3400 50  0001 C CNN
-F 3 "~" H 15150 3550 50  0001 C CNN
-	1    15150 3550
+P 2850 7700
+F 0 "C3" H 2735 7700 50  0000 R CNN
+F 1 "10uF" H 2735 7745 50  0001 R CNN
+F 2 "" H 2888 7550 50  0001 C CNN
+F 3 "~" H 2850 7700 50  0001 C CNN
+	1    2850 7700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	15050 3350 15150 3350
+	2750 7500 2850 7500
 Wire Wire Line
-	15150 3350 15150 3400
-Connection ~ 15050 3350
+	2850 7500 2850 7550
+Connection ~ 2750 7500
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR010
 U 1 1 604D0AD0
-P 15150 3900
-F 0 "#PWR?" H 15150 3650 50  0001 C CNN
-F 1 "Earth" H 15150 3750 50  0001 C CNN
-F 2 "" H 15150 3900 50  0001 C CNN
-F 3 "~" H 15150 3900 50  0001 C CNN
-	1    15150 3900
+P 2850 8050
+F 0 "#PWR010" H 2850 7800 50  0001 C CNN
+F 1 "Earth" H 2850 7900 50  0001 C CNN
+F 2 "" H 2850 8050 50  0001 C CNN
+F 3 "~" H 2850 8050 50  0001 C CNN
+	1    2850 8050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15150 3700 15150 3800
+	2850 7850 2850 7950
 Wire Wire Line
-	15150 3800 15400 3800
+	2850 7950 3100 7950
 Wire Wire Line
-	15400 3800 15400 3250
+	3100 7950 3100 7400
 Wire Wire Line
-	15400 3250 15000 3250
-Connection ~ 15150 3800
+	3100 7400 2700 7400
+Connection ~ 2850 7950
 Wire Wire Line
-	15150 3800 15150 3900
+	2850 7950 2850 8050
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR03
 U 1 1 604E53F2
-P 13600 3650
-F 0 "#PWR?" H 13600 3400 50  0001 C CNN
-F 1 "Earth" H 13600 3500 50  0001 C CNN
-F 2 "" H 13600 3650 50  0001 C CNN
-F 3 "~" H 13600 3650 50  0001 C CNN
-	1    13600 3650
+P 1300 7800
+F 0 "#PWR03" H 1300 7550 50  0001 C CNN
+F 1 "Earth" H 1300 7650 50  0001 C CNN
+F 2 "" H 1300 7800 50  0001 C CNN
+F 3 "~" H 1300 7800 50  0001 C CNN
+	1    1300 7800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13600 3650 13600 2950
+	1300 7800 1300 7100
 Wire Wire Line
-	13600 2950 13700 2950
+	1300 7100 1400 7100
 Wire Notes Line
-	12950 2500 15800 2500
+	650  6650 3500 6650
 Wire Notes Line
-	15800 4050 12950 4050
-Text Notes 12950 4250 0    50   ~ 0
+	3500 8200 650  8200
+Text Notes 650  8400 0    50   ~ 0
 Notes:\n* P2_0 should be internally pulled up
 Wire Notes Line
-	12950 4300 15800 4300
+	650  8450 3500 8450
 Wire Notes Line
-	15800 2500 15800 4300
+	3500 6650 3500 8450
 Wire Notes Line
-	12950 2500 12950 4300
+	650  6650 650  8450
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT1
 U 1 1 60535CA5
-P 3300 1650
-F 0 "BT?" H 3418 1700 50  0000 L CNN
-F 1 "CR1632" H 3418 1655 50  0001 L CNN
-F 2 "" V 3300 1710 50  0001 C CNN
-F 3 "~" V 3300 1710 50  0001 C CNN
-	1    3300 1650
+P 2950 1200
+F 0 "BT1" H 3068 1250 50  0000 L CNN
+F 1 "CR1632" H 3068 1205 50  0001 L CNN
+F 2 "" V 2950 1260 50  0001 C CNN
+F 3 "~" V 2950 1260 50  0001 C CNN
+	1    2950 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP121T-270E_TT:MCP121T-270E_TT U?
+L MCP121T-270E_TT:MCP121T-270E_TT U1
 U 1 1 60537FAF
-P 4300 1350
-F 0 "U?" H 4850 1523 50  0000 C CNN
-F 1 "MCP121T-270E_TT" H 4850 1524 50  0001 C CNN
-F 2 "SOT95P237X112-3N" H 5250 1450 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001906D.pdf" H 5250 1350 50  0001 L CNN
-F 4 "1uA Supervisor Open Drain Active Low" H 5250 1250 50  0001 L CNN "Description"
-F 5 "1.12" H 5250 1150 50  0001 L CNN "Height"
-F 6 "Microchip" H 5250 1050 50  0001 L CNN "Manufacturer_Name"
-F 7 "MCP121T-270E/TT" H 5250 950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "579-MCP121T-270E/TT" H 5250 850 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP121T-270E-TT?qs=fM4xO01eazMwXoCYE%2FeIgg%3D%3D" H 5250 750 50  0001 L CNN "Mouser Price/Stock"
-F 10 "MCP121T-270E/TT" H 5250 650 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/mcp121t-270ett/microchip-technology" H 5250 550 50  0001 L CNN "Arrow Price/Stock"
-	1    4300 1350
+P 1150 2250
+F 0 "U1" H 1700 2423 50  0000 C CNN
+F 1 "MCP121T-270E_TT" H 1700 2424 50  0001 C CNN
+F 2 "SOT95P237X112-3N" H 2100 2350 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001906D.pdf" H 2100 2250 50  0001 L CNN
+F 4 "1uA Supervisor Open Drain Active Low" H 2100 2150 50  0001 L CNN "Description"
+F 5 "1.12" H 2100 2050 50  0001 L CNN "Height"
+F 6 "Microchip" H 2100 1950 50  0001 L CNN "Manufacturer_Name"
+F 7 "MCP121T-270E/TT" H 2100 1850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "579-MCP121T-270E/TT" H 2100 1750 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP121T-270E-TT?qs=fM4xO01eazMwXoCYE%2FeIgg%3D%3D" H 2100 1650 50  0001 L CNN "Mouser Price/Stock"
+F 10 "MCP121T-270E/TT" H 2100 1550 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/mcp121t-270ett/microchip-technology" H 2100 1450 50  0001 L CNN "Arrow Price/Stock"
+	1    1150 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 60539441
-P 5500 1600
-F 0 "C?" H 5615 1600 50  0000 L CNN
-F 1 "10uF" H 5615 1555 50  0001 L CNN
-F 2 "" H 5538 1450 50  0001 C CNN
-F 3 "~" H 5500 1600 50  0001 C CNN
-	1    5500 1600
+P 2350 2500
+F 0 "C1" H 2465 2500 50  0000 L CNN
+F 1 "10uF" H 2465 2455 50  0001 L CNN
+F 2 "" H 2388 2350 50  0001 C CNN
+F 3 "~" H 2350 2500 50  0001 C CNN
+	1    2350 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 1350 5500 1350
+	2250 2250 2350 2250
 Wire Wire Line
-	5500 1350 5500 1450
+	2350 2250 2350 2350
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR06
 U 1 1 605412A5
-P 5500 1850
-F 0 "#PWR?" H 5500 1600 50  0001 C CNN
-F 1 "Earth" H 5500 1700 50  0001 C CNN
-F 2 "" H 5500 1850 50  0001 C CNN
-F 3 "~" H 5500 1850 50  0001 C CNN
-	1    5500 1850
+P 2350 2750
+F 0 "#PWR06" H 2350 2500 50  0001 C CNN
+F 1 "Earth" H 2350 2600 50  0001 C CNN
+F 2 "" H 2350 2750 50  0001 C CNN
+F 3 "~" H 2350 2750 50  0001 C CNN
+	1    2350 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 1850 5500 1750
+	2350 2750 2350 2650
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR01
 U 1 1 60548C02
-P 4200 1550
-F 0 "#PWR?" H 4200 1300 50  0001 C CNN
-F 1 "Earth" H 4200 1400 50  0001 C CNN
-F 2 "" H 4200 1550 50  0001 C CNN
-F 3 "~" H 4200 1550 50  0001 C CNN
-	1    4200 1550
+P 1050 2450
+F 0 "#PWR01" H 1050 2200 50  0001 C CNN
+F 1 "Earth" H 1050 2300 50  0001 C CNN
+F 2 "" H 1050 2450 50  0001 C CNN
+F 3 "~" H 1050 2450 50  0001 C CNN
+	1    1050 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 1450 4200 1450
+	1150 2350 1050 2350
 Wire Wire Line
-	4200 1450 4200 1550
-Text GLabel 4100 1350 0    50   Input ~ 0
+	1050 2350 1050 2450
+Text GLabel 950  2250 0    50   Input ~ 0
 RESET
 Wire Wire Line
-	4100 1350 4300 1350
+	950  2250 1100 2250
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR012
 U 1 1 6056485C
-P 3300 1850
-F 0 "#PWR?" H 3300 1600 50  0001 C CNN
-F 1 "Earth" H 3300 1700 50  0001 C CNN
-F 2 "" H 3300 1850 50  0001 C CNN
-F 3 "~" H 3300 1850 50  0001 C CNN
-	1    3300 1850
+P 2950 1400
+F 0 "#PWR012" H 2950 1150 50  0001 C CNN
+F 1 "Earth" H 2950 1250 50  0001 C CNN
+F 2 "" H 2950 1400 50  0001 C CNN
+F 3 "~" H 2950 1400 50  0001 C CNN
+	1    2950 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 1850 3300 1750
+	2950 1400 2950 1300
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR011
 U 1 1 6056D31B
-P 3300 1350
-F 0 "#PWR?" H 3300 1200 50  0001 C CNN
-F 1 "+BATT" H 3315 1523 50  0000 C CNN
-F 2 "" H 3300 1350 50  0001 C CNN
-F 3 "" H 3300 1350 50  0001 C CNN
-	1    3300 1350
+P 2950 900
+F 0 "#PWR011" H 2950 750 50  0001 C CNN
+F 1 "+BATT" H 2965 1073 50  0000 C CNN
+F 2 "" H 2950 900 50  0001 C CNN
+F 3 "" H 2950 900 50  0001 C CNN
+	1    2950 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 1350 3300 1450
-Wire Notes Line
-	5750 1100 5750 2000
-Wire Notes Line
-	5750 2000 3750 2000
-Wire Notes Line
-	3750 2000 3750 1100
-Wire Notes Line
-	3750 1100 5750 1100
-Text Notes 3750 1100 0    50   ~ 10
-Reset block
-Text Notes 12950 2500 0    50   ~ 10
+	2950 900  2950 1000
+Text Notes 650  6650 0    50   ~ 10
 RN4871 bluetooth/UART/I2C master block
 Wire Notes Line
-	3150 1100 3600 1100
+	2800 650  3250 650 
 Wire Notes Line
-	3600 1100 3600 2000
+	3250 650  3250 1550
 Wire Notes Line
-	3600 2000 3150 2000
+	3250 1550 2800 1550
 Wire Notes Line
-	3150 2000 3150 1100
-Text Notes 3150 1100 0    50   ~ 10
+	2800 1550 2800 650 
+Text Notes 2800 650  0    50   ~ 10
 Power block
+$Comp
+L power:+BATT #PWR05
+U 1 1 60135444
+P 2350 2150
+F 0 "#PWR05" H 2350 2000 50  0001 C CNN
+F 1 "+BATT" H 2365 2323 50  0000 C CNN
+F 2 "" H 2350 2150 50  0001 C CNN
+F 3 "" H 2350 2150 50  0001 C CNN
+	1    2350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2150 2350 2250
+Connection ~ 2350 2250
+Text Notes 2800 1750 0    50   ~ 10
+I2C pullup block
+Wire Notes Line
+	2800 3000 2800 1750
+Wire Notes Line
+	3500 3000 2800 3000
+Wire Notes Line
+	3500 1750 3500 3000
+Wire Notes Line
+	2800 1750 3500 1750
+Wire Wire Line
+	3300 2000 3300 2100
+$Comp
+L power:+BATT #PWR014
+U 1 1 601919AF
+P 3300 2000
+F 0 "#PWR014" H 3300 1850 50  0001 C CNN
+F 1 "+BATT" H 3315 2173 50  0000 C CNN
+F 2 "" H 3300 2000 50  0001 C CNN
+F 3 "" H 3300 2000 50  0001 C CNN
+	1    3300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2600 3300 2400
+Text GLabel 3300 2600 3    50   Input ~ 0
+I2C_SDA
+$Comp
+L Device:R R3
+U 1 1 601919A7
+P 3300 2250
+F 0 "R3" H 3370 2250 50  0000 L CNN
+F 1 "2.2kOhm" H 3370 2205 50  0001 L CNN
+F 2 "" V 3230 2250 50  0001 C CNN
+F 3 "~" H 3300 2250 50  0001 C CNN
+	1    3300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2000 2950 2100
+$Comp
+L power:+BATT #PWR013
+U 1 1 6016E545
+P 2950 2000
+F 0 "#PWR013" H 2950 1850 50  0001 C CNN
+F 1 "+BATT" H 2965 2173 50  0000 C CNN
+F 2 "" H 2950 2000 50  0001 C CNN
+F 3 "" H 2950 2000 50  0001 C CNN
+	1    2950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2600 2950 2400
+Text GLabel 2950 2600 3    50   Input ~ 0
+I2C_SCL
+$Comp
+L Device:R R2
+U 1 1 601651F5
+P 2950 2250
+F 0 "R2" H 3020 2250 50  0000 L CNN
+F 1 "2.2kOhm" H 3020 2205 50  0001 L CNN
+F 2 "" V 2880 2250 50  0001 C CNN
+F 3 "~" H 2950 2250 50  0001 C CNN
+	1    2950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L I3G4250DTR:I3G4250DTR U9
+U 1 1 603A847D
+P 6850 2000
+F 0 "U9" H 7200 2700 50  0000 L CNN
+F 1 "I3G4250DTR" H 8394 1755 50  0001 L CNN
+F 2 "LGA-16L(4X4X1.1MM)" H 8200 2600 50  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/e4/b1/d1/62/1a/e6/44/2f/DM00168691.pdf/files/DM00168691.pdf/jcr:content/translations/en.DM00168691.pdf" H 8200 2500 50  0001 L CNN
+F 4 "STMicroelectronics I3G4250DTR 3-Axis Gyroscope, 2.4  3.6 V 16-Pin LGA" H 8200 2400 50  0001 L CNN "Description"
+F 5 "" H 8200 2300 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 8200 2200 50  0001 L CNN "Manufacturer_Name"
+F 7 "I3G4250DTR" H 8200 2100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-I3G4250DTR" H 8200 2000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/I3G4250DTR/?qs=v3MacVxtdDJPIS9io4RmPA%3D%3D" H 8200 1900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "I3G4250DTR" H 8200 1800 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/i3g4250dtr/stmicroelectronics" H 8200 1700 50  0001 L CNN "Arrow Price/Stock"
+	1    6850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR025
+U 1 1 603A8483
+P 7250 3250
+F 0 "#PWR025" H 7250 3100 50  0001 C CNN
+F 1 "+BATT" H 7265 3423 50  0000 C CNN
+F 2 "" H 7250 3250 50  0001 C CNN
+F 3 "" H 7250 3250 50  0001 C CNN
+	1    7250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3200 7450 3350
+Wire Wire Line
+	7450 3350 7250 3350
+Wire Wire Line
+	7250 3350 7250 3250
+$Comp
+L Device:C C11
+U 1 1 603A848C
+P 7600 1000
+F 0 "C11" V 7348 1000 50  0000 C CNN
+F 1 "10uF" V 7439 1000 50  0000 C CNN
+F 2 "" H 7638 850 50  0001 C CNN
+F 3 "~" H 7600 1000 50  0001 C CNN
+	1    7600 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 1200 7350 1200
+Wire Wire Line
+	7350 1200 7350 1100
+Wire Wire Line
+	7350 1000 7450 1000
+Wire Wire Line
+	7750 1000 7850 1000
+Wire Wire Line
+	7850 1000 7850 1100
+Wire Wire Line
+	7850 1200 7750 1200
+$Comp
+L power:+BATT #PWR024
+U 1 1 603A8498
+P 7250 1000
+F 0 "#PWR024" H 7250 850 50  0001 C CNN
+F 1 "+BATT" H 7265 1173 50  0000 C CNN
+F 2 "" H 7250 1000 50  0001 C CNN
+F 3 "" H 7250 1000 50  0001 C CNN
+	1    7250 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1100 7350 1100
+Connection ~ 7350 1100
+Wire Wire Line
+	7350 1100 7350 1000
+$Comp
+L power:Earth #PWR030
+U 1 1 603A84A1
+P 7950 1200
+F 0 "#PWR030" H 7950 950 50  0001 C CNN
+F 1 "Earth" H 7950 1050 50  0001 C CNN
+F 2 "" H 7950 1200 50  0001 C CNN
+F 3 "~" H 7950 1200 50  0001 C CNN
+	1    7950 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1000 7250 1100
+Wire Wire Line
+	7950 1200 7950 1100
+Wire Wire Line
+	7950 1100 7850 1100
+Connection ~ 7850 1100
+Wire Wire Line
+	7850 1100 7850 1200
+$Comp
+L power:+BATT #PWR021
+U 1 1 603A84AC
+P 6750 1900
+F 0 "#PWR021" H 6750 1750 50  0001 C CNN
+F 1 "+BATT" H 6765 2073 50  0000 C CNN
+F 2 "" H 6750 1900 50  0001 C CNN
+F 3 "" H 6750 1900 50  0001 C CNN
+	1    6750 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1900 6750 2000
+Wire Wire Line
+	6750 2000 6850 2000
+$Comp
+L power:Earth #PWR028
+U 1 1 603A84B4
+P 7750 3300
+F 0 "#PWR028" H 7750 3050 50  0001 C CNN
+F 1 "Earth" H 7750 3150 50  0001 C CNN
+F 2 "" H 7750 3300 50  0001 C CNN
+F 3 "~" H 7750 3300 50  0001 C CNN
+	1    7750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3200 7750 3300
+$Comp
+L power:Earth #PWR032
+U 1 1 603A84BB
+P 8450 2400
+F 0 "#PWR032" H 8450 2150 50  0001 C CNN
+F 1 "Earth" H 8450 2250 50  0001 C CNN
+F 2 "" H 8450 2400 50  0001 C CNN
+F 3 "~" H 8450 2400 50  0001 C CNN
+	1    8450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2300 8450 2300
+Wire Wire Line
+	8450 2300 8450 2400
+Wire Wire Line
+	8350 2200 8450 2200
+Wire Wire Line
+	8450 2200 8450 2300
+Connection ~ 8450 2300
+Wire Wire Line
+	8350 2100 8450 2100
+Wire Wire Line
+	8450 2100 8450 2200
+Connection ~ 8450 2200
+Wire Wire Line
+	8350 2000 8450 2000
+Wire Wire Line
+	8450 2000 8450 2100
+Connection ~ 8450 2100
+NoConn ~ 7650 3200
+$Comp
+L power:Earth #PWR022
+U 1 1 603A84CD
+P 6750 2400
+F 0 "#PWR022" H 6750 2150 50  0001 C CNN
+F 1 "Earth" H 6750 2250 50  0001 C CNN
+F 2 "" H 6750 2400 50  0001 C CNN
+F 3 "~" H 6750 2400 50  0001 C CNN
+	1    6750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2400 6750 2300
+Wire Wire Line
+	6750 2300 6850 2300
+Text GLabel 6650 2100 0    50   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	6650 2100 6850 2100
+Text GLabel 6650 2200 0    50   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	6650 2200 6850 2200
+Wire Wire Line
+	7550 1200 7550 1100
+Wire Wire Line
+	7550 1100 7850 1100
+$Comp
+L Device:C C13
+U 1 1 603A84DB
+P 8650 2000
+F 0 "C13" H 8765 2000 50  0000 L CNN
+F 1 "10nF" H 8765 1955 50  0001 L CNN
+F 2 "" H 8688 1850 50  0001 C CNN
+F 3 "~" H 8650 2000 50  0001 C CNN
+	1    8650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 603A84E1
+P 8950 2000
+F 0 "R5" H 9020 2000 50  0000 L CNN
+F 1 "10kOhm" H 9020 1955 50  0001 L CNN
+F 2 "" V 8880 2000 50  0001 C CNN
+F 3 "~" H 8950 2000 50  0001 C CNN
+	1    8950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 603A84E7
+P 8950 1500
+F 0 "C15" H 9065 1500 50  0000 L CNN
+F 1 "470nF" H 9065 1455 50  0001 L CNN
+F 2 "" H 8988 1350 50  0001 C CNN
+F 3 "~" H 8950 1500 50  0001 C CNN
+	1    8950 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1650 8950 1850
+Wire Wire Line
+	8650 1850 8650 1150
+Wire Wire Line
+	8650 1150 8950 1150
+Wire Wire Line
+	8950 1150 8950 1350
+Wire Wire Line
+	8650 1150 7650 1150
+Wire Wire Line
+	7650 1150 7650 1200
+Connection ~ 8650 1150
+Wire Wire Line
+	8450 2300 8650 2300
+Wire Wire Line
+	8650 2300 8650 2150
+Wire Wire Line
+	8950 2150 8950 2300
+Wire Wire Line
+	8950 2300 8650 2300
+Connection ~ 8650 2300
+NoConn ~ 7550 3200
+Wire Notes Line
+	6250 650  9200 650 
+Wire Notes Line
+	9200 3450 6250 3450
+Text Notes 6250 650  0    50   ~ 10
+Watchdog gyroscope block
+Text Notes 6250 3650 0    50   ~ 0
+Notes:\n* I2C Address: 1101000b
+Wire Notes Line
+	6250 3700 9200 3700
+Wire Notes Line
+	9200 650  9200 3700
+Wire Notes Line
+	6250 650  6250 3700
+$Comp
+L Device:LED D1
+U 1 1 6048D7B6
+P 3800 1950
+F 0 "D1" V 3793 1832 50  0000 R CNN
+F 1 "KB DELPS2.12-QHRI-24-Z555-10-S" V 3748 1832 50  0001 R CNN
+F 2 "" H 3800 1950 50  0001 C CNN
+F 3 "~" H 3800 1950 50  0001 C CNN
+	1    3800 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR015
+U 1 1 60494F96
+P 3800 2200
+F 0 "#PWR015" H 3800 1950 50  0001 C CNN
+F 1 "Earth" H 3800 2050 50  0001 C CNN
+F 2 "" H 3800 2200 50  0001 C CNN
+F 3 "~" H 3800 2200 50  0001 C CNN
+	1    3800 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2200 3800 2100
+$Comp
+L Device:R R4
+U 1 1 604B0A65
+P 3800 1450
+F 0 "R4" H 3870 1450 50  0000 L CNN
+F 1 "680Ohms" H 3870 1405 50  0001 L CNN
+F 2 "" V 3730 1450 50  0001 C CNN
+F 3 "~" H 3800 1450 50  0001 C CNN
+	1    3800 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1600 3800 1800
+Text GLabel 3800 1100 1    50   Input ~ 0
+LED_BTON
+Wire Wire Line
+	3800 1100 3800 1300
+$Comp
+L Device:R R1
+U 1 1 605351F1
+P 1100 2000
+F 0 "R1" H 1170 2000 50  0000 L CNN
+F 1 "10kOhms" H 1170 1955 50  0001 L CNN
+F 2 "" V 1030 2000 50  0001 C CNN
+F 3 "~" H 1100 2000 50  0001 C CNN
+	1    1100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2150 1100 2250
+Connection ~ 1100 2250
+Wire Wire Line
+	1100 2250 1150 2250
+$Comp
+L power:+BATT #PWR02
+U 1 1 60563B59
+P 1100 1750
+F 0 "#PWR02" H 1100 1600 50  0001 C CNN
+F 1 "+BATT" H 1115 1923 50  0000 C CNN
+F 2 "" H 1100 1750 50  0001 C CNN
+F 3 "" H 1100 1750 50  0001 C CNN
+	1    1100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1750 1100 1850
+Text Notes 3700 650  0    50   ~ 10
+LED block
+Wire Notes Line
+	3700 650  4100 650 
+Wire Notes Line
+	4100 650  4100 2350
+Wire Notes Line
+	4100 2350 3700 2350
+Wire Notes Line
+	3700 2350 3700 650 
+Wire Notes Line
+	650  1500 2600 1500
+Wire Notes Line
+	2600 1500 2600 2900
+Wire Notes Line
+	650  2900 650  1500
+Text Notes 650  1500 0    50   ~ 10
+Reset block
+$Comp
+L ATTINY85V-10SUR:ATTINY85V-10SUR U4
+U 1 1 600AA84F
+P 2450 3550
+F 0 "U4" H 3800 3683 50  0000 C CNN
+F 1 "ATTINY85V-10SUR" H 3800 3684 50  0001 C CNN
+F 2 "SOIC127P798X216-8N" H 7000 3650 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet-summary.pdf" H 7000 3550 50  0001 L CNN
+F 4 "MICROCHIP - ATTINY85V-10SUR - MCU, 8BIT, AVR, 10MHZ, WSOIC-8" H 7000 3450 50  0001 L CNN "Description"
+F 5 "2.16" H 7000 3350 50  0001 L CNN "Height"
+F 6 "Microchip" H 7000 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "ATTINY85V-10SUR" H 7000 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "556-ATTINY85V-10SUR" H 7000 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology-Atmel/ATTINY85V-10SUR?qs=6Dg1WZIWLC7RsRgydzBFFw%3D%3D" H 7000 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "ATTINY85V-10SUR" H 7000 2850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/attiny85v-10sur/microchip-technology" H 7000 2750 50  0001 L CNN "Arrow Price/Stock"
+	1    2450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 600AB346
+P 5250 3800
+F 0 "C10" H 5365 3800 50  0000 L CNN
+F 1 "10uF" H 5365 3755 50  0001 L CNN
+F 2 "" H 5288 3650 50  0001 C CNN
+F 3 "~" H 5250 3800 50  0001 C CNN
+	1    5250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR020
+U 1 1 600AC7BA
+P 5850 4400
+F 0 "#PWR020" H 5850 4150 50  0001 C CNN
+F 1 "Earth" H 5850 4250 50  0001 C CNN
+F 2 "" H 5850 4400 50  0001 C CNN
+F 3 "~" H 5850 4400 50  0001 C CNN
+	1    5850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR018
+U 1 1 600AD5E7
+P 5250 3450
+F 0 "#PWR018" H 5250 3300 50  0001 C CNN
+F 1 "+BATT" H 5265 3623 50  0000 C CNN
+F 2 "" H 5250 3450 50  0001 C CNN
+F 3 "" H 5250 3450 50  0001 C CNN
+	1    5250 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 3750 0    50   Input ~ 0
+CLKO
+Wire Wire Line
+	2450 3750 2250 3750
+Text GLabel 2250 3650 0    50   Input ~ 0
+CLKI
+Wire Wire Line
+	2250 3650 2450 3650
+Text GLabel 2250 3850 0    50   Input ~ 0
+ATTINY_UART
+Wire Wire Line
+	2250 3850 2450 3850
+Text GLabel 2250 3950 0    50   Input ~ 0
+ATTINY_RTS
+Text GLabel 2250 4050 0    50   Input ~ 0
+RN4871_RTS
+Wire Wire Line
+	2450 3950 2250 3950
+Wire Wire Line
+	2450 4050 2250 4050
+Text GLabel 2250 3550 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	2250 3550 2450 3550
+Wire Wire Line
+	5150 3550 5250 3550
+Wire Wire Line
+	5250 3550 5250 3650
+Wire Wire Line
+	5150 4050 5250 4050
+Wire Wire Line
+	5250 4050 5250 3950
+Wire Wire Line
+	5250 3450 5250 3550
+Connection ~ 5250 3550
+Connection ~ 5250 4050
+Text GLabel 5450 4050 2    50   Input ~ 0
+PGND
+Wire Wire Line
+	5250 4050 5450 4050
+$Comp
+L Jumper:Jumper_2_Bridged JP1
+U 1 1 60368E7C
+P 5550 4300
+F 0 "JP1" H 5550 4403 50  0000 C CNN
+F 1 "Programming GND Disconnect" H 5550 4404 50  0001 C CNN
+F 2 "" H 5550 4300 50  0001 C CNN
+F 3 "~" H 5550 4300 50  0001 C CNN
+	1    5550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4300 5350 4300
+Wire Wire Line
+	5250 4050 5250 4300
+Wire Wire Line
+	5750 4300 5850 4300
+Wire Wire Line
+	5850 4300 5850 4400
+Text GLabel 1200 4050 2    50   Input ~ 0
+RN4871_RTS
+Text GLabel 1100 4050 0    50   Input ~ 0
+ISP_MOSI
+Wire Wire Line
+	1100 4050 1200 4050
+Text GLabel 1300 3950 2    50   Input ~ 0
+ATTINY_RTS
+Text GLabel 1200 3950 0    50   Input ~ 0
+ISP_MISO
+Wire Wire Line
+	1200 3950 1300 3950
+Text GLabel 1200 3850 2    50   Input ~ 0
+ATTINY_UART
+Text GLabel 1100 3850 0    50   Input ~ 0
+ISP_SCK
+Wire Wire Line
+	1100 3850 1200 3850
+Wire Notes Line
+	5950 4550 650  4550
+Text Notes 650  3200 0    50   ~ 10
+ATTINY block
+Text Notes 650  4800 0    50   ~ 0
+Notes:\n* There is a jumper on the board which disconnects the attiny from the board-wide ground plane, so when programming no other\ndevices mis-interpret the signals nor get destroyed if a 5.5v programmer is accidentally used...
+Wire Notes Line
+	650  4850 5950 4850
+Wire Notes Line
+	650  3200 650  4850
+Text Notes 650  5050 0    50   ~ 10
+3-wire to 4-wire UART conversion block
+Wire Notes Line
+	650  6450 650  5050
+Wire Notes Line
+	3150 6450 650  6450
+Wire Notes Line
+	3150 5050 3150 6450
+Wire Notes Line
+	650  5050 3150 5050
+Wire Wire Line
+	2500 6200 2500 6300
+Connection ~ 2500 6200
+Wire Wire Line
+	1300 5700 1400 5700
+Wire Wire Line
+	1300 6200 1300 5700
+Wire Wire Line
+	2500 6200 1300 6200
+Wire Wire Line
+	2500 6100 2500 6200
+$Comp
+L power:Earth #PWR08
+U 1 1 600EFB3C
+P 2500 6300
+F 0 "#PWR08" H 2500 6050 50  0001 C CNN
+F 1 "Earth" H 2500 6150 50  0001 C CNN
+F 2 "" H 2500 6300 50  0001 C CNN
+F 3 "~" H 2500 6300 50  0001 C CNN
+	1    2500 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 5400
+Wire Wire Line
+	2500 5400 2500 5800
+$Comp
+L Device:C C2
+U 1 1 600E7027
+P 2500 5950
+F 0 "C2" H 2615 5950 50  0000 L CNN
+F 1 "10uF" H 2615 5905 50  0001 L CNN
+F 2 "" H 2538 5800 50  0001 C CNN
+F 3 "~" H 2500 5950 50  0001 C CNN
+	1    2500 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 5400 2500 5300
+Wire Wire Line
+	2400 5400 2500 5400
+$Comp
+L power:+BATT #PWR07
+U 1 1 600E48B0
+P 2500 5300
+F 0 "#PWR07" H 2500 5150 50  0001 C CNN
+F 1 "+BATT" H 2515 5473 50  0000 C CNN
+F 2 "" H 2500 5300 50  0001 C CNN
+F 3 "" H 2500 5300 50  0001 C CNN
+	1    2500 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5700 2400 5700
+Text GLabel 2600 5700 2    50   Input ~ 0
+RN4871_TX
+Wire Wire Line
+	2600 5600 2400 5600
+Text GLabel 2600 5600 2    50   Input ~ 0
+ATTINY_RTS
+Wire Wire Line
+	2400 5500 2600 5500
+Text GLabel 2600 5500 2    50   Input ~ 0
+RN4871_RX
+Wire Wire Line
+	1200 5600 1400 5600
+Text GLabel 1200 5600 0    50   Input ~ 0
+ATTINY_UART
+Wire Wire Line
+	1200 5500 1400 5500
+Text GLabel 1200 5500 0    50   Input ~ 0
+RN4871_CTS
+Wire Wire Line
+	1200 5400 1400 5400
+Text GLabel 1200 5400 0    50   Input ~ 0
+ATTINY_UART
+$Comp
+L TC7WH08FK_LJ_CT:TC7WH08FK,LJ_CT U2
+U 1 1 600D2ACA
+P 1400 5400
+F 0 "U2" H 1900 5573 50  0000 C CNN
+F 1 "TC7WH08FK,LJ_CT" H 1900 5574 50  0001 C CNN
+F 2 "SOP50P310X90-8N" H 2250 5500 50  0001 L CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=54660&prodName=TC7WH08FK" H 2250 5400 50  0001 L CNN
+F 4 "Logic Gates Dual 2-Input L-MOS Series" H 2250 5300 50  0001 L CNN "Description"
+F 5 "0.9" H 2250 5200 50  0001 L CNN "Height"
+F 6 "Toshiba" H 2250 5100 50  0001 L CNN "Manufacturer_Name"
+F 7 "TC7WH08FK,LJ(CT" H 2250 5000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "757-TC7WH08FKLJCT" H 2250 4900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TC7WH08FKLJCT" H 2250 4800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "TC7WH08FK,LJ(CT" H 2250 4700 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/tc7wh08fklj-ct/toshiba" H 2250 4600 50  0001 L CNN "Arrow Price/Stock"
+	1    1400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MR44V100AMAZAATL:MR44V100AMAZAATL U5
+U 1 1 6010EABE
+P 4450 5600
+F 0 "U5" H 4950 5773 50  0000 C CNN
+F 1 "MR44V100AMAZAATL" H 4950 5774 50  0001 C CNN
+F 2 "SOIC127P600X165-8N" H 5300 5700 50  0001 L CNN
+F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 5300 5600 50  0001 L CNN
+F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 5300 5500 50  0001 L CNN "Description"
+F 5 "1.65" H 5300 5400 50  0001 L CNN "Height"
+F 6 "ROHM Semiconductor" H 5300 5300 50  0001 L CNN "Manufacturer_Name"
+F 7 "MR44V100AMAZAATL" H 5300 5200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "755-MR44V100AMAZAATL" H 5300 5100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 5300 5000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 5300 4900 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 5300 4800 50  0001 L CNN "Arrow Price/Stock"
+	1    4450 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MR44V100AMAZAATL:MR44V100AMAZAATL U6
+U 1 1 60111AF6
+P 4450 6350
+F 0 "U6" H 4950 6523 50  0000 C CNN
+F 1 "MR44V100AMAZAATL" H 4950 6524 50  0001 C CNN
+F 2 "SOIC127P600X165-8N" H 5300 6450 50  0001 L CNN
+F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 5300 6350 50  0001 L CNN
+F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 5300 6250 50  0001 L CNN "Description"
+F 5 "1.65" H 5300 6150 50  0001 L CNN "Height"
+F 6 "ROHM Semiconductor" H 5300 6050 50  0001 L CNN "Manufacturer_Name"
+F 7 "MR44V100AMAZAATL" H 5300 5950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "755-MR44V100AMAZAATL" H 5300 5850 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 5300 5750 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 5300 5650 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 5300 5550 50  0001 L CNN "Arrow Price/Stock"
+	1    4450 6350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 5450 1    50   Input ~ 0
+I2C_SDA
+Text GLabel 5950 5450 1    50   Input ~ 0
+I2C_SCL
+NoConn ~ 5450 5700
+NoConn ~ 5450 6450
+NoConn ~ 4450 6550
+$Comp
+L power:+BATT #PWR019
+U 1 1 60197459
+P 5550 5500
+F 0 "#PWR019" H 5550 5350 50  0001 C CNN
+F 1 "+BATT" H 5565 5673 50  0000 C CNN
+F 2 "" H 5550 5500 50  0001 C CNN
+F 3 "" H 5550 5500 50  0001 C CNN
+	1    5550 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 5600 5550 5600
+Wire Wire Line
+	5550 5600 5550 6350
+Wire Wire Line
+	5550 6350 5450 6350
+Wire Wire Line
+	5550 5500 5550 5600
+Connection ~ 5550 5600
+Wire Wire Line
+	4450 5900 4350 5900
+Wire Wire Line
+	4350 5900 4350 6650
+Wire Wire Line
+	4350 6650 4450 6650
+Connection ~ 4350 6650
+$Comp
+L Device:C C5
+U 1 1 601ABA58
+P 4100 6650
+F 0 "C5" V 3940 6650 50  0000 C CNN
+F 1 "10uF" V 3939 6650 50  0001 C CNN
+F 2 "" H 4138 6500 50  0001 C CNN
+F 3 "~" H 4100 6650 50  0001 C CNN
+	1    4100 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 6650 4350 6650
+$Comp
+L Device:C C4
+U 1 1 601B099A
+P 4100 5900
+F 0 "C4" V 3940 5900 50  0000 C CNN
+F 1 "C" V 3939 5900 50  0001 C CNN
+F 2 "" H 4138 5750 50  0001 C CNN
+F 3 "~" H 4100 5900 50  0001 C CNN
+	1    4100 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 5900 4350 5900
+Connection ~ 4350 5900
+Wire Wire Line
+	3950 5900 3850 5900
+Wire Wire Line
+	3850 5900 3850 6450
+Wire Wire Line
+	3850 6650 3950 6650
+Wire Wire Line
+	3850 6450 4450 6450
+Connection ~ 3850 6450
+Wire Wire Line
+	3850 6450 3850 6650
+$Comp
+L power:+BATT #PWR016
+U 1 1 601B5197
+P 3850 5800
+F 0 "#PWR016" H 3850 5650 50  0001 C CNN
+F 1 "+BATT" H 3865 5973 50  0000 C CNN
+F 2 "" H 3850 5800 50  0001 C CNN
+F 3 "" H 3850 5800 50  0001 C CNN
+	1    3850 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5800 3850 5900
+Connection ~ 3850 5900
+$Comp
+L MR44V100AMAZAATL:MR44V100AMAZAATL U7
+U 1 1 601BD993
+P 4450 7000
+F 0 "U7" H 4950 7173 50  0000 C CNN
+F 1 "MR44V100AMAZAATL" H 4950 7174 50  0001 C CNN
+F 2 "SOIC127P600X165-8N" H 5300 7100 50  0001 L CNN
+F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 5300 7000 50  0001 L CNN
+F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 5300 6900 50  0001 L CNN "Description"
+F 5 "1.65" H 5300 6800 50  0001 L CNN "Height"
+F 6 "ROHM Semiconductor" H 5300 6700 50  0001 L CNN "Manufacturer_Name"
+F 7 "MR44V100AMAZAATL" H 5300 6600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "755-MR44V100AMAZAATL" H 5300 6500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 5300 6400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 5300 6300 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 5300 6200 50  0001 L CNN "Arrow Price/Stock"
+	1    4450 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 6350 5550 7000
+Wire Wire Line
+	5550 7000 5450 7000
+Connection ~ 5550 6350
+NoConn ~ 5450 7100
+NoConn ~ 4450 7100
+Wire Wire Line
+	4350 6650 4350 7300
+Wire Wire Line
+	4350 7300 4450 7300
+$Comp
+L Device:C C6
+U 1 1 601C5433
+P 4100 7300
+F 0 "C6" V 3940 7300 50  0000 C CNN
+F 1 "10uF" V 3939 7300 50  0001 C CNN
+F 2 "" H 4138 7150 50  0001 C CNN
+F 3 "~" H 4100 7300 50  0001 C CNN
+	1    4100 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 7300 4350 7300
+Connection ~ 4350 7300
+Wire Wire Line
+	4450 7200 4250 7200
+Wire Wire Line
+	4250 7200 4250 7100
+Wire Wire Line
+	4250 7100 3850 7100
+Wire Wire Line
+	3850 7100 3850 6650
+Connection ~ 3850 6650
+Wire Wire Line
+	3850 7100 3850 7300
+Wire Wire Line
+	3850 7300 3950 7300
+Connection ~ 3850 7100
+$Comp
+L MR44V100AMAZAATL:MR44V100AMAZAATL U8
+U 1 1 601D78B3
+P 4450 7650
+F 0 "U8" H 4950 7823 50  0000 C CNN
+F 1 "MR44V100AMAZAATL" H 4950 7824 50  0001 C CNN
+F 2 "SOIC127P600X165-8N" H 5300 7750 50  0001 L CNN
+F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 5300 7650 50  0001 L CNN
+F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 5300 7550 50  0001 L CNN "Description"
+F 5 "1.65" H 5300 7450 50  0001 L CNN "Height"
+F 6 "ROHM Semiconductor" H 5300 7350 50  0001 L CNN "Manufacturer_Name"
+F 7 "MR44V100AMAZAATL" H 5300 7250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "755-MR44V100AMAZAATL" H 5300 7150 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 5300 7050 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 5300 6950 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 5300 6850 50  0001 L CNN "Arrow Price/Stock"
+	1    4450 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 7000 5550 7650
+Wire Wire Line
+	5550 7650 5450 7650
+Connection ~ 5550 7000
+NoConn ~ 5450 7750
+Wire Wire Line
+	4350 7300 4350 7950
+Wire Wire Line
+	4350 7950 4450 7950
+Wire Wire Line
+	4450 7850 4250 7850
+Wire Wire Line
+	4250 7850 4250 7750
+Wire Wire Line
+	4250 7750 4450 7750
+$Comp
+L Device:C C7
+U 1 1 601E34CF
+P 4100 7950
+F 0 "C7" V 3940 7950 50  0000 C CNN
+F 1 "C" V 3939 7950 50  0001 C CNN
+F 2 "" H 4138 7800 50  0001 C CNN
+F 3 "~" H 4100 7950 50  0001 C CNN
+	1    4100 7950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 7950 4350 7950
+Connection ~ 4350 7950
+Wire Wire Line
+	3950 7950 3850 7950
+Wire Wire Line
+	3850 7950 3850 7750
+Connection ~ 3850 7300
+Wire Wire Line
+	4250 7750 3850 7750
+Connection ~ 4250 7750
+Connection ~ 3850 7750
+Wire Wire Line
+	3850 7750 3850 7300
+Wire Wire Line
+	5750 5450 5750 5900
+Wire Wire Line
+	5750 5900 5450 5900
+Wire Wire Line
+	5750 5900 5750 6650
+Wire Wire Line
+	5750 6650 5450 6650
+Connection ~ 5750 5900
+Wire Wire Line
+	5750 6650 5750 7300
+Wire Wire Line
+	5750 7300 5450 7300
+Connection ~ 5750 6650
+Wire Wire Line
+	5750 7300 5750 7950
+Wire Wire Line
+	5750 7950 5450 7950
+Connection ~ 5750 7300
+Wire Wire Line
+	5950 5450 5950 5800
+Wire Wire Line
+	5950 5800 5450 5800
+Wire Wire Line
+	5950 5800 5950 6550
+Wire Wire Line
+	5950 6550 5450 6550
+Connection ~ 5950 5800
+Wire Wire Line
+	5950 6550 5950 7200
+Wire Wire Line
+	5950 7200 5450 7200
+Connection ~ 5950 6550
+Wire Wire Line
+	5950 7200 5950 7850
+Wire Wire Line
+	5950 7850 5450 7850
+Connection ~ 5950 7200
+Wire Notes Line
+	3700 5050 6050 5050
+Wire Notes Line
+	6050 8100 3700 8100
+Text Notes 3700 5050 0    50   ~ 10
+512kbyte I2C FRAM block
+Text Notes 3700 8300 0    50   ~ 0
+Notes:\n* Pins Ax are internally pulled down
+Wire Notes Line
+	3700 8350 6050 8350
+Wire Notes Line
+	6050 5050 6050 8350
+Wire Notes Line
+	3700 5050 3700 8350
+NoConn ~ 4450 5700
+NoConn ~ 4450 5800
+Wire Notes Line
+	6250 3900 6250 6950
+Wire Notes Line
+	9200 3900 9200 6950
+Wire Notes Line
+	6250 6950 9200 6950
+Text Notes 6250 6900 0    50   ~ 0
+Notes:\n* I2C Address: 1101001b
+Connection ~ 6750 5250
+Wire Wire Line
+	6750 5550 6750 5250
+Text Notes 6250 3900 0    50   ~ 10
+High-precision gyroscope block
+Wire Notes Line
+	9200 6700 6250 6700
+Wire Notes Line
+	6250 3900 9200 3900
+NoConn ~ 7550 6450
+Connection ~ 8650 5550
+Wire Wire Line
+	8950 5550 8650 5550
+Wire Wire Line
+	8950 5400 8950 5550
+Wire Wire Line
+	8650 5550 8650 5400
+Wire Wire Line
+	8450 5550 8650 5550
+Connection ~ 8650 4400
+Wire Wire Line
+	7650 4400 7650 4450
+Wire Wire Line
+	8650 4400 7650 4400
+Wire Wire Line
+	8950 4400 8950 4600
+Wire Wire Line
+	8650 4400 8950 4400
+Wire Wire Line
+	8650 5100 8650 4400
+Wire Wire Line
+	8950 4900 8950 5100
+$Comp
+L Device:C C16
+U 1 1 602E704B
+P 8950 4750
+F 0 "C16" H 9065 4750 50  0000 L CNN
+F 1 "470nF" H 9065 4705 50  0001 L CNN
+F 2 "" H 8988 4600 50  0001 C CNN
+F 3 "~" H 8950 4750 50  0001 C CNN
+	1    8950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 602E6458
+P 8950 5250
+F 0 "R6" H 9020 5250 50  0000 L CNN
+F 1 "10kOhm" H 9020 5205 50  0001 L CNN
+F 2 "" V 8880 5250 50  0001 C CNN
+F 3 "~" H 8950 5250 50  0001 C CNN
+	1    8950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 602E3292
+P 8650 5250
+F 0 "C14" H 8765 5250 50  0000 L CNN
+F 1 "10nF" H 8765 5205 50  0001 L CNN
+F 2 "" H 8688 5100 50  0001 C CNN
+F 3 "~" H 8650 5250 50  0001 C CNN
+	1    8650 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4350 7850 4350
+Wire Wire Line
+	7550 4450 7550 4350
+Wire Wire Line
+	6650 5450 6850 5450
+Text GLabel 6650 5450 0    50   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	6650 5350 6850 5350
+Text GLabel 6650 5350 0    50   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	6750 5550 6850 5550
+NoConn ~ 7650 6450
+Connection ~ 8450 5350
+Wire Wire Line
+	8450 5250 8450 5350
+Wire Wire Line
+	8350 5250 8450 5250
+Connection ~ 8450 5450
+Wire Wire Line
+	8450 5350 8450 5450
+Wire Wire Line
+	8350 5350 8450 5350
+Connection ~ 8450 5550
+Wire Wire Line
+	8450 5450 8450 5550
+Wire Wire Line
+	8350 5450 8450 5450
+Wire Wire Line
+	8450 5550 8450 5650
+Wire Wire Line
+	8350 5550 8450 5550
+$Comp
+L power:Earth #PWR033
+U 1 1 60247B81
+P 8450 5650
+F 0 "#PWR033" H 8450 5400 50  0001 C CNN
+F 1 "Earth" H 8450 5500 50  0001 C CNN
+F 2 "" H 8450 5650 50  0001 C CNN
+F 3 "~" H 8450 5650 50  0001 C CNN
+	1    8450 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 6450 7750 6550
+$Comp
+L power:Earth #PWR029
+U 1 1 6023BB42
+P 7750 6550
+F 0 "#PWR029" H 7750 6300 50  0001 C CNN
+F 1 "Earth" H 7750 6400 50  0001 C CNN
+F 2 "" H 7750 6550 50  0001 C CNN
+F 3 "~" H 7750 6550 50  0001 C CNN
+	1    7750 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5250 6850 5250
+Wire Wire Line
+	6750 5150 6750 5250
+$Comp
+L power:+BATT #PWR023
+U 1 1 6022FAFC
+P 6750 5150
+F 0 "#PWR023" H 6750 5000 50  0001 C CNN
+F 1 "+BATT" H 6765 5323 50  0000 C CNN
+F 2 "" H 6750 5150 50  0001 C CNN
+F 3 "" H 6750 5150 50  0001 C CNN
+	1    6750 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4350 7850 4450
+Connection ~ 7850 4350
+Wire Wire Line
+	7950 4350 7850 4350
+Wire Wire Line
+	7950 4450 7950 4350
+Wire Wire Line
+	7250 4250 7250 4350
+$Comp
+L power:Earth #PWR031
+U 1 1 602130A3
+P 7950 4450
+F 0 "#PWR031" H 7950 4200 50  0001 C CNN
+F 1 "Earth" H 7950 4300 50  0001 C CNN
+F 2 "" H 7950 4450 50  0001 C CNN
+F 3 "~" H 7950 4450 50  0001 C CNN
+	1    7950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4350 7350 4250
+Connection ~ 7350 4350
+Wire Wire Line
+	7250 4350 7350 4350
+$Comp
+L power:+BATT #PWR026
+U 1 1 602087E8
+P 7250 4250
+F 0 "#PWR026" H 7250 4100 50  0001 C CNN
+F 1 "+BATT" H 7265 4423 50  0000 C CNN
+F 2 "" H 7250 4250 50  0001 C CNN
+F 3 "" H 7250 4250 50  0001 C CNN
+	1    7250 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4450 7750 4450
+Wire Wire Line
+	7850 4250 7850 4350
+Wire Wire Line
+	7750 4250 7850 4250
+Wire Wire Line
+	7350 4250 7450 4250
+Wire Wire Line
+	7350 4450 7350 4350
+Wire Wire Line
+	7450 4450 7350 4450
+$Comp
+L Device:C C12
+U 1 1 601F4316
+P 7600 4250
+F 0 "C12" V 7348 4250 50  0000 C CNN
+F 1 "10uF" V 7439 4250 50  0000 C CNN
+F 2 "" H 7638 4100 50  0001 C CNN
+F 3 "~" H 7600 4250 50  0001 C CNN
+	1    7600 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 6600 7250 6500
+Wire Wire Line
+	7450 6600 7250 6600
+Wire Wire Line
+	7450 6450 7450 6600
+$Comp
+L power:+BATT #PWR027
+U 1 1 601E9A68
+P 7250 6500
+F 0 "#PWR027" H 7250 6350 50  0001 C CNN
+F 1 "+BATT" H 7265 6673 50  0000 C CNN
+F 2 "" H 7250 6500 50  0001 C CNN
+F 3 "" H 7250 6500 50  0001 C CNN
+	1    7250 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L I3G4250DTR:I3G4250DTR U10
+U 1 1 601E5072
+P 6850 5250
+F 0 "U10" H 7200 5950 50  0000 L CNN
+F 1 "I3G4250DTR" H 8394 5005 50  0001 L CNN
+F 2 "LGA-16L(4X4X1.1MM)" H 8200 5850 50  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/e4/b1/d1/62/1a/e6/44/2f/DM00168691.pdf/files/DM00168691.pdf/jcr:content/translations/en.DM00168691.pdf" H 8200 5750 50  0001 L CNN
+F 4 "STMicroelectronics I3G4250DTR 3-Axis Gyroscope, 2.4  3.6 V 16-Pin LGA" H 8200 5650 50  0001 L CNN "Description"
+F 5 "" H 8200 5550 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 8200 5450 50  0001 L CNN "Manufacturer_Name"
+F 7 "I3G4250DTR" H 8200 5350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-I3G4250DTR" H 8200 5250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/I3G4250DTR/?qs=v3MacVxtdDJPIS9io4RmPA%3D%3D" H 8200 5150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "I3G4250DTR" H 8200 5050 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/i3g4250dtr/stmicroelectronics" H 8200 4950 50  0001 L CNN "Arrow Price/Stock"
+	1    6850 5250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	650  3200 5950 3200
+Wire Notes Line
+	5950 3200 5950 4850
+Wire Notes Line
+	650  2900 2600 2900
 $EndSCHEMATC
