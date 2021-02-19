@@ -89,38 +89,38 @@ Connection ~ 4450 1150
 $Comp
 L RN4871-I_RM140:RN4871-I_RM140 U3
 U 1 1 600D5214
-P 1400 7000
-F 0 "U3" H 2050 7173 50  0000 C CNN
-F 1 "RN4871-I_RM140" H 2050 7174 50  0001 C CNN
-F 2 "RN4871IRM140" H 2550 7100 50  0001 L CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en586027" H 2550 7000 50  0001 L CNN
-F 4 "Bluetooth Modules (802.15.1) Bluetooth Low Energy BLE Module, Shielded, Antenna, ASCII Interface, 9x11.5mm" H 2550 6900 50  0001 L CNN "Description"
-F 5 "2.16" H 2550 6800 50  0001 L CNN "Height"
-F 6 "Microchip" H 2550 6700 50  0001 L CNN "Manufacturer_Name"
-F 7 "RN4871-I/RM140" H 2550 6600 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "579-RN4871-I/RM140" H 2550 6500 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN4871-I-RM140?qs=BJlw7L4Cy79OHrwBC2yoPQ%3D%3D" H 2550 6400 50  0001 L CNN "Mouser Price/Stock"
-F 10 "RN4871-I/RM140" H 2550 6300 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/rn4871-irm140/microchip-technology" H 2550 6200 50  0001 L CNN "Arrow Price/Stock"
-	1    1400 7000
+P 1400 5400
+F 0 "U3" H 2050 5573 50  0000 C CNN
+F 1 "RN4871-I_RM140" H 2050 5574 50  0001 C CNN
+F 2 "RN4871IRM140" H 2550 5500 50  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en586027" H 2550 5400 50  0001 L CNN
+F 4 "Bluetooth Modules (802.15.1) Bluetooth Low Energy BLE Module, Shielded, Antenna, ASCII Interface, 9x11.5mm" H 2550 5300 50  0001 L CNN "Description"
+F 5 "2.16" H 2550 5200 50  0001 L CNN "Height"
+F 6 "Microchip" H 2550 5100 50  0001 L CNN "Manufacturer_Name"
+F 7 "RN4871-I/RM140" H 2550 5000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "579-RN4871-I/RM140" H 2550 4900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/RN4871-I-RM140?qs=BJlw7L4Cy79OHrwBC2yoPQ%3D%3D" H 2550 4800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "RN4871-I/RM140" H 2550 4700 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/rn4871-irm140/microchip-technology" H 2550 4600 50  0001 L CNN "Arrow Price/Stock"
+	1    1400 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 7000 2    50   Input ~ 0
+Text GLabel 2900 5400 2    50   Input ~ 0
 RN4871_RTS
 Wire Wire Line
-	2700 7000 2900 7000
-Text GLabel 2900 7200 2    50   Input ~ 0
+	2700 5400 2900 5400
+Text GLabel 2900 5600 2    50   Input ~ 0
 ATTINY_RTS
 Wire Wire Line
-	2700 7200 2900 7200
-Text GLabel 1200 7600 0    50   Input ~ 0
-RN4871_RX
+	2700 5600 2900 5600
+Text GLabel 1200 6000 0    50   Input ~ 0
+ATTINY_TX
 Wire Wire Line
-	1200 7600 1400 7600
-Text GLabel 1200 7700 0    50   Input ~ 0
+	1200 6000 1400 6000
+Text GLabel 1200 6100 0    50   Input ~ 0
 RN4871_TX
 Wire Wire Line
-	1400 7700 1200 7700
+	1400 6100 1200 6100
 Wire Notes Line
 	4300 650  5400 650 
 Wire Notes Line
@@ -258,14 +258,14 @@ Wire Wire Line
 	10600 3300 10400 3300
 Wire Wire Line
 	10700 3100 10700 3200
-Text GLabel 1200 7200 0    50   Input ~ 0
+Text GLabel 1200 5600 0    50   Input ~ 0
 I2C_SCL
 Wire Wire Line
-	1200 7200 1400 7200
-Text GLabel 1200 7300 0    50   Input ~ 0
+	1200 5600 1400 5600
+Text GLabel 1200 5700 0    50   Input ~ 0
 I2C_SDA
 Wire Wire Line
-	1200 7300 1400 7300
+	1200 5700 1400 5700
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J1
 U 1 1 6037ADD2
@@ -535,98 +535,98 @@ Wire Notes Line
 	11600 3850 11600 6850
 Wire Notes Line
 	9400 3850 9400 6850
-NoConn ~ 2700 7600
-Text GLabel 2900 7100 2    50   Input ~ 0
+NoConn ~ 2700 6000
+Text GLabel 2900 5500 2    50   Input ~ 0
 RESET
 Wire Wire Line
-	2900 7100 2700 7100
-Text GLabel 2900 7300 2    50   Input ~ 0
+	2900 5500 2700 5500
+Text GLabel 2900 5700 2    50   Input ~ 0
 LED_BTON
 Wire Wire Line
-	2900 7300 2700 7300
-NoConn ~ 2700 7700
-NoConn ~ 1400 7400
-NoConn ~ 1400 7500
+	2900 5700 2700 5700
+NoConn ~ 2700 6100
+NoConn ~ 1400 5800
+NoConn ~ 1400 5900
 $Comp
 L power:+BATT #PWR09
 U 1 1 604C2FEA
-P 2750 6900
-F 0 "#PWR09" H 2750 6750 50  0001 C CNN
-F 1 "+BATT" H 2765 7073 50  0000 C CNN
-F 2 "" H 2750 6900 50  0001 C CNN
-F 3 "" H 2750 6900 50  0001 C CNN
-	1    2750 6900
+P 2750 5300
+F 0 "#PWR09" H 2750 5150 50  0001 C CNN
+F 1 "+BATT" H 2765 5473 50  0000 C CNN
+F 2 "" H 2750 5300 50  0001 C CNN
+F 3 "" H 2750 5300 50  0001 C CNN
+	1    2750 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 6900 2750 7500
+	2750 5300 2750 5900
 Wire Wire Line
-	2750 7500 2700 7500
+	2750 5900 2700 5900
 $Comp
 L Device:C C3
 U 1 1 604C9C88
-P 2850 7700
-F 0 "C3" H 2735 7700 50  0000 R CNN
-F 1 "10uF" H 2735 7745 50  0001 R CNN
-F 2 "" H 2888 7550 50  0001 C CNN
-F 3 "~" H 2850 7700 50  0001 C CNN
-	1    2850 7700
+P 2850 6100
+F 0 "C3" H 2735 6100 50  0000 R CNN
+F 1 "10uF" H 2735 6145 50  0001 R CNN
+F 2 "" H 2888 5950 50  0001 C CNN
+F 3 "~" H 2850 6100 50  0001 C CNN
+	1    2850 6100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2750 7500 2850 7500
+	2750 5900 2850 5900
 Wire Wire Line
-	2850 7500 2850 7550
-Connection ~ 2750 7500
+	2850 5900 2850 5950
+Connection ~ 2750 5900
 $Comp
 L power:Earth #PWR010
 U 1 1 604D0AD0
-P 2850 8050
-F 0 "#PWR010" H 2850 7800 50  0001 C CNN
-F 1 "Earth" H 2850 7900 50  0001 C CNN
-F 2 "" H 2850 8050 50  0001 C CNN
-F 3 "~" H 2850 8050 50  0001 C CNN
-	1    2850 8050
+P 2850 6450
+F 0 "#PWR010" H 2850 6200 50  0001 C CNN
+F 1 "Earth" H 2850 6300 50  0001 C CNN
+F 2 "" H 2850 6450 50  0001 C CNN
+F 3 "~" H 2850 6450 50  0001 C CNN
+	1    2850 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 7850 2850 7950
+	2850 6250 2850 6350
 Wire Wire Line
-	2850 7950 3100 7950
+	2850 6350 3100 6350
 Wire Wire Line
-	3100 7950 3100 7400
+	3100 6350 3100 5800
 Wire Wire Line
-	3100 7400 2700 7400
-Connection ~ 2850 7950
+	3100 5800 2700 5800
+Connection ~ 2850 6350
 Wire Wire Line
-	2850 7950 2850 8050
+	2850 6350 2850 6450
 $Comp
 L power:Earth #PWR03
 U 1 1 604E53F2
-P 1300 7800
-F 0 "#PWR03" H 1300 7550 50  0001 C CNN
-F 1 "Earth" H 1300 7650 50  0001 C CNN
-F 2 "" H 1300 7800 50  0001 C CNN
-F 3 "~" H 1300 7800 50  0001 C CNN
-	1    1300 7800
+P 1300 6200
+F 0 "#PWR03" H 1300 5950 50  0001 C CNN
+F 1 "Earth" H 1300 6050 50  0001 C CNN
+F 2 "" H 1300 6200 50  0001 C CNN
+F 3 "~" H 1300 6200 50  0001 C CNN
+	1    1300 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 7800 1300 7100
+	1300 6200 1300 5500
 Wire Wire Line
-	1300 7100 1400 7100
+	1300 5500 1400 5500
 Wire Notes Line
-	650  6650 3500 6650
+	650  5050 3500 5050
 Wire Notes Line
-	3500 8200 650  8200
-Text Notes 650  8400 0    50   ~ 0
+	3500 6600 650  6600
+Text Notes 650  6800 0    50   ~ 0
 Notes:\n* P2_0 should be internally pulled up
 Wire Notes Line
-	650  8450 3500 8450
+	650  6850 3500 6850
 Wire Notes Line
-	3500 6650 3500 8450
+	3500 5050 3500 6850
 Wire Notes Line
-	650  6650 650  8450
+	650  5050 650  6850
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 60535CA5
@@ -730,7 +730,7 @@ F 3 "" H 2950 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 900  2950 1000
-Text Notes 650  6650 0    50   ~ 10
+Text Notes 650  5050 0    50   ~ 10
 RN4871 bluetooth/UART/I2C master block
 Wire Notes Line
 	2800 650  3250 650 
@@ -1222,11 +1222,11 @@ CLKI
 Wire Wire Line
 	2250 3650 2450 3650
 Text GLabel 2250 3850 0    50   Input ~ 0
-ATTINY_UART
+ATTINY_TX
 Wire Wire Line
 	2250 3850 2450 3850
 Text GLabel 2250 3950 0    50   Input ~ 0
-ATTINY_RTS
+RN4871_TX
 Text GLabel 2250 4050 0    50   Input ~ 0
 RN4871_RTS
 Wire Wire Line
@@ -1279,17 +1279,17 @@ ISP_MOSI
 Wire Wire Line
 	1100 4050 1200 4050
 Text GLabel 1300 3950 2    50   Input ~ 0
-ATTINY_RTS
+RN4871_TX
 Text GLabel 1200 3950 0    50   Input ~ 0
 ISP_MISO
 Wire Wire Line
 	1200 3950 1300 3950
-Text GLabel 1200 3850 2    50   Input ~ 0
-ATTINY_UART
-Text GLabel 1100 3850 0    50   Input ~ 0
+Text GLabel 1400 3850 2    50   Input ~ 0
+ATTINY_TX
+Text GLabel 1300 3850 0    50   Input ~ 0
 ISP_SCK
 Wire Wire Line
-	1100 3850 1200 3850
+	1300 3850 1400 3850
 Wire Notes Line
 	5950 4550 650  4550
 Text Notes 650  3200 0    50   ~ 10
@@ -1300,110 +1300,6 @@ Wire Notes Line
 	650  4850 5950 4850
 Wire Notes Line
 	650  3200 650  4850
-Text Notes 650  5050 0    50   ~ 10
-3-wire to 4-wire UART conversion block
-Wire Notes Line
-	650  6450 650  5050
-Wire Notes Line
-	3150 6450 650  6450
-Wire Notes Line
-	3150 5050 3150 6450
-Wire Notes Line
-	650  5050 3150 5050
-Wire Wire Line
-	2500 6200 2500 6300
-Connection ~ 2500 6200
-Wire Wire Line
-	1300 5700 1400 5700
-Wire Wire Line
-	1300 6200 1300 5700
-Wire Wire Line
-	2500 6200 1300 6200
-Wire Wire Line
-	2500 6100 2500 6200
-$Comp
-L power:Earth #PWR08
-U 1 1 600EFB3C
-P 2500 6300
-F 0 "#PWR08" H 2500 6050 50  0001 C CNN
-F 1 "Earth" H 2500 6150 50  0001 C CNN
-F 2 "" H 2500 6300 50  0001 C CNN
-F 3 "~" H 2500 6300 50  0001 C CNN
-	1    2500 6300
-	1    0    0    -1  
-$EndComp
-Connection ~ 2500 5400
-Wire Wire Line
-	2500 5400 2500 5800
-$Comp
-L Device:C C2
-U 1 1 600E7027
-P 2500 5950
-F 0 "C2" H 2615 5950 50  0000 L CNN
-F 1 "10uF" H 2615 5905 50  0001 L CNN
-F 2 "" H 2538 5800 50  0001 C CNN
-F 3 "~" H 2500 5950 50  0001 C CNN
-	1    2500 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 5400 2500 5300
-Wire Wire Line
-	2400 5400 2500 5400
-$Comp
-L power:+BATT #PWR07
-U 1 1 600E48B0
-P 2500 5300
-F 0 "#PWR07" H 2500 5150 50  0001 C CNN
-F 1 "+BATT" H 2515 5473 50  0000 C CNN
-F 2 "" H 2500 5300 50  0001 C CNN
-F 3 "" H 2500 5300 50  0001 C CNN
-	1    2500 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 5700 2400 5700
-Text GLabel 2600 5700 2    50   Input ~ 0
-RN4871_TX
-Wire Wire Line
-	2600 5600 2400 5600
-Text GLabel 2600 5600 2    50   Input ~ 0
-ATTINY_RTS
-Wire Wire Line
-	2400 5500 2600 5500
-Text GLabel 2600 5500 2    50   Input ~ 0
-RN4871_RX
-Wire Wire Line
-	1200 5600 1400 5600
-Text GLabel 1200 5600 0    50   Input ~ 0
-ATTINY_UART
-Wire Wire Line
-	1200 5500 1400 5500
-Text GLabel 1200 5500 0    50   Input ~ 0
-RN4871_CTS
-Wire Wire Line
-	1200 5400 1400 5400
-Text GLabel 1200 5400 0    50   Input ~ 0
-ATTINY_UART
-$Comp
-L TC7WH08FK_LJ_CT:TC7WH08FK,LJ_CT U2
-U 1 1 600D2ACA
-P 1400 5400
-F 0 "U2" H 1900 5573 50  0000 C CNN
-F 1 "TC7WH08FK,LJ_CT" H 1900 5574 50  0001 C CNN
-F 2 "SOP50P310X90-8N" H 2250 5500 50  0001 L CNN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=54660&prodName=TC7WH08FK" H 2250 5400 50  0001 L CNN
-F 4 "Logic Gates Dual 2-Input L-MOS Series" H 2250 5300 50  0001 L CNN "Description"
-F 5 "0.9" H 2250 5200 50  0001 L CNN "Height"
-F 6 "Toshiba" H 2250 5100 50  0001 L CNN "Manufacturer_Name"
-F 7 "TC7WH08FK,LJ(CT" H 2250 5000 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "757-TC7WH08FKLJCT" H 2250 4900 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=757-TC7WH08FKLJCT" H 2250 4800 50  0001 L CNN "Mouser Price/Stock"
-F 10 "TC7WH08FK,LJ(CT" H 2250 4700 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/tc7wh08fklj-ct/toshiba" H 2250 4600 50  0001 L CNN "Arrow Price/Stock"
-	1    1400 5400
-	1    0    0    -1  
-$EndComp
 $Comp
 L MR44V100AMAZAATL:MR44V100AMAZAATL U5
 U 1 1 6010EABE
@@ -1423,32 +1319,11 @@ F 11 "" H 5300 4800 50  0001 L CNN "Arrow Price/Stock"
 	1    4450 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L MR44V100AMAZAATL:MR44V100AMAZAATL U6
-U 1 1 60111AF6
-P 4450 6350
-F 0 "U6" H 4950 6523 50  0000 C CNN
-F 1 "MR44V100AMAZAATL" H 4950 6524 50  0001 C CNN
-F 2 "SOIC127P600X165-8N" H 5300 6450 50  0001 L CNN
-F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 5300 6350 50  0001 L CNN
-F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 5300 6250 50  0001 L CNN "Description"
-F 5 "1.65" H 5300 6150 50  0001 L CNN "Height"
-F 6 "ROHM Semiconductor" H 5300 6050 50  0001 L CNN "Manufacturer_Name"
-F 7 "MR44V100AMAZAATL" H 5300 5950 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "755-MR44V100AMAZAATL" H 5300 5850 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 5300 5750 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 5300 5650 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 5300 5550 50  0001 L CNN "Arrow Price/Stock"
-	1    4450 6350
-	1    0    0    -1  
-$EndComp
 Text GLabel 5750 5450 1    50   Input ~ 0
 I2C_SDA
 Text GLabel 5950 5450 1    50   Input ~ 0
 I2C_SCL
 NoConn ~ 5450 5700
-NoConn ~ 5450 6450
-NoConn ~ 4450 6550
 $Comp
 L power:+BATT #PWR019
 U 1 1 60197459
@@ -1463,241 +1338,25 @@ $EndComp
 Wire Wire Line
 	5450 5600 5550 5600
 Wire Wire Line
-	5550 5600 5550 6350
-Wire Wire Line
-	5550 6350 5450 6350
-Wire Wire Line
 	5550 5500 5550 5600
-Connection ~ 5550 5600
-Wire Wire Line
-	4450 5900 4350 5900
-Wire Wire Line
-	4350 5900 4350 6650
-Wire Wire Line
-	4350 6650 4450 6650
-Connection ~ 4350 6650
-$Comp
-L Device:C C5
-U 1 1 601ABA58
-P 4100 6650
-F 0 "C5" V 3940 6650 50  0000 C CNN
-F 1 "10uF" V 3939 6650 50  0001 C CNN
-F 2 "" H 4138 6500 50  0001 C CNN
-F 3 "~" H 4100 6650 50  0001 C CNN
-	1    4100 6650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4250 6650 4350 6650
-$Comp
-L Device:C C4
-U 1 1 601B099A
-P 4100 5900
-F 0 "C4" V 3940 5900 50  0000 C CNN
-F 1 "C" V 3939 5900 50  0001 C CNN
-F 2 "" H 4138 5750 50  0001 C CNN
-F 3 "~" H 4100 5900 50  0001 C CNN
-	1    4100 5900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4250 5900 4350 5900
-Connection ~ 4350 5900
-Wire Wire Line
-	3950 5900 3850 5900
-Wire Wire Line
-	3850 5900 3850 6450
-Wire Wire Line
-	3850 6650 3950 6650
-Wire Wire Line
-	3850 6450 4450 6450
-Connection ~ 3850 6450
-Wire Wire Line
-	3850 6450 3850 6650
-$Comp
-L power:+BATT #PWR016
-U 1 1 601B5197
-P 3850 5800
-F 0 "#PWR016" H 3850 5650 50  0001 C CNN
-F 1 "+BATT" H 3865 5973 50  0000 C CNN
-F 2 "" H 3850 5800 50  0001 C CNN
-F 3 "" H 3850 5800 50  0001 C CNN
-	1    3850 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 5800 3850 5900
-Connection ~ 3850 5900
-$Comp
-L MR44V100AMAZAATL:MR44V100AMAZAATL U7
-U 1 1 601BD993
-P 4450 7000
-F 0 "U7" H 4950 7173 50  0000 C CNN
-F 1 "MR44V100AMAZAATL" H 4950 7174 50  0001 C CNN
-F 2 "SOIC127P600X165-8N" H 5300 7100 50  0001 L CNN
-F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 5300 7000 50  0001 L CNN
-F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 5300 6900 50  0001 L CNN "Description"
-F 5 "1.65" H 5300 6800 50  0001 L CNN "Height"
-F 6 "ROHM Semiconductor" H 5300 6700 50  0001 L CNN "Manufacturer_Name"
-F 7 "MR44V100AMAZAATL" H 5300 6600 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "755-MR44V100AMAZAATL" H 5300 6500 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 5300 6400 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 5300 6300 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 5300 6200 50  0001 L CNN "Arrow Price/Stock"
-	1    4450 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 6350 5550 7000
-Wire Wire Line
-	5550 7000 5450 7000
-Connection ~ 5550 6350
-NoConn ~ 5450 7100
-NoConn ~ 4450 7100
-Wire Wire Line
-	4350 6650 4350 7300
-Wire Wire Line
-	4350 7300 4450 7300
-$Comp
-L Device:C C6
-U 1 1 601C5433
-P 4100 7300
-F 0 "C6" V 3940 7300 50  0000 C CNN
-F 1 "10uF" V 3939 7300 50  0001 C CNN
-F 2 "" H 4138 7150 50  0001 C CNN
-F 3 "~" H 4100 7300 50  0001 C CNN
-	1    4100 7300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4250 7300 4350 7300
-Connection ~ 4350 7300
-Wire Wire Line
-	4450 7200 4250 7200
-Wire Wire Line
-	4250 7200 4250 7100
-Wire Wire Line
-	4250 7100 3850 7100
-Wire Wire Line
-	3850 7100 3850 6650
-Connection ~ 3850 6650
-Wire Wire Line
-	3850 7100 3850 7300
-Wire Wire Line
-	3850 7300 3950 7300
-Connection ~ 3850 7100
-$Comp
-L MR44V100AMAZAATL:MR44V100AMAZAATL U8
-U 1 1 601D78B3
-P 4450 7650
-F 0 "U8" H 4950 7823 50  0000 C CNN
-F 1 "MR44V100AMAZAATL" H 4950 7824 50  0001 C CNN
-F 2 "SOIC127P600X165-8N" H 5300 7750 50  0001 L CNN
-F 3 "http://www.lapis-semi.com/en/data/datasheet-file_db/Memory/FEDR44V100A-01.pdf" H 5300 7650 50  0001 L CNN
-F 4 "ROHM - MR44V100AMAZAATL - F-RAM, NON-VOL, 1MBIT, 3.4MHZ, SOP-8" H 5300 7550 50  0001 L CNN "Description"
-F 5 "1.65" H 5300 7450 50  0001 L CNN "Height"
-F 6 "ROHM Semiconductor" H 5300 7350 50  0001 L CNN "Manufacturer_Name"
-F 7 "MR44V100AMAZAATL" H 5300 7250 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "755-MR44V100AMAZAATL" H 5300 7150 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/MR44V100AMAZAATL?qs=f9yNj16SXrIX1f97fznE%2Fg%3D%3D" H 5300 7050 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 5300 6950 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 5300 6850 50  0001 L CNN "Arrow Price/Stock"
-	1    4450 7650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 7000 5550 7650
-Wire Wire Line
-	5550 7650 5450 7650
-Connection ~ 5550 7000
-NoConn ~ 5450 7750
-Wire Wire Line
-	4350 7300 4350 7950
-Wire Wire Line
-	4350 7950 4450 7950
-Wire Wire Line
-	4450 7850 4250 7850
-Wire Wire Line
-	4250 7850 4250 7750
-Wire Wire Line
-	4250 7750 4450 7750
-$Comp
-L Device:C C7
-U 1 1 601E34CF
-P 4100 7950
-F 0 "C7" V 3940 7950 50  0000 C CNN
-F 1 "C" V 3939 7950 50  0001 C CNN
-F 2 "" H 4138 7800 50  0001 C CNN
-F 3 "~" H 4100 7950 50  0001 C CNN
-	1    4100 7950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4250 7950 4350 7950
-Connection ~ 4350 7950
-Wire Wire Line
-	3950 7950 3850 7950
-Wire Wire Line
-	3850 7950 3850 7750
-Connection ~ 3850 7300
-Wire Wire Line
-	4250 7750 3850 7750
-Connection ~ 4250 7750
-Connection ~ 3850 7750
-Wire Wire Line
-	3850 7750 3850 7300
 Wire Wire Line
 	5750 5450 5750 5900
 Wire Wire Line
 	5750 5900 5450 5900
 Wire Wire Line
-	5750 5900 5750 6650
-Wire Wire Line
-	5750 6650 5450 6650
-Connection ~ 5750 5900
-Wire Wire Line
-	5750 6650 5750 7300
-Wire Wire Line
-	5750 7300 5450 7300
-Connection ~ 5750 6650
-Wire Wire Line
-	5750 7300 5750 7950
-Wire Wire Line
-	5750 7950 5450 7950
-Connection ~ 5750 7300
-Wire Wire Line
 	5950 5450 5950 5800
 Wire Wire Line
 	5950 5800 5450 5800
-Wire Wire Line
-	5950 5800 5950 6550
-Wire Wire Line
-	5950 6550 5450 6550
-Connection ~ 5950 5800
-Wire Wire Line
-	5950 6550 5950 7200
-Wire Wire Line
-	5950 7200 5450 7200
-Connection ~ 5950 6550
-Wire Wire Line
-	5950 7200 5950 7850
-Wire Wire Line
-	5950 7850 5450 7850
-Connection ~ 5950 7200
 Wire Notes Line
 	3700 5050 6050 5050
 Wire Notes Line
-	6050 8100 3700 8100
+	6050 6650 3700 6650
 Text Notes 3700 5050 0    50   ~ 10
-512kbyte I2C FRAM block
-Text Notes 3700 8300 0    50   ~ 0
+128kbyte I2C FRAM block
+Text Notes 3700 6850 0    50   ~ 0
 Notes:\n* Pins Ax are internally pulled down
 Wire Notes Line
-	3700 8350 6050 8350
-Wire Notes Line
-	6050 5050 6050 8350
-Wire Notes Line
-	3700 5050 3700 8350
+	3700 6900 6050 6900
 NoConn ~ 4450 5700
 NoConn ~ 4450 5800
 Wire Notes Line
@@ -1898,8 +1557,8 @@ $Comp
 L Device:C C12
 U 1 1 601F4316
 P 7600 4250
-F 0 "C12" V 7348 4250 50  0000 C CNN
-F 1 "10uF" V 7439 4250 50  0000 C CNN
+F 0 "C12" V 7450 4250 50  0000 C CNN
+F 1 "10uF" V 7439 4250 50  0001 C CNN
 F 2 "" H 7638 4100 50  0001 C CNN
 F 3 "~" H 7600 4250 50  0001 C CNN
 	1    7600 4250
@@ -1947,4 +1606,42 @@ Wire Notes Line
 	5950 3200 5950 4850
 Wire Notes Line
 	650  2900 2600 2900
+$Comp
+L Device:C 10uF
+U 1 1 604053C8
+P 4950 6250
+F 0 "10uF" V 4698 6250 50  0001 C CNN
+F 1 "C" V 4790 6250 50  0000 C CNN
+F 2 "" H 4988 6100 50  0001 C CNN
+F 3 "~" H 4950 6250 50  0001 C CNN
+	1    4950 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 6250 5550 6250
+Wire Wire Line
+	5550 6250 5550 5600
+Connection ~ 5550 5600
+Wire Wire Line
+	4450 5900 4450 6250
+Wire Wire Line
+	4450 6250 4800 6250
+$Comp
+L power:Earth #PWR?
+U 1 1 604221A8
+P 4450 6350
+F 0 "#PWR?" H 4450 6100 50  0001 C CNN
+F 1 "Earth" H 4450 6200 50  0001 C CNN
+F 2 "" H 4450 6350 50  0001 C CNN
+F 3 "~" H 4450 6350 50  0001 C CNN
+	1    4450 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6250 4450 6350
+Connection ~ 4450 6250
+Wire Notes Line
+	3700 6900 3700 5050
+Wire Notes Line
+	6050 6900 6050 5050
 $EndSCHEMATC
