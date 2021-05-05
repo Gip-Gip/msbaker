@@ -166,7 +166,7 @@ U 1 1 605FC9FC
 P 4200 2200
 F 0 "J1" H 4250 2425 50  0000 C CNN
 F 1 "AVR ISP" H 4250 2426 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 4200 2200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 4200 2200 50  0001 C CNN
 F 3 "~" H 4200 2200 50  0001 C CNN
 	1    4200 2200
 	1    0    0    -1  
@@ -258,7 +258,7 @@ U 1 1 60635D9E
 P 5050 3950
 F 0 "JP1" H 5050 4123 50  0000 C CNN
 F 1 "Programming Disconnect" H 5050 4123 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5050 3950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5050 3950 50  0001 C CNN
 F 3 "~" H 5050 3950 50  0001 C CNN
 	1    5050 3950
 	1    0    0    -1  
