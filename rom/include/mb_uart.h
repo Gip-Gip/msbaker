@@ -15,7 +15,7 @@
 
 #define UART_TCCR0A 0b00000000 // value to set TCCR0A when doing UART operations
 #define UART_TCCR0B 0b00000001 // value to set TCCR0B when doing UART operations
-#define UART_DELAY (uint8_t)174 // Amount of clock cycles between bits read/sent through UART
+#define UART_DELAY (uint8_t)80 // Amount of clock cycles between bits read/sent through UART, assuming clock speed of 10MHZ and baud rate of 115200
 
 /* FUNCTION DEFINITIONS
  *
@@ -26,5 +26,7 @@
 void mb_uart_init();
 bool mb_uart_cts();
 void mb_uart_writeData(uint8_t *data, size_t length);
+void mb_uart_writeDataCts(uint8_t *data, size_t length);
+int mb_uart_readData(uint8_t *data, size_t length);
 
 #endif /* INCLUDE_MB_UART_H_ */
