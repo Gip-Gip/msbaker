@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name msbaker)(type Legacy)(uri ${KIPRJMOD}/msbaker.lib)(options "")(descr ""))
+  (lib (name mbaker-rescue)(type Legacy)(uri ${KIPRJMOD}/mbaker-rescue.lib)(options "")(descr ""))
+)
