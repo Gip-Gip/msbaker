@@ -6,14 +6,19 @@
 
 *Current Revision:* **2.3.1**
 
-*Current Revision Status:* **Awaiting Parts**
+*Current Revision Status:* **Testing**
 
 ## What is Ms Baker?
 
 Ms. Baker is a small-form-factor accelerometer/gyro logging board that utilizes BTLE to upload and download data wirelessly. Being based off of the ESP-32 chip it has
-plenty of computational power, and enough GPIO for any sort of project you have in mind. 
+plenty of computational power, and enough GPIO for any sort of project you have in mind.
 
 The board is named after the space pioneer Miss Baker, one of the first monkeys to go to space and safely return
+
+## Goal
+
+Ms. Baker is being designed to provide a robust, rocket-grade ESP32 platform complete with compact GPIO and full programmability. Being open source in every aspect,
+Ms. Baker is intended to be used in an array of rocketry projects from simple small apogee logging to fully fledged multi-staged LPR
 
 ## Features
 
