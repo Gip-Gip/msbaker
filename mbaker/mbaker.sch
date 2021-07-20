@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "Ms. Baker Rocket Telemetry Board"
-Date "2021-06-13"
-Rev "2.3.1"
+Date "2021-07-19"
+Rev "2.4.0"
 Comp ""
 Comment1 "Calculated 205mA approximate max current draw"
 Comment2 "Each crystal should have a load capacitance of 10pF"
@@ -315,7 +315,7 @@ U 1 1 60B74B1B
 P 12700 13300
 F 0 "Y2" H 13000 13400 50  0000 L CNN
 F 1 "40MHZ" H 13000 13300 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm" H 12700 13300 50  0001 C CNN
+F 2 "mbaker:Crystal_SMD_2520-4Pin_2.5x2.0mm" H 12700 13300 50  0001 C CNN
 F 3 "~" H 12700 13300 50  0001 C CNN
 	1    12700 13300
 	1    0    0    -1  
@@ -415,7 +415,7 @@ U 1 1 60BF41FC
 P 9000 7000
 F 0 "U1" H 8771 7046 50  0000 R CNN
 F 1 "MCP130T-270I/TT" H 8771 6955 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9600 6650 50  0001 C CNN
+F 2 "mbaker:SOT-23" H 9600 6650 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11184d.pdf" H 9000 7000 50  0001 C CNN
 	1    9000 7000
 	1    0    0    -1  
@@ -701,7 +701,7 @@ U 1 1 6124AD11
 P 18400 11850
 F 0 "U5" H 17950 11350 50  0000 C CNN
 F 1 "ICM-20601" H 18100 11250 50  0000 C CNN
-F 2 "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y" H 18400 12100 50  0001 C CNN
+F 2 "mbaker:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y" H 18400 12100 50  0001 C CNN
 F 3 "http://www.invensense.com/wp-content/uploads/2016/10/DS-000176-ICM-20602-v1.0.pdf" H 18450 12800 50  0001 C CNN
 	1    18400 11850
 	1    0    0    -1  
@@ -712,7 +712,7 @@ U 1 1 6126F81A
 P 18550 7450
 F 0 "U6" H 19000 7100 50  0000 C CNN
 F 1 "FM24V01" H 18900 7000 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 18550 7450 50  0001 C CNN
+F 2 "mbaker:SOIC-8_3.9x4.9mm_P1.27mm" H 18550 7450 50  0001 C CNN
 F 3 "http://www.cypress.com/file/41651/download" H 18350 7800 50  0001 C CNN
 	1    18550 7450
 	-1   0    0    -1  
@@ -1146,17 +1146,6 @@ $EndComp
 Wire Wire Line
 	10650 2150 10650 2250
 Connection ~ 10650 2250
-$Comp
-L msbaker:ADP150AUJZ-1.8-R7 U4
-U 1 1 61E28798
-P 11600 2900
-F 0 "U4" H 10950 2850 50  0000 L CNN
-F 1 "ADP150AUJZ-1.8-R7" H 10950 2750 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 10750 2700 50  0001 C CNN
-F 3 "" H 10750 2700 50  0001 C CNN
-	1    11600 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11500 2650 11400 2650
 Wire Wire Line
@@ -1333,173 +1322,6 @@ Text Notes 7800 8650 0    50   ~ 0
 RTC Crystal Block
 Text GLabel 10200 6900 1    50   Input ~ 0
 RESET
-Text GLabel 5200 8650 0    50   Input ~ 0
-SPI_CS
-Wire Wire Line
-	5200 8650 5300 8650
-Text GLabel 5200 8750 0    50   Input ~ 0
-SPI_IO1
-Wire Wire Line
-	5200 8750 5300 8750
-Text GLabel 5200 8850 0    50   Input ~ 0
-SPI_IO3
-Text GLabel 5200 8950 0    50   Input ~ 0
-SPI_CLK
-Text GLabel 5200 9050 0    50   Input ~ 0
-SPI_IO2
-Text GLabel 5200 9150 0    50   Input ~ 0
-SPI_IO0
-Text GLabel 5200 9250 0    50   Input ~ 0
-JTAG_MTMS
-Text GLabel 5200 9350 0    50   Input ~ 0
-JTAG_MTDI
-Text GLabel 5200 9450 0    50   Input ~ 0
-JTAG_MTCK
-$Comp
-L Connector_Generic:Conn_02x10_Counter_Clockwise J1
-U 1 1 625DE144
-P 5500 8950
-F 0 "J1" H 5550 9567 50  0000 C CNN
-F 1 "PEPI" H 5550 9476 50  0000 C CNN
-F 2 "mbaker:PEPI" H 5500 8950 50  0001 C CNN
-F 3 "~" H 5500 8950 50  0001 C CNN
-	1    5500 8950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR01
-U 1 1 625DFBE4
-P 5100 8450
-F 0 "#PWR01" H 5100 8200 50  0001 C CNN
-F 1 "Earth" H 5100 8300 50  0001 C CNN
-F 2 "" H 5100 8450 50  0001 C CNN
-F 3 "~" H 5100 8450 50  0001 C CNN
-	1    5100 8450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 8550 5300 8350
-Wire Wire Line
-	5300 8350 5100 8350
-Wire Wire Line
-	5100 8350 5100 8450
-Wire Wire Line
-	5200 8850 5300 8850
-Wire Wire Line
-	5200 8950 5300 8950
-Wire Wire Line
-	5200 9050 5300 9050
-Wire Wire Line
-	5200 9150 5300 9150
-Wire Wire Line
-	5200 9250 5300 9250
-Wire Wire Line
-	5200 9350 5300 9350
-Wire Wire Line
-	5200 9450 5300 9450
-$Comp
-L power:+3.3V #PWR03
-U 1 1 62650CCA
-P 5900 8450
-F 0 "#PWR03" H 5900 8300 50  0001 C CNN
-F 1 "+3.3V" H 5915 8623 50  0000 C CNN
-F 2 "" H 5900 8450 50  0001 C CNN
-F 3 "" H 5900 8450 50  0001 C CNN
-	1    5900 8450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 8450 5900 8550
-Wire Wire Line
-	5900 8550 5800 8550
-$Comp
-L power:Earth #PWR05
-U 1 1 6265F79E
-P 6100 8650
-F 0 "#PWR05" H 6100 8400 50  0001 C CNN
-F 1 "Earth" H 6100 8500 50  0001 C CNN
-F 2 "" H 6100 8650 50  0001 C CNN
-F 3 "~" H 6100 8650 50  0001 C CNN
-	1    6100 8650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 8750 5900 8750
-Wire Wire Line
-	5900 8750 5900 8700
-Wire Wire Line
-	5900 8650 5800 8650
-Wire Wire Line
-	5900 8700 6000 8700
-Wire Wire Line
-	6000 8700 6000 8550
-Wire Wire Line
-	6000 8550 6100 8550
-Wire Wire Line
-	6100 8550 6100 8650
-Connection ~ 5900 8700
-Wire Wire Line
-	5900 8700 5900 8650
-Text GLabel 5900 8850 2    50   Input ~ 0
-RESET
-Wire Wire Line
-	5900 8850 5800 8850
-Text GLabel 5900 8950 2    50   Input ~ 0
-BOOTMODE
-Wire Wire Line
-	5900 8950 5800 8950
-Text GLabel 5900 9050 2    50   Input ~ 0
-UART_TX
-Wire Wire Line
-	5900 9050 5800 9050
-Text GLabel 5900 9150 2    50   Input ~ 0
-UART_RX
-Wire Wire Line
-	5900 9150 5800 9150
-Text GLabel 5900 9250 2    50   Input ~ 0
-I2C_SDA
-Wire Wire Line
-	5900 9250 5800 9250
-Text GLabel 5900 9350 2    50   Input ~ 0
-I2C_SCK
-Wire Wire Line
-	5900 9350 5800 9350
-Text GLabel 5900 9450 2    50   Input ~ 0
-JTAG_MTDO
-Wire Wire Line
-	5900 9450 5800 9450
-Text Notes 3650 8700 0    50   ~ 0
-Internal Flash SPI Chip-Select
-Text Notes 4000 8800 0    50   ~ 0
-Internal Flash SPI IO1
-Text Notes 4000 8900 0    50   ~ 0
-Internal Flash SPI IO3
-Text Notes 3900 9000 0    50   ~ 0
-Internal Flash SPI Clock
-Text Notes 4150 9100 0    50   ~ 0
-Internal Flash IO2
-Text Notes 4150 9200 0    50   ~ 0
-Internal Flash IO0
-Text Notes 3850 9300 0    50   ~ 0
-JTAG Test Mode Select
-Text Notes 4050 9400 0    50   ~ 0
-JTAG Test Data In
-Text Notes 4100 9500 0    50   ~ 0
-JTAG Test Clock
-Text Notes 6400 9500 0    50   ~ 0
-JTAG Test Data Out
-Text Notes 6300 9400 0    50   ~ 0
-I2C Clock
-Text Notes 6300 9300 0    50   ~ 0
-I2C Data
-Text Notes 6300 9200 0    50   ~ 0
-UART Data Recieve
-Text Notes 6300 9100 0    50   ~ 0
-UART Data Transmit
-Text Notes 6400 9000 0    50   ~ 0
-ESP32 boot mode pin
-Text Notes 6200 8900 0    50   ~ 0
-Reset line
 Text Notes 8050 7400 0    50   ~ 0
 Reset Block
 Wire Notes Line
@@ -1524,10 +1346,6 @@ Wire Wire Line
 	9850 9000 9950 9000
 Text Notes 8700 11200 0    50   ~ 0
 Resistors to supress\n80MHz harmonics,\nper ESP32 hardware\nchecklist
-Text GLabel 9850 10600 0    50   Input ~ 0
-SPI_CLK
-Wire Wire Line
-	9850 10600 9950 10600
 Text GLabel 9850 11000 0    50   Input ~ 0
 GPIO10
 Wire Wire Line
@@ -1538,10 +1356,6 @@ Wire Wire Line
 	9850 11200 9950 11200
 Wire Wire Line
 	9350 11500 9950 11500
-Text GLabel 9850 10800 0    50   Input ~ 0
-SPI_IO3
-Wire Wire Line
-	9850 10800 9950 10800
 Wire Notes Line
 	9250 7650 9250 8650
 Wire Notes Line
@@ -1558,18 +1372,6 @@ Text GLabel 9850 11700 0    50   Input ~ 0
 UART_RX
 Wire Wire Line
 	9850 11700 9950 11700
-Text GLabel 9850 10400 0    50   Input ~ 0
-SPI_IO2
-Wire Wire Line
-	9850 10400 9950 10400
-Text GLabel 9850 10200 0    50   Input ~ 0
-SPI_IO0
-Wire Wire Line
-	9850 10200 9950 10200
-Text GLabel 13000 9100 2    50   Input ~ 0
-SPI_CS
-Text GLabel 13000 9400 2    50   Input ~ 0
-SPI_IO1
 Text GLabel 13000 8700 2    50   Input ~ 0
 BOOTMODE
 Wire Wire Line
@@ -1656,10 +1458,6 @@ Text GLabel 13000 8200 2    50   Input ~ 0
 GPIO27
 Wire Wire Line
 	13000 8200 12900 8200
-Text GLabel 13000 8500 2    50   Input ~ 0
-GPIO2
-Wire Wire Line
-	13000 8500 12900 8500
 Text GLabel 13000 8900 2    50   Input ~ 0
 GPIO4
 Text GLabel 13000 10400 2    50   Input ~ 0
@@ -1688,60 +1486,6 @@ Wire Wire Line
 	14750 9700 12900 9700
 Wire Wire Line
 	13000 8900 12900 8900
-$Comp
-L power:Earth #PWR02
-U 1 1 62D2C3DB
-P 5100 10900
-F 0 "#PWR02" H 5100 10650 50  0001 C CNN
-F 1 "Earth" H 5100 10750 50  0001 C CNN
-F 2 "" H 5100 10900 50  0001 C CNN
-F 3 "~" H 5100 10900 50  0001 C CNN
-	1    5100 10900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 10900 5100 10800
-Wire Wire Line
-	5100 10800 5300 10800
-Wire Wire Line
-	5300 10800 5300 11000
-$Comp
-L power:+3.3V #PWR04
-U 1 1 62D495D2
-P 5900 10900
-F 0 "#PWR04" H 5900 10750 50  0001 C CNN
-F 1 "+3.3V" H 5915 11073 50  0000 C CNN
-F 2 "" H 5900 10900 50  0001 C CNN
-F 3 "" H 5900 10900 50  0001 C CNN
-	1    5900 10900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 10900 5900 11000
-Wire Wire Line
-	5900 11000 5800 11000
-Text GLabel 5900 11300 2    50   Input ~ 0
-GPIO2
-Text GLabel 5900 11400 2    50   Input ~ 0
-GPIO4
-Text GLabel 5900 11500 2    50   Input ~ 0
-GPIO27
-Text GLabel 5900 11600 2    50   Input ~ 0
-GPIO9
-Text GLabel 5200 11600 0    50   Input ~ 0
-GPIO21
-Text GLabel 5200 11500 0    50   Input ~ 0
-GPIO22
-Text GLabel 5200 11400 0    50   Input ~ 0
-GPIO19
-Text GLabel 5200 11300 0    50   Input ~ 0
-GPIO10
-Text GLabel 5200 11200 0    50   Input ~ 0
-GPIO34
-Text GLabel 5200 11100 0    50   Input ~ 0
-GPIO35
-Text Notes 4850 10650 0    50   ~ 0
-Pins are arranged to minimize\ntrace crossing between\nthe connector and the ESP32
 $Comp
 L Device:C C5
 U 1 1 619B2D0B
@@ -1772,26 +1516,6 @@ Text Notes 7650 5400 0    50   ~ 0
 Place antenna close to chip\nto reduce parasitic inductance
 Wire Notes Line
 	7600 6150 10000 6150
-Wire Notes Line
-	7250 8200 3650 8200
-Text Notes 3650 9700 0    50   ~ 0
-PCB Edge Programming Interface Block
-Wire Notes Line
-	3650 8200 3650 9700
-Wire Notes Line
-	3650 9700 7250 9700
-Wire Notes Line
-	7250 9700 7250 8200
-Text Notes 4750 11900 0    50   ~ 0
-PCB Edge GPIO Interface Block
-Wire Notes Line
-	4750 10400 4750 11900
-Wire Notes Line
-	4750 11900 6250 11900
-Wire Notes Line
-	6250 11900 6250 10400
-Wire Notes Line
-	6250 10400 4750 10400
 $Comp
 L msbaker:ADP124ACPZ-3.3-R7 U2
 U 1 1 60B81441
@@ -2041,10 +1765,6 @@ Wire Notes Line
 	12250 12750 14100 12750
 Wire Notes Line
 	8050 7400 8050 6150
-Wire Wire Line
-	13000 9100 12900 9100
-Wire Wire Line
-	13000 9400 12900 9400
 $Comp
 L Device:Antenna_Dipole AE1
 U 1 1 61A20290
@@ -2056,65 +1776,6 @@ F 3 "~" H 8950 5000 50  0001 C CNN
 	1    8950 5000
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x07_Counter_Clockwise J2
-U 1 1 60BBD73A
-P 5500 11300
-F 0 "J2" H 5550 11817 50  0000 C CNN
-F 1 "PEGI" H 5550 11726 50  0000 C CNN
-F 2 "mbaker:PEGI" H 5500 11300 50  0001 C CNN
-F 3 "~" H 5500 11300 50  0001 C CNN
-	1    5500 11300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR0101
-U 1 1 60BE7C3E
-P 6100 11100
-F 0 "#PWR0101" H 6100 10850 50  0001 C CNN
-F 1 "Earth" H 6100 10950 50  0001 C CNN
-F 2 "" H 6100 11100 50  0001 C CNN
-F 3 "~" H 6100 11100 50  0001 C CNN
-	1    6100 11100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 11300 5800 11300
-Wire Wire Line
-	5900 11400 5800 11400
-Wire Wire Line
-	5900 11500 5800 11500
-Wire Wire Line
-	5900 11600 5800 11600
-Wire Wire Line
-	5300 11600 5200 11600
-Wire Wire Line
-	5200 11500 5300 11500
-Wire Wire Line
-	5300 11400 5200 11400
-Wire Wire Line
-	5300 11300 5200 11300
-Wire Wire Line
-	5300 11200 5200 11200
-Wire Wire Line
-	5300 11100 5200 11100
-Wire Wire Line
-	5800 11200 5900 11200
-Wire Wire Line
-	5900 11200 5900 11150
-Wire Wire Line
-	5900 11100 5800 11100
-Wire Wire Line
-	5900 11150 6000 11150
-Wire Wire Line
-	6000 11150 6000 11000
-Wire Wire Line
-	6000 11000 6100 11000
-Wire Wire Line
-	6100 11000 6100 11100
-Connection ~ 5900 11150
-Wire Wire Line
-	5900 11150 5900 11100
 Wire Wire Line
 	9650 5400 9650 5500
 Connection ~ 9650 5500
@@ -2155,4 +1816,283 @@ Wire Wire Line
 	9150 5000 9650 5000
 Wire Notes Line
 	10000 4600 10000 7650
+Wire Wire Line
+	5300 11100 5200 11100
+Wire Wire Line
+	5300 11200 5200 11200
+Wire Wire Line
+	5300 11300 5200 11300
+Wire Wire Line
+	5300 11400 5200 11400
+Wire Wire Line
+	5200 11500 5300 11500
+Wire Wire Line
+	5300 11600 5200 11600
+$Comp
+L Connector_Generic:Conn_02x07_Counter_Clockwise J2
+U 1 1 60BBD73A
+P 5500 11300
+F 0 "J2" H 5550 11817 50  0000 C CNN
+F 1 "PEGI" H 5550 11726 50  0000 C CNN
+F 2 "mbaker:Conn_card-edge_14pin" H 5500 11300 50  0001 C CNN
+F 3 "~" H 5500 11300 50  0001 C CNN
+	1    5500 11300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6250 10400 4750 10400
+Wire Notes Line
+	6250 11900 6250 10400
+Wire Notes Line
+	4750 11900 6250 11900
+Wire Notes Line
+	4750 10400 4750 11900
+Text Notes 4750 11900 0    50   ~ 0
+PCB Edge GPIO Interface Block
+Wire Notes Line
+	7250 9700 7250 8200
+Wire Notes Line
+	3650 9700 7250 9700
+Wire Notes Line
+	3650 8200 3650 9700
+Text Notes 3650 9700 0    50   ~ 0
+PCB Edge Programming Interface Block
+Wire Notes Line
+	7250 8200 3650 8200
+Text Notes 4850 10650 0    50   ~ 0
+Pins are arranged to minimize\ntrace crossing between\nthe connector and the ESP32
+Text GLabel 5200 11100 0    50   Input ~ 0
+GPIO35
+Text GLabel 5200 11200 0    50   Input ~ 0
+GPIO34
+Text GLabel 5200 11300 0    50   Input ~ 0
+GPIO10
+Text GLabel 5200 11400 0    50   Input ~ 0
+GPIO19
+Wire Wire Line
+	5900 11000 5800 11000
+Wire Wire Line
+	5900 10900 5900 11000
+$Comp
+L power:+3.3V #PWR04
+U 1 1 62D495D2
+P 5900 10900
+F 0 "#PWR04" H 5900 10750 50  0001 C CNN
+F 1 "+3.3V" H 5915 11073 50  0000 C CNN
+F 2 "" H 5900 10900 50  0001 C CNN
+F 3 "" H 5900 10900 50  0001 C CNN
+	1    5900 10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 10800 5300 11000
+Wire Wire Line
+	5100 10800 5300 10800
+Wire Wire Line
+	5100 10900 5100 10800
+$Comp
+L power:Earth #PWR02
+U 1 1 62D2C3DB
+P 5100 10900
+F 0 "#PWR02" H 5100 10650 50  0001 C CNN
+F 1 "Earth" H 5100 10750 50  0001 C CNN
+F 2 "" H 5100 10900 50  0001 C CNN
+F 3 "~" H 5100 10900 50  0001 C CNN
+	1    5100 10900
+	1    0    0    -1  
+$EndComp
+Text Notes 6200 8900 0    50   ~ 0
+Reset line
+Text Notes 6400 9000 0    50   ~ 0
+ESP32 boot mode pin
+Text Notes 6300 9100 0    50   ~ 0
+UART Data Transmit
+Text Notes 6300 9200 0    50   ~ 0
+UART Data Recieve
+Text Notes 4800 9200 2    50   ~ 0
+I2C Data
+Text Notes 4800 9100 2    50   ~ 0
+I2C Clock
+Text Notes 4700 9000 2    50   ~ 0
+JTAG Test Data Out
+Wire Wire Line
+	5200 8950 5300 8950
+Text GLabel 5200 8950 0    50   Input ~ 0
+JTAG_MTDO
+Wire Wire Line
+	5200 9050 5300 9050
+Text GLabel 5200 9050 0    50   Input ~ 0
+I2C_SCK
+Wire Wire Line
+	5200 9150 5300 9150
+Text GLabel 5200 9150 0    50   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	5900 9150 5800 9150
+Text GLabel 5900 9150 2    50   Input ~ 0
+UART_RX
+Wire Wire Line
+	5900 9050 5800 9050
+Text GLabel 5900 9050 2    50   Input ~ 0
+UART_TX
+Wire Wire Line
+	5900 8950 5800 8950
+Text GLabel 5900 8950 2    50   Input ~ 0
+BOOTMODE
+Wire Wire Line
+	5900 8850 5800 8850
+Text GLabel 5900 8850 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	5900 8700 5900 8650
+Wire Wire Line
+	6100 8550 6100 8650
+Wire Wire Line
+	6000 8550 6100 8550
+Wire Wire Line
+	6000 8700 6000 8550
+Wire Wire Line
+	5900 8700 6000 8700
+Wire Wire Line
+	5900 8650 5800 8650
+Connection ~ 5900 8700
+Wire Wire Line
+	5900 8750 5900 8700
+Wire Wire Line
+	5800 8750 5900 8750
+$Comp
+L power:Earth #PWR05
+U 1 1 6265F79E
+P 6100 8650
+F 0 "#PWR05" H 6100 8400 50  0001 C CNN
+F 1 "Earth" H 6100 8500 50  0001 C CNN
+F 2 "" H 6100 8650 50  0001 C CNN
+F 3 "~" H 6100 8650 50  0001 C CNN
+	1    6100 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 8550 5800 8550
+Wire Wire Line
+	5900 8450 5900 8550
+$Comp
+L power:+3.3V #PWR03
+U 1 1 62650CCA
+P 5900 8450
+F 0 "#PWR03" H 5900 8300 50  0001 C CNN
+F 1 "+3.3V" H 5915 8623 50  0000 C CNN
+F 2 "" H 5900 8450 50  0001 C CNN
+F 3 "" H 5900 8450 50  0001 C CNN
+	1    5900 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 8850 5300 8850
+Wire Wire Line
+	5200 8750 5300 8750
+Wire Wire Line
+	5200 8650 5300 8650
+Wire Wire Line
+	5100 8350 5100 8450
+Wire Wire Line
+	5300 8350 5100 8350
+Wire Wire Line
+	5300 8550 5300 8350
+$Comp
+L power:Earth #PWR01
+U 1 1 625DFBE4
+P 5100 8450
+F 0 "#PWR01" H 5100 8200 50  0001 C CNN
+F 1 "Earth" H 5100 8300 50  0001 C CNN
+F 2 "" H 5100 8450 50  0001 C CNN
+F 3 "~" H 5100 8450 50  0001 C CNN
+	1    5100 8450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 12900 9400
+NoConn ~ 12900 9100
+NoConn ~ 9950 10200
+NoConn ~ 9950 10400
+NoConn ~ 9950 10600
+NoConn ~ 9950 10800
+Text GLabel 5200 11500 0    50   Input ~ 0
+GPIO22
+Text GLabel 5200 11600 0    50   Input ~ 0
+GPIO21
+Wire Wire Line
+	5900 11600 5800 11600
+Wire Wire Line
+	5900 11500 5800 11500
+Text GLabel 5900 11600 2    50   Input ~ 0
+GPIO9
+Text GLabel 5900 11500 2    50   Input ~ 0
+GPIO27
+Text GLabel 5900 11400 2    50   Input ~ 0
+GPIO4
+Wire Wire Line
+	5900 11400 5800 11400
+Wire Wire Line
+	6000 11000 6100 11000
+NoConn ~ 12900 8500
+$Comp
+L power:Earth #PWR0101
+U 1 1 60BE7C3E
+P 6100 11100
+F 0 "#PWR0101" H 6100 10850 50  0001 C CNN
+F 1 "Earth" H 6100 10950 50  0001 C CNN
+F 2 "" H 6100 11100 50  0001 C CNN
+F 3 "~" H 6100 11100 50  0001 C CNN
+	1    6100 11100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 11200 5900 11200
+Wire Wire Line
+	5900 11200 5900 11150
+Wire Wire Line
+	5900 11100 5800 11100
+Wire Wire Line
+	5900 11150 6000 11150
+Wire Wire Line
+	6000 11150 6000 11000
+Wire Wire Line
+	6100 11000 6100 11100
+Connection ~ 5900 11150
+Wire Wire Line
+	5900 11150 5900 11100
+$Comp
+L Connector_Generic:Conn_02x07_Counter_Clockwise J1
+U 1 1 6107222E
+P 5500 8850
+F 0 "J1" H 5550 9367 50  0000 C CNN
+F 1 "PEPI" H 5550 9276 50  0000 C CNN
+F 2 "mbaker:Conn_card-edge_14pin" H 5500 8850 50  0001 C CNN
+F 3 "~" H 5500 8850 50  0001 C CNN
+	1    5500 8850
+	1    0    0    -1  
+$EndComp
+Text GLabel 5200 8650 0    50   Input ~ 0
+JTAG_MTMS
+Text GLabel 5200 8750 0    50   Input ~ 0
+JTAG_MTDI
+Text GLabel 5200 8850 0    50   Input ~ 0
+JTAG_MTCK
+Text Notes 3850 8700 0    50   ~ 0
+JTAG Test Mode Select
+Text Notes 4050 8800 0    50   ~ 0
+JTAG Test Data In
+Text Notes 4100 8900 0    50   ~ 0
+JTAG Test Clock
+NoConn ~ 5800 11300
+$Comp
+L msbaker:ADP150AUJZ-1.8-R7 U4
+U 1 1 61E28798
+P 11600 2900
+F 0 "U4" H 10950 2850 50  0000 L CNN
+F 1 "ADP150AUJZ-1.8-R7" H 10950 2750 50  0000 L CNN
+F 2 "mbaker:TSOT-23-5" H 10750 2700 50  0001 C CNN
+F 3 "" H 10750 2700 50  0001 C CNN
+	1    11600 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
