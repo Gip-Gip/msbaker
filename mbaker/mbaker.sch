@@ -1869,50 +1869,14 @@ Text GLabel 5200 11300 0    50   Input ~ 0
 GPIO10
 Text GLabel 5200 11400 0    50   Input ~ 0
 GPIO19
-Wire Wire Line
-	5900 11000 5800 11000
-Wire Wire Line
-	5900 10900 5900 11000
-$Comp
-L power:+3.3V #PWR04
-U 1 1 62D495D2
-P 5900 10900
-F 0 "#PWR04" H 5900 10750 50  0001 C CNN
-F 1 "+3.3V" H 5915 11073 50  0000 C CNN
-F 2 "" H 5900 10900 50  0001 C CNN
-F 3 "" H 5900 10900 50  0001 C CNN
-	1    5900 10900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 10800 5300 11000
-Wire Wire Line
-	5100 10800 5300 10800
-Wire Wire Line
-	5100 10900 5100 10800
-$Comp
-L power:Earth #PWR02
-U 1 1 62D2C3DB
-P 5100 10900
-F 0 "#PWR02" H 5100 10650 50  0001 C CNN
-F 1 "Earth" H 5100 10750 50  0001 C CNN
-F 2 "" H 5100 10900 50  0001 C CNN
-F 3 "~" H 5100 10900 50  0001 C CNN
-	1    5100 10900
-	1    0    0    -1  
-$EndComp
-Text Notes 6200 8900 0    50   ~ 0
+Text Notes 6200 9100 0    50   ~ 0
 Reset line
-Text Notes 6400 9000 0    50   ~ 0
+Text Notes 6400 9200 0    50   ~ 0
 ESP32 boot mode pin
-Text Notes 6300 9100 0    50   ~ 0
-UART Data Transmit
-Text Notes 6300 9200 0    50   ~ 0
-UART Data Recieve
 Text Notes 4800 9200 2    50   ~ 0
-I2C Data
+UART Data Transmit
 Text Notes 4800 9100 2    50   ~ 0
-I2C Clock
+UART Data Recieve
 Text Notes 4700 9000 2    50   ~ 0
 JTAG Test Data Out
 Wire Wire Line
@@ -1921,69 +1885,40 @@ Text GLabel 5200 8950 0    50   Input ~ 0
 JTAG_MTDO
 Wire Wire Line
 	5200 9050 5300 9050
-Text GLabel 5200 9050 0    50   Input ~ 0
-I2C_SCK
 Wire Wire Line
 	5200 9150 5300 9150
-Text GLabel 5200 9150 0    50   Input ~ 0
-I2C_SDA
 Wire Wire Line
 	5900 9150 5800 9150
-Text GLabel 5900 9150 2    50   Input ~ 0
+Text GLabel 5200 9050 0    50   Input ~ 0
 UART_RX
 Wire Wire Line
 	5900 9050 5800 9050
-Text GLabel 5900 9050 2    50   Input ~ 0
+Text GLabel 5200 9150 0    50   Input ~ 0
 UART_TX
-Wire Wire Line
-	5900 8950 5800 8950
-Text GLabel 5900 8950 2    50   Input ~ 0
+Text GLabel 5900 9150 2    50   Input ~ 0
 BOOTMODE
-Wire Wire Line
-	5900 8850 5800 8850
-Text GLabel 5900 8850 2    50   Input ~ 0
+Text GLabel 5900 9050 2    50   Input ~ 0
 RESET
-Wire Wire Line
-	5900 8700 5900 8650
-Wire Wire Line
-	6100 8550 6100 8650
-Wire Wire Line
-	6000 8550 6100 8550
-Wire Wire Line
-	6000 8700 6000 8550
-Wire Wire Line
-	5900 8700 6000 8700
-Wire Wire Line
-	5900 8650 5800 8650
-Connection ~ 5900 8700
-Wire Wire Line
-	5900 8750 5900 8700
-Wire Wire Line
-	5800 8750 5900 8750
 $Comp
 L power:Earth #PWR05
 U 1 1 6265F79E
-P 6100 8650
-F 0 "#PWR05" H 6100 8400 50  0001 C CNN
-F 1 "Earth" H 6100 8500 50  0001 C CNN
-F 2 "" H 6100 8650 50  0001 C CNN
-F 3 "~" H 6100 8650 50  0001 C CNN
-	1    6100 8650
+P 6000 8650
+F 0 "#PWR05" H 6000 8400 50  0001 C CNN
+F 1 "Earth" H 6000 8500 50  0001 C CNN
+F 2 "" H 6000 8650 50  0001 C CNN
+F 3 "~" H 6000 8650 50  0001 C CNN
+	1    6000 8650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 8550 5800 8550
-Wire Wire Line
-	5900 8450 5900 8550
 $Comp
 L power:+3.3V #PWR03
 U 1 1 62650CCA
-P 5900 8450
-F 0 "#PWR03" H 5900 8300 50  0001 C CNN
-F 1 "+3.3V" H 5915 8623 50  0000 C CNN
-F 2 "" H 5900 8450 50  0001 C CNN
-F 3 "" H 5900 8450 50  0001 C CNN
-	1    5900 8450
+P 6100 8750
+F 0 "#PWR03" H 6100 8600 50  0001 C CNN
+F 1 "+3.3V" H 6115 8923 50  0000 C CNN
+F 2 "" H 6100 8750 50  0001 C CNN
+F 3 "" H 6100 8750 50  0001 C CNN
+	1    6100 8750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2031,35 +1966,7 @@ Text GLabel 5900 11400 2    50   Input ~ 0
 GPIO4
 Wire Wire Line
 	5900 11400 5800 11400
-Wire Wire Line
-	6000 11000 6100 11000
 NoConn ~ 12900 8500
-$Comp
-L power:Earth #PWR0101
-U 1 1 60BE7C3E
-P 6100 11100
-F 0 "#PWR0101" H 6100 10850 50  0001 C CNN
-F 1 "Earth" H 6100 10950 50  0001 C CNN
-F 2 "" H 6100 11100 50  0001 C CNN
-F 3 "~" H 6100 11100 50  0001 C CNN
-	1    6100 11100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 11200 5900 11200
-Wire Wire Line
-	5900 11200 5900 11150
-Wire Wire Line
-	5900 11100 5800 11100
-Wire Wire Line
-	5900 11150 6000 11150
-Wire Wire Line
-	6000 11150 6000 11000
-Wire Wire Line
-	6100 11000 6100 11100
-Connection ~ 5900 11150
-Wire Wire Line
-	5900 11150 5900 11100
 $Comp
 L Connector_Generic:Conn_02x07_Counter_Clockwise J1
 U 1 1 6107222E
@@ -2083,7 +1990,6 @@ Text Notes 4050 8800 0    50   ~ 0
 JTAG Test Data In
 Text Notes 4100 8900 0    50   ~ 0
 JTAG Test Clock
-NoConn ~ 5800 11300
 $Comp
 L msbaker:ADP150AUJZ-1.8-R7 U4
 U 1 1 61E28798
@@ -2095,4 +2001,96 @@ F 3 "" H 10750 2700 50  0001 C CNN
 	1    11600 2900
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:Earth #PWR02
+U 1 1 62D2C3DB
+P 5100 10900
+F 0 "#PWR02" H 5100 10650 50  0001 C CNN
+F 1 "Earth" H 5100 10750 50  0001 C CNN
+F 2 "" H 5100 10900 50  0001 C CNN
+F 3 "~" H 5100 10900 50  0001 C CNN
+	1    5100 10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 10900 5100 10800
+Wire Wire Line
+	5100 10800 5300 10800
+Wire Wire Line
+	5300 10800 5300 11000
+Wire Wire Line
+	5800 11000 5900 11000
+Wire Wire Line
+	5900 11000 5900 11050
+Wire Wire Line
+	5900 11100 5800 11100
+Wire Wire Line
+	5800 11200 5900 11200
+Wire Wire Line
+	5900 11200 5900 11250
+Wire Wire Line
+	5900 11300 5800 11300
+Wire Wire Line
+	6100 11250 5900 11250
+Connection ~ 5900 11250
+Wire Wire Line
+	5900 11250 5900 11300
+Wire Wire Line
+	5900 11050 6000 11050
+Wire Wire Line
+	6000 11050 6000 11100
+Connection ~ 5900 11050
+Wire Wire Line
+	5900 11050 5900 11100
+NoConn ~ 5800 8950
+Wire Wire Line
+	5800 8550 5900 8550
+Wire Wire Line
+	5900 8550 5900 8600
+Wire Wire Line
+	5900 8650 5800 8650
+Wire Wire Line
+	6000 8600 5900 8600
+Connection ~ 5900 8600
+Wire Wire Line
+	5900 8600 5900 8650
+Wire Wire Line
+	5800 8750 5900 8750
+Wire Wire Line
+	5900 8750 5900 8800
+Wire Wire Line
+	5900 8850 5800 8850
+Wire Wire Line
+	6100 8750 6100 8800
+Wire Wire Line
+	6100 8800 5900 8800
+Connection ~ 5900 8800
+Wire Wire Line
+	5900 8800 5900 8850
+Wire Wire Line
+	6000 8600 6000 8650
+$Comp
+L power:Earth #PWR?
+U 1 1 6107F3E0
+P 6000 11100
+F 0 "#PWR?" H 6000 10850 50  0001 C CNN
+F 1 "Earth" H 6000 10950 50  0001 C CNN
+F 2 "" H 6000 11100 50  0001 C CNN
+F 3 "~" H 6000 11100 50  0001 C CNN
+	1    6000 11100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR04
+U 1 1 62D495D2
+P 6100 11200
+F 0 "#PWR04" H 6100 11050 50  0001 C CNN
+F 1 "+3.3V" H 6115 11373 50  0000 C CNN
+F 2 "" H 6100 11200 50  0001 C CNN
+F 3 "" H 6100 11200 50  0001 C CNN
+	1    6100 11200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 11200 6100 11250
 $EndSCHEMATC
