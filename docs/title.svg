@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000pt"
+   height="250pt"
+   viewBox="0 0 1333.3333 333.33335"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="title.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="pt"
+     width="1920px"
+     scale-x="1"
+     inkscape:zoom="0.60845258"
+     inkscape:cx="760.94673"
+     inkscape:cy="165.99486"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="405.22366"
+       y="130.0771"
+       width="473.78339"
+       height="240.33424"
+       id="rect45880" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:85.3333px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="454.58368"
+       y="164.83331"
+       id="text11062"><tspan
+         sodipodi:role="line"
+         id="tspan11060"
+         x="454.58368"
+         y="164.83331"
+         style="font-size:85.3333px;fill:#ffffff">Ms. Baker</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="375.21329"
+       y="290.97916"
+       id="text56036"
+       inkscape:export-filename="/home/thompsonc/Projects/msbaker/docs/title.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         x="375.21329"
+         y="290.97916"
+         id="tspan72170">Small-Form-Factor Telemetry &amp; GPIO</tspan></text>
+  </g>
+</svg>
