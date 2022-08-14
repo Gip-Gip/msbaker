@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name mbaker)(type KiCad)(uri ${KIPRJMOD}/mbaker.pretty)(options "")(descr ""))
-)
