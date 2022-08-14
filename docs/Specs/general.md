@@ -11,7 +11,7 @@ tags:
     - Software
 ---
 # General Specifications of the Ms. Baker Microcomputer
-### The Need for a Compact Microcomputer in Rocketry
+## The Need for a Compact Microcomputer in Rocketry
 
 With modern advancements in chip design decreasing footprint and increasing computation power and effeciency, along with the shrinkage of many passive components, it is more than possible to cram fully capable flight computation units along with basic telemetry in a sub 10cm² package. The benefits for this are several, including but not limited to weight savings, dev time savings(not needing to design a custom computer for a project), and cost savings. This improvements are of both a combination of modern technology and advanced board design which is all open sourced and openly developed to help lead to future improvements in the unexplored tech. On top of that, these improvements are all fairly substantial to hobby model rocketry as every little change especially counts at the small rocket scale.
 
@@ -21,18 +21,80 @@ With modern advancements in chip design decreasing footprint and increasing comp
 
 **Cost Savings** *todo*
 
-### What is Required for Ms. Baker to Meet It's Goals?
+## What is Required for Ms. Baker to Meet It's Goals?
 
 Ms. Baker has a lot of things it needs to fullfill, and each requirement brings it twords the goal of it being a fully fledged microcomputer
 
  * A **RP2004** MCU at the heart of the project. The RP2040 is low cost and OSH-friendly, with an open-source bootROM and good support for Rust
  * Firmware programmed in **Rust**. Rust is a powerful language that enforces good programming habits and allows the firmware to be far more robust by nature than if it were built in another language such as C or C++
  * On-board **accelerometer** and **gyroscope**, ideally in the same chip as this allows Ms. Baker to keep approximate relative location of the microcomputer
+ * **10 meter** apogee accuracy when measuring apogee, under 10000 meters
  * Robust **GPIO** connectors and/or headers for expanding the use of the computer into other projects, with a minimum of one **I2C** interface
  * **USB** interface for extracting data from previous flights *and* programming the computer
  * **4MB** flash storage for plenty of room to program
  * **F-RAM** for storing non-volitile flight telemetry data
- * Total area under 10cm², and ideally small enough to fit into an estes gnome
+ * Total area under **10cm²**, and ideally small enough to fit into an estes gnome
+
+## Finding Telemetric Accuracy
+### Calculating Distance from Rocket Acceleration
+
+First you need to find the initial hypothetical apogee from a hypothetical rocket's acceleration. Let's say the rocket accelerates at around 16g for 1 second, the rocket would gain $s_1$ distance and $v_1$ velocity by the time the rocket looses power
+  $$
+  \begin{aligned}
+  &v = u + at\\
+  &v = 0 + 156.9_{m/s^2}\cdot1_s\\
+  \\
+  &v_1 = 156.9_{m/s}
+  \end{aligned}
+ $$
+$$
+\begin{aligned}
+\\
+&v^2=u^2+2as\\
+&2as=v^2-u^2\\
+&s_1=\frac{v_1^2-u^2}{2a}\\
+\\
+&s_1=\frac{156.9_{m/s}^2-0_{m/s}^2}{2\cdot156.9_{m/s^2}}
+\\
+&s_1=78.5_m
+\end{aligned}
+$$
+Then from there you can find the distance($s_2$) it takes the rocket to reach it's apogee
+$$
+\begin{aligned}
+&u_2=v_1\\
+\\
+&s_2=\frac{v_2^2-u_2^2}{2a_2}\\
+\\
+&s_2=\frac{0_{m/s}^2-156.9_{m/s}^2}{2\cdot-9.8_{m/s^2}}
+\\
+&s_2=1256_m
+\end{aligned}
+$$
+After that, you can find the total distance($s_t$) by adding $s_1$ and $s_2$, in this case $s_t=s_1+s_2=1334.5_m$. To condense the steps needed to get $s_t$, we can simply concatinate the above math into one equation
+$$
+\begin{aligned}
+&s_t = s_1 + s_2\\
+&s_t = \frac{v_1^2}{2a}+\frac{-v_1^2}{2\cdot-9.8_{m/s^2}}\\
+\\
+&s_t = \frac{(at)^2}{2a}+\frac{(at)^2}{19.6_{m/s^2}}
+\end{aligned}
+$$
+
+## Part Selection
+
+ * MPU: **RP2040**
+     * Open-Source boot rom
+     * Flash-able without any extra hardware via USB
+     * Micro-SD card support
+     * 2 i2c interfaces, 2spi interfaces
+     * Up to 16mb external programmable flash
+ * IMU: **LSM6DSO32TR**
+     * 
+ * Flash: **W25Q128JVSIM TR**
+     * Reccomended flash for the RP2040
+     * 16mb fast program storage
+ * Voltage Regulator: **MIC5365-3.3YC5-TR**
 
 # Citations
 
