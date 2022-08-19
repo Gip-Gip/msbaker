@@ -14,7 +14,7 @@ tags:
      - [ ] 3.3v LDO Voltage Regulator
      - [ ] Decoupling capacitors
          - [ ] 100n capacitors on pins 49, 42, 33, 22, 10, 1, 48 and 43
-         - [ ] 100n capacitors on pins 40 and 23
+         - [ ] 100n capacitors on pins 50 and 23
          - [ ] 1u capacitors on pins 45 and 44
  - [ ] Flash Storage
      - [ ] Boot select header connected to QSPI_SS
