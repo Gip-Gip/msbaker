@@ -1,6 +1,6 @@
 ---
 title: "General Specifications"
-date: 2022-08-12
+date: 2022-08-19
 author:
     - Charles Thompson
 tags:
@@ -95,6 +95,10 @@ $$
      * Reccomended flash for the RP2040
      * 16mb fast program storage
  * Voltage Regulator: **MIC5365-3.3YC5-TR**
+ * Micro-USB port: **105017-0001**
+ * MicroSD card connector: **104031-0811**
+ * GPIO connector: **5055513420**
+ * Crystal: **445I23D12M00000**
 
 # Citations
 
