@@ -54,3 +54,4 @@ dkms.conf
 /sloeber.ino.cpp
 kicad/msbaker-backups/*
 kicad/_autosave*
+.~lock*
