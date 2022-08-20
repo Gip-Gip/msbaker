@@ -1727,7 +1727,7 @@
 
   (no_connect (at 48.26 114.3) (uuid 829c8781-4f05-4afd-83f0-eb5fc47b6232))
   (no_connect (at 267.97 241.3) (uuid f9abd452-a560-4062-aa66-0c7a3aa46565))
-  (no_connect (at 267.97 243.84) (uuid f9abd452-a560-4062-aa66-0c7a3aa46565))
+  (no_connect (at 267.97 243.84) (uuid f9abd452-a560-4062-aa66-0c7a3aa46566))
 
   (polyline (pts (xy 111.76 118.11) (xy 111.76 57.15))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -3301,7 +3301,7 @@
     (effects (font (size 1.27 1.27) bold) (justify right bottom))
     (uuid 2ba0faae-c9de-4269-bc6a-0ee19b997c1c)
   )
-  (label "I2C_SCL" (at 256.54 118.11 0)
+  (label "I2C0_SCL" (at 256.54 118.11 0)
     (effects (font (size 1.27 1.27) bold) (justify left bottom))
     (uuid 2dab14e3-eb15-41e0-b7f5-e495f1126b4b)
   )
@@ -3377,7 +3377,7 @@
     (effects (font (size 1.27 1.27) bold) (justify left bottom))
     (uuid 5739536f-9829-4581-9cd3-fbe6731053d1)
   )
-  (label "I2C_SDA" (at 256.54 115.57 0)
+  (label "I2C0_SDA" (at 256.54 115.57 0)
     (effects (font (size 1.27 1.27) bold) (justify left bottom))
     (uuid 5d30999d-7ac0-4e7e-8a18-fda1f94b99d8)
   )
@@ -4508,7 +4508,7 @@
     (property "Value" "RP2040" (id 1) (at 224.2694 186.69 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "RP2040_minimal:RP2040-QFN-56" (id 2) (at 203.2 133.35 0)
+    (property "Footprint" "msbaker:RP2040-QFN-56" (id 2) (at 203.2 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 203.2 133.35 0)
@@ -5153,7 +5153,7 @@
       (reference "U2") (unit 1) (value "W25Q128JVS") (footprint "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm")
     )
     (path "/a530eb3b-850c-4348-9c18-72b32f461f6b"
-      (reference "U3") (unit 1) (value "RP2040") (footprint "RP2040_minimal:RP2040-QFN-56")
+      (reference "U3") (unit 1) (value "RP2040") (footprint "msbaker:RP2040-QFN-56")
     )
     (path "/9a16b67b-1f3d-4692-985a-7f1fc616b1b8"
       (reference "U4") (unit 1) (value "LSM6DSO32") (footprint "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y")
