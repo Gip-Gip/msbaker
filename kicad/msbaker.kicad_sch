@@ -3349,7 +3349,7 @@
     (effects (font (size 1.27 1.27) bold) (justify right bottom))
     (uuid 3ea44f2a-3dd5-4694-a02a-512ed6ec994a)
   )
-  (label "I2C_SCL" (at 50.8 171.45 0)
+  (label "I2C0_SCL" (at 50.8 171.45 0)
     (effects (font (size 1.27 1.27) bold) (justify left bottom))
     (uuid 42018a4d-365d-48b1-8946-4d3a6cec51b5)
   )
