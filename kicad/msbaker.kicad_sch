@@ -3836,9 +3836,9 @@
   (symbol (lib_id "Jumper:Jumper_2_Open") (at 160.02 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 23378ab5-1c12-4850-a758-87df6c952ed0)
-    (property "Reference" "JP?" (id 0) (at 160.02 161.29 0))
+    (property "Reference" "JP2" (id 0) (at 160.02 161.29 0))
     (property "Value" "RESET" (id 1) (at 160.02 163.83 0))
-    (property "Footprint" "" (id 2) (at 160.02 167.64 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (id 2) (at 160.02 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 160.02 167.64 0)
@@ -4049,7 +4049,7 @@
   (symbol (lib_id "power:GND") (at 152.4 170.18 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 34075927-0940-4a51-b071-f748f1aafb45)
-    (property "Reference" "#PWR?" (id 0) (at 152.4 176.53 0)
+    (property "Reference" "#PWR0128" (id 0) (at 152.4 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 152.4 175.26 0))
@@ -5186,7 +5186,7 @@
       (reference "#PWR0127") (unit 1) (value "GND") (footprint "")
     )
     (path "/34075927-0940-4a51-b071-f748f1aafb45"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0128") (unit 1) (value "GND") (footprint "")
     )
     (path "/c7da6979-49ad-4486-80d0-67dcc8e8ab59"
       (reference "C1") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
@@ -5264,7 +5264,7 @@
       (reference "JP1") (unit 1) (value "BOOTSEL") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/23378ab5-1c12-4850-a758-87df6c952ed0"
-      (reference "JP?") (unit 1) (value "RESET") (footprint "")
+      (reference "JP2") (unit 1) (value "RESET") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/21a3236e-0675-438d-b524-ddd5ec5a0139"
       (reference "R1") (unit 1) (value "15k") (footprint "Resistor_SMD:R_0402_1005Metric")
