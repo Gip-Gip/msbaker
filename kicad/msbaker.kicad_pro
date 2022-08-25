@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.42,
-          "width": 0.3
+          "drill": 2.2,
+          "height": 3.8,
+          "width": 3.8
         },
         "silk_line_width": 0.07619999999999999,
         "silk_text_italic": false,
@@ -364,7 +364,7 @@
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.1,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -381,7 +381,7 @@
       },
       {
         "bus_width": 12.0,
-        "clearance": 0.1,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
