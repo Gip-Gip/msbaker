@@ -1,6 +1,6 @@
 ---
 title: "Schematic Checklist"
-date: 2022-08-19
+date: 2022-08-26
 author:
     - Charles Thompson
 tags:
@@ -17,8 +17,6 @@ tags:
          - [ ] 100n capacitors on pins 50 and 23
          - [ ] 1u capacitors on pins 45 and 44
  - [ ] Flash Storage
-     - [ ] Boot select header connected to QSPI_SS
-         - [ ] 1k resistor between header and QSPI_SS
      - [ ] W25Q128JVS flash chip
  - [ ] Crystal Oscillator
      - [ ] 33p capacitor connected to each pin on the crystal
@@ -33,17 +31,31 @@ tags:
      - [ ] I2C
          - [ ] Pullup resistors correct value
          - [ ] All ICs connected to I2C0 on pins 8 and 9
+             - [ ] SDA on pin 8
+             - [ ] SCL on pin 9
      - [ ] SD Card
          - [ ] 10u decoupling capacitor between VDD and ground
          - [ ] All data lines contiguous and in order
      - [ ] Green Status LED
-         - [ ] 120 ohm current limiting resistor
+         - [ ] 470 ohm current limiting resistor
+     - [ ] Reset Header
+         - [ ] Connected to the RUN pin
+     - [ ] Bootsel Jumper
+         - [ ] Connected to QSPI_SS
+         - [ ] 1k resistor between jumper and ground
+     - [ ] Test Pads
+         - [ ] 3.3v test pad
+         - [ ] 1.1v test pad
+         - [ ] XIN test pad
+         - [ ] I2C SDA test pad
+         - [ ] I2C SCL test pad
 
 # LSM6DSO32 Checklist
 ### Derived from [iNEMO inertial module: always-on 3D Accelerometer and 3D gyroscope](https://www.st.com/resource/en/datasheet/lsm6dso32.pdf)
  - [ ] Power
      - [ ] 3.3v supply connected to pins 8 and 5
      - [ ] 100n capacitors connected to pins 8 and 5
+     - [ ] Ground connected to pins 6 and 7
  - [ ] I2C
      - [ ] SA0(pin 1) connected to ground to set the I2C lsbit to zero
      - [ ] SDx and SCx connected to ground
@@ -58,6 +70,11 @@ tags:
  - [ ] Power
      - [ ] 3.3v supply connected to pin 8
      - [ ] 100n capacitor connected to pin 8
+     - [ ] Ground connected to pin 4
+ - [ ] QSPI
+     - [ ] QSPI_SS connected to CS
+     - [ ] QSPI_SCLK connected to CLK
+     - [ ] QSPI_SD0-3 connected to IO0-3
 
 # MIC5365-3.3YC5 Checklist
 ### Derived from the MIC5465 [Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/mic5365.pdf)
@@ -72,7 +89,8 @@ tags:
  - [ ] LSM6DSO32 Checklist Complete
  - [ ] W25Q128JVSIM Checklist Complete
  - [ ] MIC5365-3.3YC5 Checklist Complete
- - [ ] No unconnected pins
+ - [ ] No unconnected pins or nets
+ - [ ] ERC ran
  - [ ] Schematic organized
  - [ ] BOM generated
  - [ ] Footprints set
