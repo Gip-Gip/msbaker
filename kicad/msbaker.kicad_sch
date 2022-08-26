@@ -4366,7 +4366,7 @@
     (property "Reference" "R7" (id 0) (at 341.63 93.9799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "120" (id 1) (at 341.63 96.5199 0)
+    (property "Value" "470" (id 1) (at 341.63 96.5199 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 339.09 95.25 0)
@@ -5257,7 +5257,7 @@
       (reference "R6") (unit 1) (value "27.4") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/87cbd431-1d69-421b-9adc-99f3e4885165"
-      (reference "R7") (unit 1) (value "120") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R7") (unit 1) (value "470") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/2a6801f7-377c-4fda-9ad9-4a9501936da3"
       (reference "U1") (unit 1) (value "MIC5365-3.3YC5") (footprint "Package_TO_SOT_SMD:SOT-353_SC-70-5")
