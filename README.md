@@ -1,32 +1,50 @@
-# Ms. Baker
+**Ms. Baker is a compact microcomputer built off the RP2040, specifically with model rocketry in mind.**
+Occupying a footprint under 10cm&sup2;, this computer provides a unique density of many useful components, including a compact **25 pin GPIO** connector and a high accuracy **IMU**.
+These features in a compact and light package is especially useful for low and medium power rockets, but may also find use in other applications where an ultra-small microcomputer may be needed.
 
-**Authored and Developed by Charles "Gip-Gip" Thompson**
+## Feature Set
 
-## A General-Purpose Bluetooth Telemetry Board
+Ms. Baker is fairly feature packed for the size, and includes:
 
-*Current Revision:* **3**
+### RP2040 MCU
 
-*Current Revision Status: **Initial Brainstorm**
+Powered by Raspberry Pi's RP2040 Microcontroller, Ms. Baker has the computation power of a 133MHz dual-core Arm Corted-M0+ processor in an unbelievably compact package.
 
-## To-Dos
+### Micro SD Card Slot
 
- * Redesign board for RP2040
+Useful for logging data and loading/storing programs, Ms. Baker comes equipped with a compact MicroSD card slot for easy-to-use data storage.
 
-## Directory Layout
+### I2C IMU
 
- * docs -  Documents pretaining to Ms. Baker, such as renders, specifications, checklists, and BOMs
- * mbaker - Ms. Baker KiCad projec
- * rom - ROM Eclipse(C/C++) project
-   * bin - flashable binaries
-   * include - header files
-   * obj -  pre-linker object files
-   * src - C source files
+No rocket computer should be complete with at least some form of telemetry, and Ms. Baker comes with the versitile LSM6DSO32 IMU, providing both gyro and acceleration data at a sample rate of up to 6.7kHz.
+It has a maximum measurable acceleration range of &plusmn;32*g* and a maximum measurable angular rate of &plusmn;200dps, which should be good for most low and medium powered rockets, in theory.
 
-## Contributing
+### USB Programmable ROM
 
-Contact me at the email chmithbiz@gmail.com and see what I need help with, or alternatively if you're more of an introvert just comb through the repository and see
-what can be done/what you want to see. If you contribute I will add you to the "Authored and Developed by..." section and you will recieve my unending gratitude.
+Thanks to the RP2040 Ms. Baker is entirely programmable via USB, meaning so long as you have a Micro USB cable and a computer you have access to **16MBytes of ROM** with no extra hardware!
 
-## Legal
+### GPIO
 
-Every file in this repository, unless stated otherwise, is under the BSD 3-Clause License. See LICENSE for more details
+Utilizing a Molex SlimStack connector Ms. Baker provides 25 pins of GPIO in a very compact footprint, completely up for any use the end user may desire!
+
+### Robust Firmware
+
+Like any other OpenApeShop project, Ms Baker's firmware is *(to be written)* in the Rust programming language, making it very robust and resistant to common bugs that may occur in other embedded firmware solutions.
+
+## Development Status
+
+**Currently Awaiting Parts**, Ms. Baker is on it's third prototype and has the following steps that need to be completed before it is more or less ready for use:
+
+- [ ] Assemble a working prototype
+- [ ] Program the firmware so that by default Ms. Baker acts as a telemetry logging device
+- [ ] Field test Ms. Baker on a live rocket
+- [ ] Reorganize PCB to fill up any unused space by
+    - [ ] Spacing traces to reduce the chances of crosstalk, when possible
+    - [ ] Increasing the size of traces to reduce impedence, when possible
+- [ ] Document Ms. Baker so it's easy to use
+- [ ] Develop a pin breakout board so prototyping is as easy as with a normal Raspberry Pi Pico
+
+## Links
+
+* [Website](https://openapeshop.org/hardware/msbaker)
+* [Schematic](https://github.com/Gip-Gip/msbaker/raw/main/docs/Renders/schematic.png)
