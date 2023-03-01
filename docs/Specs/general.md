@@ -71,7 +71,7 @@ $$
 &s_2=1256_m
 \end{aligned}
 $$
-After that, you can find the total distance($s_t$) by adding $s_1$ and $s_2$, in this case $s_t=s_1+s_2=1334.5_m$. To condense the steps needed to get $s_t$, we can simply concatinate the above math into one equation
+After that, you can find the total distance($s_t$) by adding $s_1$ and $s_2$, in this case $s_t=s_1+s_2=1334.5_m$. To condense the steps needed to get $s_t$, we can simply concatenate the above math into one equation
 $$
 \begin{aligned}
 &s_t = s_1 + s_2\\
@@ -90,7 +90,6 @@ $$
      * 2 i2c interfaces, 2spi interfaces
      * Up to 16mb external programmable flash
  * IMU: **LSM6DSO32TR**
-     * 
  * Flash: **W25Q128JVSIM TR**
      * Reccomended flash for the RP2040
      * 16mb fast program storage
