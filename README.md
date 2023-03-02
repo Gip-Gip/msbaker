@@ -33,9 +33,8 @@ Like any other OpenApeShop project, Ms Baker's firmware is *(to be written)* in 
 
 ## Development Status
 
-**Currently Awaiting Parts**, Ms. Baker is on it's third prototype and has the following steps that need to be completed before it is more or less ready for use:
+**With a working prototype**, Ms. Baker is on it's third prototype and has the following steps that need to be completed before it is more or less ready for use:
 
-- [ ] Assemble a working prototype
 - [ ] Program the firmware so that by default Ms. Baker acts as a telemetry logging device
 - [ ] Field test Ms. Baker on a live rocket
 - [ ] Reorganize PCB to fill up any unused space by
@@ -43,6 +42,11 @@ Like any other OpenApeShop project, Ms Baker's firmware is *(to be written)* in 
     - [ ] Increasing the size of traces to reduce impedence, when possible
 - [ ] Document Ms. Baker so it's easy to use
 - [ ] Develop a pin breakout board so prototyping is as easy as with a normal Raspberry Pi Pico
+
+## Legal
+
+Ms Baker's hardware is under the CERN-OHL-S and software under GPL-3.0.
+See LEGAL-HARDWARE for all legal info regarding hardware, LEGAL-SOFTWARE for all legal info regarding software.
 
 ## Links
 

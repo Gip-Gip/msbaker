@@ -1,5 +1,22 @@
 //! Main functions and other top-level code needed to operate
 
+// Copyright (c) 2023 Charles M. Thompson
+//
+// This file is part of Ms. Baker's firmware.
+//
+// Ms. Baker's firmware is free software: you can redistribute it and/or modify it under
+// the terms only of version 3 of the GNU General Public License as published
+// by the Free Software Foundation
+//
+// Ms. Baker's firmware is distributed in the hope that it will be useful, but WITHOUT ANY
+// WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+// FOR A PARTICULAR PURPOSE. See the GNU General Public License
+// for more details.
+//
+// You should have received a copy of the GNU General Public License along with
+// Ms. Baker's firmware(in a file named COPYING).
+// If not, see <https://www.gnu.org/licenses/>.
+
 #![no_std]
 #![no_main]
 
