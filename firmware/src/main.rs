@@ -1,29 +1,4 @@
-//! Simple blinker program, of no importance
-//! 
-//! Derived from https://github.com/rp-rs/rp-hal/blob/main/rp2040-hal/examples/blinky.rs
-//!
-//! MIT License
-//! 
-//! Copyright (c) 2021 rp-rs organization
-//! 
-//! Permission is hereby granted, free of charge, to any person obtaining a copy
-//! of this software and associated documentation files (the "Software"), to deal
-//! in the Software without restriction, including without limitation the rights
-//! to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//! copies of the Software, and to permit persons to whom the Software is
-//! furnished to do so, subject to the following conditions:
-//! 
-//! The above copyright notice and this permission notice shall be included in all
-//! copies or substantial portions of the Software.
-//! 
-//! THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//! IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//! FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//! AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//! LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//! OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-//! SOFTWARE.
-//! 
+//! Main functions and other top-level code needed to operate
 
 #![no_std]
 #![no_main]
@@ -33,6 +8,9 @@ use rp2040_hal as hal;
 use core::panic::PanicInfo;
 use hal::pac;
 
+use embedded_hal::blocking::i2c::WriteRead;
+use fugit::RateExtU32;
+
 use embedded_hal::digital::v2::OutputPin;
 use rp2040_hal::clocks::Clock;
 
@@ -41,9 +19,17 @@ use rp2040_hal::clocks::Clock;
 pub static BOOT2: [u8; 256] = rp2040_boot2::BOOT_LOADER_GENERIC_03H;
 
 const XTAL_FREQ_HZ: u32 = 12_000_000u32;
+const IMU_ADDR: u8 = 0b1101010;
+const IMU_CHECK_REG: u8 = 0x0F;
+const IMU_CHECK_VAL: u8 = 0b01101100;
 
+/// Core 0 main function, the entrypoint for our code
+/// Everything starts here!
 #[rp2040_hal::entry]
-fn main() -> ! {
+fn main_0() -> ! {
+    // ===================================================================== //
+    // STEP 1, INITIALIZATION!                                               //
+    // ===================================================================== //
     let mut pac = pac::Peripherals::take().unwrap();
     let core = pac::CorePeripherals::take().unwrap();
 
@@ -61,8 +47,6 @@ fn main() -> ! {
     .ok()
     .unwrap();
 
-    let mut delay = cortex_m::delay::Delay::new(core.SYST, clocks.system_clock.freq().to_Hz());
-
     let sio = hal::Sio::new(pac.SIO);
 
     let pins = hal::gpio::Pins::new(
@@ -72,18 +56,57 @@ fn main() -> ! {
         &mut pac.RESETS,
     );
 
-    let mut led_pin = pins.gpio25.into_push_pull_output();
-    loop {
-        led_pin.set_high().unwrap();
-        delay.delay_ms(500);
-        led_pin.set_low().unwrap();
-        delay.delay_ms(500);
+    // Initialize GPIO
+    let mut pin_led = pins.gpio25.into_push_pull_output();
+    // Initialize the I2C1 line
+    // !TODO! says it's I2C0 on the schematic, figure out why
+    let pin_i2c1_sda = pins.gpio6.into_mode::<hal::gpio::FunctionI2C>();
+    let pin_i2c1_scl = pins.gpio7.into_mode::<hal::gpio::FunctionI2C>();
+    let mut i2c1 = hal::I2C::i2c1(
+        pac.I2C1,
+        pin_i2c1_sda,
+        pin_i2c1_scl,
+        400.kHz(),
+        &mut pac.RESETS,
+        &clocks.system_clock,
+    );
+
+    // ===================================================================== //
+    // STEP 1.1, SELF CHECKS!                                                //
+    // ===================================================================== //
+
+    // Check the IMU
+    let mut response: [u8; 1] = [0; 1];
+    // Remember you have to write to i2c to read from i2c...
+    i2c1.write_read(IMU_ADDR, &[IMU_CHECK_REG], &mut response)
+        .unwrap();
+
+    if response[0] != IMU_CHECK_VAL {
+        panic!("IMU NOT OK!");
     }
+
+    // !TODO! Self check for sd card
+
+    // !TODO! Initialize core 1
+
+    // ===================================================================== //
+    // STEP 2, WAIT!                                                         //
+    // ===================================================================== //
+
+    // Turn the LED solid to signify all is good!
+    pin_led.set_high().unwrap();
+
+    loop {
+        cortex_m::asm::wfi();
+    }
+}
+
+/// Core 1 main function, called by core 0
+fn main_1() {
+    todo!()
 }
 
 #[panic_handler]
 fn panic(_: &PanicInfo) -> ! {
-    loop {
-    }
+    loop {}
 }
-
