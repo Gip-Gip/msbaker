@@ -276,7 +276,7 @@ impl<P: PIOExt> Sdio4bit<P> {
         // Send CMD0
         loop {
             self.send_command(SdCmd::GoIdleState);
-            self.delay.delay_us(50);
+            self.delay.delay_us(500);
         }
     }
 
