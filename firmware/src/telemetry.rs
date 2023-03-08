@@ -14,7 +14,7 @@
 // for more details.
 //
 // You should have received a copy of the GNU General Public License along with
-// Ms. Baker's firmware(in a file named COPYING).
+// Ms. Baker's firmware(in a file named LEGAL-SOFTWARE).
 // If not, see <https://www.gnu.org/licenses/>.
 
 #![no_std]

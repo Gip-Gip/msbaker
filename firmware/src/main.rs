@@ -17,19 +17,25 @@
 // Ms. Baker's firmware(in a file named COPYING).
 // If not, see <https://www.gnu.org/licenses/>.
 
-#![no_std]
+#![cfg_attr(not(test), no_std)]
 #![no_main]
+
+mod sdio;
+
+use crate::sdio::Sdio4bit;
 
 use rp2040_hal as hal;
 
 use core::panic::PanicInfo;
 use hal::pac;
 
+use hal::pio::PIOExt;
 use embedded_hal::blocking::i2c::WriteRead;
 use fugit::RateExtU32;
 
 use embedded_hal::digital::v2::OutputPin;
 use rp2040_hal::clocks::Clock;
+use cortex_m::delay::Delay;
 
 #[link_section = ".boot2"]
 #[used]
@@ -74,7 +80,7 @@ fn main_0() -> ! {
     );
 
     // Initialize GPIO
-    let mut pin_led = pins.gpio25.into_push_pull_output();
+    //let mut pin_led = pins.gpio25.into_push_pull_output();
     // Initialize the I2C1 line
     // !TODO! says it's I2C0 on the schematic, figure out why
     let pin_i2c1_sda = pins.gpio6.into_mode::<hal::gpio::FunctionI2C>();
@@ -88,6 +94,40 @@ fn main_0() -> ! {
         &clocks.system_clock,
     );
 
+    // Initialize the SD card pins
+    let pin_sd_clk = pins.gpio0.into_mode::<hal::gpio::FunctionPio0>(); 
+    let pin_sd_cmd = pins.gpio5.into_mode::<hal::gpio::FunctionPio0>();
+    let pin_sd_dat0 = pins.gpio1.into_mode::<hal::gpio::FunctionPio0>();
+    let pin_sd_dat1 = pins.gpio2.into_mode::<hal::gpio::FunctionPio0>();
+    let pin_sd_dat2 = pins.gpio3.into_mode::<hal::gpio::FunctionPio0>();
+    let pin_sd_dat3 = pins.gpio4.into_mode::<hal::gpio::FunctionPio0>();
+
+    // Get their ids
+    let pin_sd_clk_id = pin_sd_clk.id().num;
+    let pin_sd_cmd_id = pin_sd_cmd.id().num;
+    let pin_sd_dat0_id = pin_sd_dat0.id().num;
+    let pin_sd_dat1_id = pin_sd_dat1.id().num;
+    let pin_sd_dat2_id = pin_sd_dat2.id().num;
+    let pin_sd_dat3_id = pin_sd_dat3.id().num;
+
+    // Initialize the sd card
+    let (mut pio, sm0, sm1, _, _) = pac.PIO0.split(&mut pac.RESETS);
+    let mut delay = Delay::new(core.SYST, clocks.system_clock.freq().to_Hz());
+    let mut sd_controller = Sdio4bit::new(
+        pio,
+        delay,
+        sm0,
+        sm1,
+        pin_sd_clk_id,
+        pin_sd_cmd_id, 
+        pin_sd_dat0_id,
+        pin_sd_dat1_id,
+        pin_sd_dat2_id,
+        pin_sd_dat3_id
+    );
+
+    sd_controller.init();
+
     // ===================================================================== //
     // STEP 1.1, SELF CHECKS!                                                //
     // ===================================================================== //
@@ -99,10 +139,12 @@ fn main_0() -> ! {
         .unwrap();
 
     if response[0] != IMU_CHECK_VAL {
-        panic!("IMU NOT OK!");
+        panic!("IMU NOT OK");
     }
 
     // !TODO! Self check for sd card
+    
+
 
     // !TODO! Initialize core 1
 
@@ -111,7 +153,7 @@ fn main_0() -> ! {
     // ===================================================================== //
 
     // Turn the LED solid to signify all is good!
-    pin_led.set_high().unwrap();
+    //pin_led.set_high().unwrap();
 
     loop {
         cortex_m::asm::wfi();

@@ -10,11 +10,13 @@ cortex-m = "0.7.2"
 cortex-m-rt = "0.7"
 embedded-hal = { version = "0.2.5", features = ["unproven"] }
 rp2040-pac = "0.4.0"
-rp2040-hal="0.8.0"
-rp2040-boot2= "0.2"
+rp2040-hal={git="https://github.com/Gip-Gip/rp-hal"}
+rp2040-boot2= "0.2.0"
 rp2040-hal-macros = "0.1.0"
 critical-section = "1.0.0"
 fugit = "0.3.6"
+pio-proc = "0.2.0"
+pio = "0.2.0"
 
 [features]
 rt = ["rp2040-pac/rt"]
